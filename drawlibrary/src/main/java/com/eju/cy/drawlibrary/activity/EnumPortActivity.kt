@@ -89,7 +89,7 @@ class EnumPortActivity : AppCompatActivity() {
 
         override fun didFinishedEnumPorts() {
             if (deviceList!!.size == 0) {
-                ToastUtils.showShort("附近没有可用蓝牙设备，请重试")
+                ToastUtils.showShort(" 附近没有可用蓝牙设备，请重试")
                 finish()
             }
         }

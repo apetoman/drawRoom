@@ -2,14 +2,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
-//publish {
-//    userOrg = 'zmcat' //bintray账户下某个组织id
-//    groupId = 'com.eju.cy.drawlibrary' //maven仓库下库的包名，一般为模块包名
-//    artifactId = 'drawLibrary' //项目名称
-//    publishVersion = '1.0.0' //版本号
-//    desc = '户型绘制' //项目介绍，可以不写
-//    website = '' //项目主页，可以不写
-//}
+
 
 
 android {
