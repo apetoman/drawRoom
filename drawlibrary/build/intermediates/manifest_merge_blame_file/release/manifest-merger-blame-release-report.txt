@@ -1,0 +1,46 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.eju.cy.drawlibrary"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.BLUETOOTH" />
+11-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:5:5-68
+11-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:5:22-65
+12    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" /> <!-- 用于进行网络定位 -->
+12-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:6:5-74
+12-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:6:22-71
+13    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 用于访问GPS定位 -->
+13-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:7:5-81
+13-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:7:22-78
+14    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+14-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:8:5-79
+14-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:8:22-76
+15
+16    <application>
+16-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:10:5-19:19
+17        <activity android:name="com.eju.cy.drawlibrary.activity.DrawRoomActivity" />
+17-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:11:9-72
+17-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:11:19-60
+18        <activity
+18-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:12:9-14:47
+19            android:name="com.eju.cy.drawlibrary.activity.EnumPortActivity"
+19-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:13:13-54
+20            android:launchMode="singleTask" />
+20-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:14:13-44
+21
+22        <service
+22-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:16:9-18:38
+23            android:name="com.eju.cy.drawlibrary.bluetooth.ACSUtilityService"
+23-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:17:13-56
+24            android:enabled="true" />
+24-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:18:13-35
+25    </application>
+26
+27</manifest>

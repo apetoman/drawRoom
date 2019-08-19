@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DrawLibrary</string>
+    <string name="bluetooth_equipment" translatable="false">请先链接测距仪</string>
+</resources>
