@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.eju.cy.drawlibrary.activity.DrawRoomActivity
 import com.eju.cy.drawlibrary.activity.EnumPortActivity
+import com.eju.cy.drawlibrary.activity.ShowArHuXingActivity
+import com.eju.cy.drawlibrary.activity.TestActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -22,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
         tv_open.setOnClickListener {
 
-            var intent = Intent(this, DrawRoomActivity::class.java)
+            var intent = Intent(this, TestActivity::class.java)
             startActivity(intent)
         }
     }

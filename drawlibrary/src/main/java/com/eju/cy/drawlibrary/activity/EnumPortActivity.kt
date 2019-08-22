@@ -47,7 +47,10 @@ class EnumPortActivity : AppCompatActivity() {
         this.adapter = BluetoothDeviceAdapter(R.layout.item_show_bluetooth_list, deviceList)
         rl_list.adapter = adapter
 
+        iv_close.setOnClickListener {
 
+                this.finish()
+        }
 
         adapter.setOnItemClickListener { adapter, view, position ->
 

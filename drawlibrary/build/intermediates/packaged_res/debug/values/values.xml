@@ -54,6 +54,7 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorbdbdbd">#BDBDBD</color>
     <color name="colorbfefe4">#BFEFE4</color>
+    <color name="colorc3d4de6">#3D4DE6</color>
     <color name="colorc4a90e2">#4A90E2</color>
     <color name="colorc50e3c2">#50E3C2</color>
     <color name="colorc51a1ff">#51A1FF</color>
@@ -75,4 +76,26 @@
     <color name="transparent60">#60000000</color>
     <string name="app_name">DrawLibrary</string>
     <string name="bluetooth_equipment" translatable="false">请先链接测距仪</string>
+    <string name="ej_draw_room">智能量房</string>
+    <string name="ej_draw_room_list">量房记录</string>
+    <string name="ej_share">分享</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+    <declare-styleable name="BubbleLayout">
+        <attr format="color" name="background_color"/>
+        <attr format="color" name="shadow_color"/>
+        <attr format="dimension" name="shadow_size"/>
+        <attr format="dimension" name="radius"/>
+        <attr format="enum" name="direction">
+            <enum name="left" value="1"/>
+            <enum name="top" value="2"/>
+            <enum name="right" value="3"/>
+            <enum name="bottom" value="4"/>
+        </attr>
+        <attr format="dimension" name="offset"/>
+    </declare-styleable>
 </resources>

@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">DrawLibrary</string>
     <string name="bluetooth_equipment" translatable="false">请先链接测距仪</string>
+    <string name="ej_draw_room">智能量房</string>
+    <string name="ej_draw_room_list">量房记录</string>
+    <string name="ej_share">分享</string>
+
 </resources>
