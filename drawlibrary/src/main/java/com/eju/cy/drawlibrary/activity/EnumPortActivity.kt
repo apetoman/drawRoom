@@ -11,6 +11,7 @@ import com.blankj.utilcode.util.ToastUtils
 import com.eju.cy.drawlibrary.R
 import com.eju.cy.drawlibrary.adapter.BluetoothDeviceAdapter
 import com.eju.cy.drawlibrary.bluetooth.ACSUtility
+import com.eju.cy.drawlibrary.plug.EjuDrawBleEventCar
 import kotlinx.android.synthetic.main.activity_enum_port.*
 
 
@@ -49,7 +50,7 @@ class EnumPortActivity : AppCompatActivity() {
 
         iv_close.setOnClickListener {
 
-                this.finish()
+            this.finish()
         }
 
         adapter.setOnItemClickListener { adapter, view, position ->
@@ -57,14 +58,17 @@ class EnumPortActivity : AppCompatActivity() {
 
             val device = deviceList!!.get(position)
             utility!!.stopEnum()
-
-
-            val b = Bundle()
-            b.putParcelable(BluetoothDevice.EXTRA_DEVICE, device)
-            val result = Intent()
-            result.putExtras(b)
-            setResult(Activity.RESULT_OK, result)
+            EjuDrawBleEventCar.getDefault().post(device)
             finish()
+
+
+//
+//            val b = Bundle()
+//            b.putParcelable(BluetoothDevice.EXTRA_DEVICE, device)
+//            val result = Intent()
+//            result.putExtras(b)
+//            setResult(Activity.RESULT_OK, result)
+//            finish()
 
         }
 
@@ -86,7 +90,7 @@ class EnumPortActivity : AppCompatActivity() {
 
 
             runOnUiThread {
-                 addDevice(mNewtPort!!._device);
+                addDevice(mNewtPort!!._device);
             }
         }
 
@@ -132,7 +136,7 @@ class EnumPortActivity : AppCompatActivity() {
         }
 
         if (!deviceFound) {
-            if (device.name != null) {
+            if (null != device.name && device.name.replace(" ", "") == "Myhome3D") {
                 deviceList.add(device)
                 adapter.notifyDataSetChanged()
             }
@@ -147,9 +151,11 @@ class EnumPortActivity : AppCompatActivity() {
     override fun onDestroy() {
         super.onDestroy()
 
-        if (utilAvaliable) {
+        if (null != utility) {
             //utility.setUserCallback(null);
-            utility!!.stopEnum()
+            if (utilAvaliable) {
+                utility!!.stopEnum()
+            }
             utility!!.closeACSUtility()
         }
     }
