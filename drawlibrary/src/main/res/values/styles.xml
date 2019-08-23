@@ -23,4 +23,11 @@
         <attr name="offset" format="dimension" />
     </declare-styleable>
 
+
+    <style name="bottomSheet_animation" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
+
 </resources>

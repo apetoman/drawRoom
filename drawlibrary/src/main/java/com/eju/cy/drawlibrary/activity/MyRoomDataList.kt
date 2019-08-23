@@ -14,6 +14,7 @@ import com.scwang.smartrefresh.layout.listener.OnLoadMoreListener
 import com.scwang.smartrefresh.layout.listener.OnRefreshListener
 import io.reactivex.Observer
 import io.reactivex.android.schedulers.AndroidSchedulers
+import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_my_room_data_list.*
@@ -25,11 +26,11 @@ import java.util.HashMap
 
 class MyRoomDataList : AppCompatActivity(), OnRefreshListener, OnLoadMoreListener {
 
-    var disposableis: Disposable? = null
-    var adapter: MyRoomDataAdapter? = null
+    lateinit var adapter: MyRoomDataAdapter
     var dataList = arrayListOf<MyRoomData.DataBean.RecordsBean>()
     var start_index: Int = 0
 
+    lateinit var compositeDisposable: CompositeDisposable
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_my_room_data_list)
@@ -39,6 +40,14 @@ class MyRoomDataList : AppCompatActivity(), OnRefreshListener, OnLoadMoreListene
 
     private fun initView() {
 
+
+        iv_back.setOnClickListener {
+
+            finish()
+
+        }
+
+        compositeDisposable = CompositeDisposable()
         refreshLayout.setOnRefreshListener(this)
         refreshLayout.setOnLoadMoreListener(this)
         adapter = MyRoomDataAdapter(R.layout.item_room_data_list_layout, dataList)
@@ -95,7 +104,8 @@ class MyRoomDataList : AppCompatActivity(), OnRefreshListener, OnLoadMoreListene
                 }
 
                 override fun onSubscribe(d: Disposable) {
-                    disposableis = d
+
+                    compositeDisposable.add(d)
                 }
 
                 override fun onNext(t: MyRoomData) {
@@ -130,7 +140,7 @@ class MyRoomDataList : AppCompatActivity(), OnRefreshListener, OnLoadMoreListene
 
     override fun onDestroy() {
         super.onDestroy()
-        disposableis!!.dispose()
+        compositeDisposable.clear()
     }
 
 

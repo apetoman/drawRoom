@@ -14,15 +14,18 @@ import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import androidx.fragment.app.FragmentManager;
+
 import com.blankj.utilcode.util.LogUtils;
 import com.blankj.utilcode.util.ToastUtils;
 import com.eju.cy.arhuxinglibrary.bean.RoomDataDto;
 import com.eju.cy.drawlibrary.R;
 import com.eju.cy.drawlibrary.activity.MyRoomDataList;
 import com.eju.cy.drawlibrary.bean.DrawRoomDataDto;
-import com.eju.cy.drawlibrary.bean.MyRoomData;
 import com.eju.cy.drawlibrary.bean.SaveRoomDto;
+import com.eju.cy.drawlibrary.dialog.CreateConstructionNameDalog;
 import com.eju.cy.drawlibrary.net.DrawRoomInterface;
+import com.eju.cy.drawlibrary.plug.DialogInterface;
 import com.eju.cy.drawlibrary.pop.MoreInterface;
 import com.eju.cy.drawlibrary.pop.MorePopup;
 import com.eju.cy.drawlibrary.utils.JsonUtils;
@@ -39,10 +42,8 @@ import com.tencent.smtt.sdk.WebChromeClient;
 import com.tencent.smtt.sdk.WebView;
 import com.tencent.smtt.sdk.WebViewClient;
 
-import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Observable;
 
 import io.reactivex.ObservableSource;
 import io.reactivex.Observer;
@@ -51,28 +52,31 @@ import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Function;
 import io.reactivex.schedulers.Schedulers;
-import okhttp3.ResponseBody;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
-
+/**
+* @ Name: Caochen
+* @ Date: 2019-08-19
+* @ Time: 10:54
+* @ Description： 户型绘制View
+*/
 public class JddDrawRoomView extends RelativeLayout implements View.OnClickListener {
     private Context mContext;
     private RelativeLayout rl_view;
-    private ImageView ej_iv_more;
-    private TextView tv_share;
+    private ImageView ej_iv_more, ej_iv_back;
+    private TextView tv_share, tv_title;
     private AgentWebX5 mAgentWeb;
 
     private PopupWindow popupWindow;
     private Activity activity;
+    private FragmentManager fragmentManager;
     private MiddleWareWebChromeBase mMiddleWareWebChrome;
     private MiddleWareWebClientBase mMiddleWareWebClient;
 
     private Disposable disposable;
     CompositeDisposable compositeDisposable = new CompositeDisposable();
+
 
     public JddDrawRoomView(Context context) {
         this(context, null);
@@ -95,18 +99,27 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
         rl_view = layout.findViewById(R.id.rl_view);
         ej_iv_more = layout.findViewById(R.id.ej_iv_more);
         tv_share = layout.findViewById(R.id.ej_tv_share);
+
+
+        tv_title = layout.findViewById(R.id.tv_title);
+        ej_iv_back = layout.findViewById(R.id.ej_iv_back);
         ej_iv_more.setOnClickListener(this);
         tv_share.setOnClickListener(this);
-
+        ej_iv_back.setOnClickListener(this);
 
         tv_share.setVisibility(View.GONE);
         ej_iv_more.setEnabled(false);
 
+
+        backViewIsShow(false, "");
+
+
     }
 
 
-    public void setActivity(Activity activity) {
+    public void initJddDrawRoomView(Activity activity, FragmentManager fragmentManager) {
         this.activity = activity;
+        this.fragmentManager = fragmentManager;
         initWeb(activity);
 
 
@@ -265,21 +278,37 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
      */
     public void returnRoomData(final String jsonString, Boolean isH5Save) {
 
-//        getHandler().post(new Runnable() {
-//            @Override
-//            public void run() {
+        getHandler().post(new Runnable() {
+            @Override
+            public void run() {
 
+                CreateConstructionNameDalog createConstructionNameDalog = new CreateConstructionNameDalog(new DialogInterface() {
+                    @Override
+                    public void dialogCommit(String msg) {
+                        saveRoomData(jsonString, msg + "");
+                    }
 
-        //  }
-//        });
+                    @Override
+                    public void dialogFinish(String msg) {
 
-        saveRoomData(jsonString, "上海大学");
+                    }
+
+                    @Override
+                    public void dialogFinish() {
+
+                    }
+                });
+
+                createConstructionNameDalog.show(fragmentManager, "createConstructionNameDalog");
+
+            }
+        });
 
 
     }
 
 
-    private void saveRoomData(String jsonString, final String cityName) {
+    private void saveRoomData(String jsonString, final String constructionName) {
 
         final DrawRoomDataDto drawRoomDataDto = JsonUtils.fromJson(jsonString, DrawRoomDataDto.class);
 
@@ -322,13 +351,15 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
                 .flatMap(new Function<SaveRoomDto, ObservableSource<SaveRoomDto>>() {
                     @Override
                     public ObservableSource<SaveRoomDto> apply(SaveRoomDto saveRoomDto) throws Exception {
-                        return obRequest.saveDrawingRoomProperty(headersMap, ParameterUtils.prepareFormData(drawRoomDataDto.getNo()), ParameterUtils.prepareFormData(cityName));
+                        return obRequest.saveDrawingRoomProperty(headersMap, ParameterUtils.prepareFormData(drawRoomDataDto.getNo()), ParameterUtils.prepareFormData(constructionName));
                     }
                 }).observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Observer<SaveRoomDto>() {
                     @Override
                     public void onSubscribe(Disposable d) {
-                        LogUtils.w("onSubscribe");
+                        //  LogUtils.w("onSubscribe");
+                        compositeDisposable.add(d);
+
                     }
 
                     @Override
@@ -336,16 +367,21 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
 
                         LogUtils.w("onNext" + saveRoomDto.getCode());
 
+                        if (null != saveRoomDto && "0".equals(saveRoomDto.getCode()) || "10000".equals(saveRoomDto.getCode())) {
+                            ToastUtils.showShort("保存成功");
+                        }
+
+
                     }
 
                     @Override
                     public void onError(Throwable e) {
-                        LogUtils.w("onError" + e);
+                        ToastUtils.showShort("保存失败，请稍后再试");
                     }
 
                     @Override
                     public void onComplete() {
-                        LogUtils.w("onComplete");
+                        //LogUtils.w("onComplete");
                     }
                 });
 
@@ -365,17 +401,19 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
                 @Override
                 public void popDraw() {
                     mAgentWeb.getJsEntraceAccess().quickCallJs("CallJS.app_js_showDefault()");
-
+                    backViewIsShow(false, "");
                 }
 
                 @Override
                 public void popFacade() {
                     mAgentWeb.getJsEntraceAccess().quickCallJs("CallJS.app_js_showFacade()");
+                    backViewIsShow(true, "立面图");
                 }
 
                 @Override
                 public void pop3D() {
                     mAgentWeb.getJsEntraceAccess().quickCallJs("CallJS.app_js_show3d()");
+                    backViewIsShow(true, "3D模型");
                 }
 
                 @Override
@@ -390,6 +428,8 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
                 @Override
                 public void popRepertoire() {
                     mAgentWeb.getJsEntraceAccess().quickCallJs("CallJS.app_js_showAreaList()");
+                    backViewIsShow(true, "面积清单");
+
                 }
             });
             morePopup.setPopupGravity(Gravity.RIGHT);
@@ -397,6 +437,40 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
             morePopup.showPopupWindow(v);
 
 
+        } else if (v.getId() == R.id.ej_iv_back) {
+            backViewIsShow(false, "");
+            mAgentWeb.getJsEntraceAccess().quickCallJs("CallJS.app_js_showDefault()");
         }
     }
+
+
+    private void backViewIsShow(Boolean isShow, String title) {
+
+        if (isShow) {
+            ej_iv_back.setVisibility(View.VISIBLE);
+            setMargins(tv_title, dpToPx(mContext, 0), 0, 0, 0);
+            tv_title.setText(title);
+        } else {
+            ej_iv_back.setVisibility(View.GONE);
+            setMargins(tv_title, dpToPx(mContext, 21), 0, 0, 0);
+            tv_title.setText("智能量房");
+        }
+
+    }
+
+
+    private int dpToPx(Context context, float dpValue) {//dp转换为px
+        float scale = context.getResources().getDisplayMetrics().density;//获得当前屏幕密度
+        return (int) (dpValue * scale + 0.5f);
+    }
+
+
+    private void setMargins(View v, int l, int t, int r, int b) {
+        if (v.getLayoutParams() instanceof ViewGroup.MarginLayoutParams) {
+            ViewGroup.MarginLayoutParams p = (ViewGroup.MarginLayoutParams) v.getLayoutParams();
+            p.setMargins(l, t, r, b);
+            v.requestLayout();
+        }
+    }
+
 }

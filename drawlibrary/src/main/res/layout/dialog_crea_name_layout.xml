@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_radius5_color_ffffff">
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+
+            android:gravity="center"
+            android:text="@string/ej_hint"
+            android:textColor="@color/color333333"
+            android:textSize="18sp" />
+
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/tv_title"
+            android:layout_alignBottom="@+id/tv_title"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/close_enum" />
+
+        <View
+            android:id="@+id/vi_lin_one"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/iv_close"
+            android:background="@color/colorf4f4f4" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vi_lin_one"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp">
+
+
+            <TextView
+                android:id="@+id/tv_construction_name_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="@string/ej_construction_name"
+                android:textColor="@color/color333333"
+                android:textSize="18sp" />
+
+
+            <EditText
+                android:id="@+id/ed_ed_construction_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_construction_name_hint"
+                android:background="@drawable/bg_radius0_color_ffffff"
+                android:maxLines="1" />
+
+
+            <TextView
+                android:id="@+id/tv_ed_construction_name_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_construction_name_hint"
+                android:layout_marginTop="10dp"
+                android:text="@string/ej_construction_name_test_hint"
+                android:textColor="@color/color333333"
+                android:textSize="14sp" />
+
+
+            <View
+                android:layout_marginTop="10dp"
+                android:id="@+id/vi_lin_two"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/tv_ed_construction_name_hint"
+                android:background="@color/colorf4f4f4" />
+
+            <TextView
+                android:id="@+id/tv_create_construction"
+                android:textColor="@color/color333333"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="@string/ej_crea_room"
+                android:layout_below="@+id/vi_lin_two"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"/>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

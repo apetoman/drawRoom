@@ -16,7 +16,7 @@ public class TestActivity extends AppCompatActivity {
         setContentView(R.layout.activity_test);
 
         jddView = findViewById(R.id.jdd_view);
-        jddView.setActivity(this);
+        jddView.initJddDrawRoomView(this,getSupportFragmentManager());
 
     }
 }

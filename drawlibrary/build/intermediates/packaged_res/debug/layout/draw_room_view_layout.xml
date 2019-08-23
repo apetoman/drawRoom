@@ -10,14 +10,26 @@
         android:layout_height="?attr/actionBarSize"
         android:background="@color/colorc3d4de6">
 
-        <TextView
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/ej_iv_back"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:gravity="center"
             android:paddingLeft="21dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/eju_icon_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/ej_iv_back"
+            android:gravity="center"
             android:text="@string/ej_draw_room"
             android:textColor="@color/colorffffff"
             android:textSize="20sp" />
+
 
         <ImageView
             android:id="@+id/ej_iv_more"
