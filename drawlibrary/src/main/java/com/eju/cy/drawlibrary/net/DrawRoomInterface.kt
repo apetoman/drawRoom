@@ -11,6 +11,7 @@ import okhttp3.ResponseBody
 import retrofit2.http.*
 import retrofit2.http.POST
 import retrofit2.http.Multipart
+import retrofit2.http.GET
 
 
 interface DrawRoomInterface {
@@ -62,6 +63,17 @@ interface DrawRoomInterface {
         @Part("no") no: RequestBody,
         @Part("name") name: RequestBody
     ): Observable<SaveRoomDto>
+
+
+    /**
+     * 根据户型编号获取户型详情，包括户型数据
+     *
+     * @param no case 编号
+     * @return
+     */
+
+    @GET("/deco/huxing/detail/")
+    fun getDetail(  @HeaderMap headers: Map<String, String>,@Query("no") no: String): Observable<ResultDto<String>>
 
 
 }

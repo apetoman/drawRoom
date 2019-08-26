@@ -31,10 +31,24 @@ public class TestActivity extends AppCompatActivity implements EjuDrawObserver {
 
     }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        jddView.onPause();
+    }
+
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        jddView.onResume();
+    }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
         EjuDrawEventCar.getDefault().unregister(this);
+        jddView.onDestroy();
+
     }
 }

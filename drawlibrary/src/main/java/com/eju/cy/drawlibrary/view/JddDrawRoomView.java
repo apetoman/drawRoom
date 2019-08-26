@@ -1,5 +1,6 @@
 package com.eju.cy.drawlibrary.view;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
@@ -25,6 +26,7 @@ import com.eju.cy.drawlibrary.R;
 import com.eju.cy.drawlibrary.activity.EnumPortActivity;
 import com.eju.cy.drawlibrary.activity.MyRoomDataList;
 import com.eju.cy.drawlibrary.bean.DrawRoomDataDto;
+import com.eju.cy.drawlibrary.bean.OpenRoomDto;
 import com.eju.cy.drawlibrary.bean.SaveRoomDto;
 import com.eju.cy.drawlibrary.bluetooth.ACSUtility;
 import com.eju.cy.drawlibrary.dialog.CreateConstructionNameDalog;
@@ -35,6 +37,7 @@ import com.eju.cy.drawlibrary.plug.EjuDrawEventCar;
 import com.eju.cy.drawlibrary.plug.EjuDrawObserver;
 import com.eju.cy.drawlibrary.pop.MoreInterface;
 import com.eju.cy.drawlibrary.pop.MorePopup;
+import com.eju.cy.drawlibrary.utils.ButtonUtils;
 import com.eju.cy.drawlibrary.utils.JsonUtils;
 import com.eju.cy.drawlibrary.utils.ParameterUtils;
 import com.eju.cy.drawlibrary.web.AndroidInterface;
@@ -52,12 +55,16 @@ import com.tencent.smtt.sdk.WebViewClient;
 import java.io.ByteArrayOutputStream;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
+import io.reactivex.Observable;
 import io.reactivex.ObservableSource;
 import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
+import io.reactivex.functions.Consumer;
 import io.reactivex.functions.Function;
 import io.reactivex.schedulers.Schedulers;
 import retrofit2.Retrofit;
@@ -85,6 +92,7 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
 
     private Disposable disposable;
     CompositeDisposable compositeDisposable = new CompositeDisposable();
+    private Boolean addOrUpdate = false;
 
 
     //蓝牙
@@ -215,24 +223,26 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
 
 
                             break;
-                        case "save"://H5上的保存按钮
+                        case "save"://保存按钮
                             returnRoomData(roomDataDto.getData(), true);
                             break;
 
                         case "measure"://测距
-                            //LogUtils.w("去蓝牙测量");
-                            if (isBluetoothEnabled()) {
-                                if (isLink) {
-                                    setData();
+                            if (!ButtonUtils.isFastDoubleClick()) {
+
+                                if (isBluetoothEnabled()) {
+                                    if (isLink) {
+                                        setData();
+                                    } else {
+                                        Intent intent = new Intent(mContext, EnumPortActivity.class);
+                                        mContext.startActivity(intent);
+                                    }
+
+
                                 } else {
-                                    Intent intent = new Intent(mContext, EnumPortActivity.class);
-                                    mContext.startActivity(intent);
+                                    //isLink = false;
+                                    ToastUtils.showShort("请打开蓝牙");
                                 }
-
-
-                            } else {
-                                //isLink = false;
-                                ToastUtils.showShort("请打开蓝牙");
                             }
 
                             break;
@@ -288,25 +298,12 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
     /**
      * 打开户型
      *
-     * @param no
      * @param data
      */
-    private void openDrawRoom(String no, String data) {
+    private void openDrawRoom(String data) {
+        final String myData = replaceBlank(data);
+        mAgentWeb.getJsEntraceAccess().quickCallJs("CallJS.app_js_openHuxing", myData);
 
-        String myData = data.replaceAll(" ", "");
-
-        mAgentWeb.getJsEntraceAccess().quickCallJs("CallJS.app_js_openHuxing", no, data + "");
-
-    }
-
-    /**
-     * 打开AR 绘制户型
-     *
-     * @param arDrawData
-     */
-    private void openArDrawRoom(String arDrawData) {
-        LogUtils.w("Ar-Data" + arDrawData);
-        mAgentWeb.getJsEntraceAccess().quickCallJs("CallJS.app_js_loadPath", arDrawData);
 
     }
 
@@ -318,39 +315,59 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
      * @param jsonString 户型数据 同以前一样
      * @param isH5Save   是否H5上面的保存按钮
      */
+    @SuppressLint("CheckResult")
     public void returnRoomData(final String jsonString, Boolean isH5Save) {
 
-        getHandler().post(new Runnable() {
-            @Override
-            public void run() {
 
-                CreateConstructionNameDalog createConstructionNameDalog = new CreateConstructionNameDalog(new DialogInterface() {
-                    @Override
-                    public void dialogCommit(String msg) {
-                        saveRoomData(jsonString, msg + "");
-                    }
+        if (addOrUpdate) {
 
-                    @Override
-                    public void dialogFinish(String msg) {
+            Observable.just(1)
+                    .subscribeOn(AndroidSchedulers.mainThread())
+                    .observeOn(AndroidSchedulers.mainThread())
+                    .subscribe(new Consumer<Integer>() {
+                        @Override
+                        public void accept(Integer integer) throws Exception {
+                            saveRoomData(jsonString, "update", addOrUpdate);
+                        }
+                    });
 
-                    }
 
-                    @Override
-                    public void dialogFinish() {
+        } else {
+            Observable.just(1)
+                    .subscribeOn(AndroidSchedulers.mainThread())
+                    .observeOn(AndroidSchedulers.mainThread())
+                    .subscribe(new Consumer<Integer>() {
+                        @Override
+                        public void accept(Integer integer) throws Exception {
+                            CreateConstructionNameDalog createConstructionNameDalog = new CreateConstructionNameDalog(new DialogInterface() {
+                                @Override
+                                public void dialogCommit(String msg) {
+                                    saveRoomData(jsonString, msg + "", addOrUpdate);
+                                }
 
-                    }
-                });
+                                @Override
+                                public void dialogFinish(String msg) {
 
-                createConstructionNameDalog.show(fragmentManager, "createConstructionNameDalog");
+                                }
 
-            }
-        });
+                                @Override
+                                public void dialogFinish() {
 
+                                }
+                            });
+
+                            createConstructionNameDalog.show(fragmentManager, "createConstructionNameDalog");
+
+                        }
+                    });
+        }
 
     }
 
 
-    private void saveRoomData(String jsonString, final String constructionName) {
+    private void saveRoomData(String jsonString, final String constructionName, Boolean addOrUpdate) {
+
+
         rl_av_load.setVisibility(View.VISIBLE);
         final DrawRoomDataDto drawRoomDataDto = JsonUtils.fromJson(jsonString, DrawRoomDataDto.class);
 
@@ -380,54 +397,94 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
                 .addConverterFactory(GsonConverterFactory.create()) //设置使用Gson解析(记得加入依赖)
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create()) // 支持RxJava
                 .build();
-
-
         final DrawRoomInterface obRequest = retrofit.create(DrawRoomInterface.class);
-        obRequest.saveDrawingRoom(headersMap,
-                ParameterUtils.prepareFormData(drawRoomDataDto.getNo()),
-                ParameterUtils.prepareFormData(drawRoomDataDto.getData()),
-                ParameterUtils.prepareFormData(drawRoomDataDto.getArea() + "")
-        ).subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
-                .observeOn(Schedulers.io())
-                .flatMap(new Function<SaveRoomDto, ObservableSource<SaveRoomDto>>() {
-                    @Override
-                    public ObservableSource<SaveRoomDto> apply(SaveRoomDto saveRoomDto) throws Exception {
-                        return obRequest.saveDrawingRoomProperty(headersMap, ParameterUtils.prepareFormData(drawRoomDataDto.getNo()), ParameterUtils.prepareFormData(constructionName));
-                    }
-                }).observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Observer<SaveRoomDto>() {
-                    @Override
-                    public void onSubscribe(Disposable d) {
-                        //  LogUtils.w("onSubscribe");
-                        compositeDisposable.add(d);
 
-                    }
+        //修改
+        if (addOrUpdate) {
 
-                    @Override
-                    public void onNext(SaveRoomDto saveRoomDto) {
-
-                        LogUtils.w("onNext" + saveRoomDto.getCode());
-
-                        if (null != saveRoomDto && "0".equals(saveRoomDto.getCode()) || "10000".equals(saveRoomDto.getCode())) {
-                            ToastUtils.showShort("保存成功");
+            obRequest.saveDrawingRoom(headersMap,
+                    ParameterUtils.prepareFormData(drawRoomDataDto.getNo()),
+                    ParameterUtils.prepareFormData(drawRoomDataDto.getData()),
+                    ParameterUtils.prepareFormData(drawRoomDataDto.getArea() + ""))
+                    .subscribeOn(Schedulers.io())
+                    .observeOn(AndroidSchedulers.mainThread())
+                    .subscribe(new Observer<SaveRoomDto>() {
+                        @Override
+                        public void onSubscribe(Disposable d) {
+                            compositeDisposable.add(d);
                         }
 
-                        rl_av_load.setVisibility(View.GONE);
-                    }
+                        @Override
+                        public void onNext(SaveRoomDto saveRoomDto) {
 
-                    @Override
-                    public void onError(Throwable e) {
-                        ToastUtils.showShort("保存失败，请稍后再试");
-                        rl_av_load.setVisibility(View.GONE);
-                    }
+                            if (null != saveRoomDto && "0".equals(saveRoomDto.getCode()) || "10000".equals(saveRoomDto.getCode())) {
+                                ToastUtils.showShort("保存成功");
+                            }
 
-                    @Override
-                    public void onComplete() {
-                        //LogUtils.w("onComplete");
-                        rl_av_load.setVisibility(View.GONE);
-                    }
-                });
+                            rl_av_load.setVisibility(View.GONE);
+                        }
+
+                        @Override
+                        public void onError(Throwable e) {
+                            ToastUtils.showShort("修改户型失败，请稍后再试");
+                            rl_av_load.setVisibility(View.GONE);
+                        }
+
+                        @Override
+                        public void onComplete() {
+                            rl_av_load.setVisibility(View.GONE);
+                        }
+                    });
+
+
+        } else {
+            //添加
+            obRequest.saveDrawingRoom(headersMap,
+                    ParameterUtils.prepareFormData(drawRoomDataDto.getNo()),
+                    ParameterUtils.prepareFormData(drawRoomDataDto.getData()),
+                    ParameterUtils.prepareFormData(drawRoomDataDto.getArea() + "")
+            ).subscribeOn(Schedulers.io())
+                    .observeOn(AndroidSchedulers.mainThread())
+                    .observeOn(Schedulers.io())
+                    .flatMap(new Function<SaveRoomDto, ObservableSource<SaveRoomDto>>() {
+                        @Override
+                        public ObservableSource<SaveRoomDto> apply(SaveRoomDto saveRoomDto) throws Exception {
+                            return obRequest.saveDrawingRoomProperty(headersMap, ParameterUtils.prepareFormData(drawRoomDataDto.getNo()), ParameterUtils.prepareFormData(constructionName));
+                        }
+                    }).observeOn(AndroidSchedulers.mainThread())
+                    .subscribe(new Observer<SaveRoomDto>() {
+                        @Override
+                        public void onSubscribe(Disposable d) {
+                            //  LogUtils.w("onSubscribe");
+                            compositeDisposable.add(d);
+
+                        }
+
+                        @Override
+                        public void onNext(SaveRoomDto saveRoomDto) {
+
+                            LogUtils.w("onNext" + saveRoomDto.getCode());
+
+                            if (null != saveRoomDto && "0".equals(saveRoomDto.getCode()) || "10000".equals(saveRoomDto.getCode())) {
+                                ToastUtils.showShort("保存成功");
+                            }
+
+                            rl_av_load.setVisibility(View.GONE);
+                        }
+
+                        @Override
+                        public void onError(Throwable e) {
+                            ToastUtils.showShort("保存失败，请稍后再试");
+                            rl_av_load.setVisibility(View.GONE);
+                        }
+
+                        @Override
+                        public void onComplete() {
+                            //LogUtils.w("onComplete");
+                            rl_av_load.setVisibility(View.GONE);
+                        }
+                    });
+        }
 
     }
 
@@ -517,41 +574,67 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
         }
     }
 
+    private String replaceBlank(String str) {
+        String dest = "";
+        if (str != null) {
+            Pattern p = Pattern.compile("\\s*|\t|\r|\n");
+            Matcher m = p.matcher(str);
+            dest = m.replaceAll("");
+        }
+        return dest;
+    }
+
 
     //接收蓝牙设备
     @Override
     public void update(Object obj) {
-        if (null != obj) {
-            BluetoothDevice device = (BluetoothDevice) obj;
-            //链接
-
-            LogUtils.w("接收到的蓝牙设备名字\n" + device.getName());
-
-            mSelectedPort = util.new blePort(device);
 
 
-            getHandler().postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    if (mSelectedPort != null) {
-                        LogUtils.w("我有值-------去链接");
+        if ((obj instanceof OpenRoomDto)) {
 
-                        if (isPortOpen) {
-                            LogUtils.w("isPortOpen-------");
-                            util.closePort();
-                        } else if (mSelectedPort != null) {
-                            LogUtils.w("mSelectedPort--------");
-                            // 等待窗口
-                            util.openPort(mSelectedPort);
-                            rl_av_load.setVisibility(View.VISIBLE);
-                        } else {
-                            ToastUtils.showShort("没有选择设备");
+
+            LogUtils.w("打开户型");
+            OpenRoomDto openRoomDto = (OpenRoomDto) obj;
+            addOrUpdate = openRoomDto.getAddOrUpdata();
+            openDrawRoom(openRoomDto.getData() + "");
+            return;
+        } else {
+            LogUtils.w("蓝牙");
+            if (null != obj) {
+                BluetoothDevice device = (BluetoothDevice) obj;
+                //链接
+                LogUtils.w("接收到的蓝牙设备名字\n" + device.getName());
+
+                mSelectedPort = util.new blePort(device);
+
+
+                try {
+                    getHandler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            if (mSelectedPort != null) {
+                                LogUtils.w("我有值-------去链接");
+
+                                if (isPortOpen) {
+                                    LogUtils.w("isPortOpen-------");
+                                    util.closePort();
+                                } else if (mSelectedPort != null) {
+                                    LogUtils.w("mSelectedPort--------");
+                                    // 等待窗口
+                                    util.openPort(mSelectedPort);
+                                    rl_av_load.setVisibility(View.VISIBLE);
+                                } else {
+                                    ToastUtils.showShort("没有选择设备");
+                                }
+
+                            }
                         }
-
-                    }
+                    }, 500L);
+                } catch (Exception e) {
+                    rl_av_load.setVisibility(View.GONE);
+                    //ToastUtils.showShort("请重新选择设备");
                 }
-            }, 500L);
-
+            }
         }
 
     }
