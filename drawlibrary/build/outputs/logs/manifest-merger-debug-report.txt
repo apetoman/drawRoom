@@ -75,8 +75,6 @@ ADDED from /Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/Androi
 		ADDED from /Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:21:9-40
 	android:networkSecurityConfig
 		ADDED from /Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:20:9-69
-	android:name
-		ADDED from /Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:19:9-37
 activity#com.eju.cy.drawlibrary.activity.MyRoomDataList
 ADDED from /Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:22:9-70
 	android:name

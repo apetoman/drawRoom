@@ -24,10 +24,10 @@
 #-keep class com.eju.cy.drawlibrary.** { ; }
 #-dontwarn com.eju.cy.drawlibrary.*
 
--keep public class com.eju.cy.arhuxinglibrary.bean.**{*;}
+-keep public class com.eju.cy.drawlibrary.bean.**{*;}
 
--keep public class com.eju.cy.arhuxinglibrary.view.**{*;}
--keep public class com.eju.cy.arhuxinglibrary.web.**{*;}
+-keep public class com.eju.cy.drawlibrary.view.**{*;}
+-keep public class com.eju.cy.drawlibrary.web.**{*;}
 
 -keep class com.wang.avi.** { *; }
 -keep class com.wang.avi.indicators.** { *; }
@@ -46,6 +46,7 @@
 -dontwarn com.just.agentweb.**
 
 -keepclassmembers class com.eju.cy.drawlibrary.web.AndroidInterface{ *; }
+-keep class com.eju.cy.drawlibrary.JDHomeSdk{ *; }
 
 -keep class com.tencent.smtt.export.external.**{
     *;

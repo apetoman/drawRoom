@@ -132,7 +132,7 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
         ej_iv_back.setOnClickListener(this);
 
         tv_share.setVisibility(View.GONE);
-        ej_iv_more.setEnabled(false);
+      //  ej_iv_more.setEnabled(false);
 
 
         EjuDrawEventCar.getDefault().post("app_qgz_measurement_Click");
@@ -220,7 +220,7 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
                                     ej_iv_more.setEnabled(true);
                                 }
                             });
-
+                            LogUtils.w("初始化完毕");
 
                             break;
                         case "save"://保存按钮

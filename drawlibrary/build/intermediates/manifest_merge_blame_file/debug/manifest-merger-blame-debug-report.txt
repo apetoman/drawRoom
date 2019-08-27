@@ -49,37 +49,35 @@
 23
 24    <application
 24-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:18:5-33:19
-25        android:name="com.eju.cy.drawlibrary.IApplication"
-25-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:19:9-37
-26        android:networkSecurityConfig="@xml/network_security_config"
-26-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:20:9-69
-27        android:theme="@style/AppTheme" >
-27-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:21:9-40
-28        <activity android:name="com.eju.cy.drawlibrary.activity.MyRoomDataList" />
-28-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:22:9-70
-28-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:22:19-58
-29        <activity android:name="com.eju.cy.drawlibrary.activity.TestActivity" />
-29-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:23:9-59
-29-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:23:19-56
-30        <activity android:name="com.eju.cy.drawlibrary.activity.ShowArHuXingActivity" />
-30-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:24:9-67
-30-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:24:19-64
-31        <activity android:name="com.eju.cy.drawlibrary.activity.DrawRoomActivity" />
-31-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:25:9-63
-31-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:25:19-60
-32        <activity
-32-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:26:9-28:47
-33            android:name="com.eju.cy.drawlibrary.activity.EnumPortActivity"
-33-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:27:13-54
-34            android:launchMode="singleTask" />
-34-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:28:13-44
-35
-36        <service
-36-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:30:9-32:38
-37            android:name="com.eju.cy.drawlibrary.bluetooth.ACSUtilityService"
-37-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:31:13-56
-38            android:enabled="true" />
-38-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:32:13-35
-39    </application>
-40
-41</manifest>
+25        android:networkSecurityConfig="@xml/network_security_config"
+25-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:20:9-69
+26        android:theme="@style/AppTheme" >
+26-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:21:9-40
+27        <activity android:name="com.eju.cy.drawlibrary.activity.MyRoomDataList" />
+27-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:22:9-70
+27-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:22:19-58
+28        <activity android:name="com.eju.cy.drawlibrary.activity.TestActivity" />
+28-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:23:9-59
+28-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:23:19-56
+29        <activity android:name="com.eju.cy.drawlibrary.activity.ShowArHuXingActivity" />
+29-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:24:9-67
+29-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:24:19-64
+30        <activity android:name="com.eju.cy.drawlibrary.activity.DrawRoomActivity" />
+30-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:25:9-63
+30-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:25:19-60
+31        <activity
+31-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:26:9-28:47
+32            android:name="com.eju.cy.drawlibrary.activity.EnumPortActivity"
+32-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:27:13-54
+33            android:launchMode="singleTask" />
+33-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:28:13-44
+34
+35        <service
+35-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:30:9-32:38
+36            android:name="com.eju.cy.drawlibrary.bluetooth.ACSUtilityService"
+36-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:31:13-56
+37            android:enabled="true" />
+37-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:32:13-35
+38    </application>
+39
+40</manifest>
