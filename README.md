@@ -85,7 +85,7 @@ public class TestActivity extends AppCompatActivity implements EjuDrawObserver {
 }
 ```
 
-### Step4
+### Step5
 ```
 //添加混淆配置
 -keep class com.eju.cy.drawlibrary.**{*;}
