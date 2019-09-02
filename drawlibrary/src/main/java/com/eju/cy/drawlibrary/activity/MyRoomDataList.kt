@@ -1,17 +1,16 @@
 package com.eju.cy.drawlibrary.activity
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import com.eju.cy.drawlibrary.R
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import com.blankj.utilcode.util.LogUtils
 import com.chad.library.adapter.base.BaseQuickAdapter
+import com.eju.cy.drawlibrary.R
 import com.eju.cy.drawlibrary.adapter.MyRoomDataAdapter
 import com.eju.cy.drawlibrary.bean.MyRoomData
 import com.eju.cy.drawlibrary.bean.OpenRoomDto
 import com.eju.cy.drawlibrary.bean.ResultDto
-import com.eju.cy.drawlibrary.net.DrawRoomInterface
 import com.eju.cy.drawlibrary.net.RetrofitManager
 import com.eju.cy.drawlibrary.plug.EjuDrawBleEventCar
 import com.eju.cy.drawlibrary.utils.GridSpacingItemDecoration
@@ -24,10 +23,6 @@ import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_my_room_data_list.*
-import retrofit2.Retrofit
-import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
-import retrofit2.converter.gson.GsonConverterFactory
-import java.util.HashMap
 
 
 class MyRoomDataList : AppCompatActivity(), OnRefreshListener, OnLoadMoreListener {
@@ -92,21 +87,9 @@ class MyRoomDataList : AppCompatActivity(), OnRefreshListener, OnLoadMoreListene
 
     private fun getRoomDetail(no: String) {
 
-//        val headersMap = HashMap<String, String>()
-//
-//        headersMap["User-Id"] = "9027"
-//        headersMap["User-Token"] = "cbcf71e1f8538fd11a0761fc759ffc5918bc092f"
-//        headersMap["X-REQUESTED-WITH"] = "json"
-//
-//        val retrofit = Retrofit.Builder()
-//            .baseUrl("https://yun.jiandanhome.com/")
-//            .addConverterFactory(GsonConverterFactory.create()) //设置使用Gson解析(记得加入依赖)
-//            .addCallAdapterFactory(RxJava2CallAdapterFactory.create()) // 支持RxJava
-//            .build()
+        val obRequest = RetrofitManager.getDefault().provideClientApi(this)
 
-        val obRequest = RetrofitManager.provideClientApi(this)
-
-        obRequest.getDetail( no)
+        obRequest.getDetail(no)
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe(object : Observer<ResultDto<String>> {
@@ -123,7 +106,7 @@ class MyRoomDataList : AppCompatActivity(), OnRefreshListener, OnLoadMoreListene
 
 
                     if (t.isOk) {
-                        LogUtils.w("onNext" + t.data+"\n啥线程"+Thread.currentThread().name)
+                        LogUtils.w("onNext" + t.data + "\n啥线程" + Thread.currentThread().name)
 
                         var roomData = OpenRoomDto()
                         roomData.no = no
@@ -146,7 +129,7 @@ class MyRoomDataList : AppCompatActivity(), OnRefreshListener, OnLoadMoreListene
     private fun getData(isRefresh: Boolean) {
 
 
-        val obRequest =  RetrofitManager.provideClientApi(this)
+        val obRequest = RetrofitManager.getDefault().provideClientApi(this)
 
 
         obRequest.getMyRoomList(

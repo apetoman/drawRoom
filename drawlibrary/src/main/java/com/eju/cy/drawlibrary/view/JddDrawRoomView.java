@@ -61,10 +61,7 @@ import com.tencent.smtt.sdk.WebView;
 import com.tencent.smtt.sdk.WebViewClient;
 
 import java.io.ByteArrayOutputStream;
-import java.time.Instant;
-import java.util.Date;
 import java.util.HashMap;
-import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -170,15 +167,8 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
         params.put("company_id", companyId);
         try {
             String sign = jhomeSignature.rsaSign(params, appPrivateKey, JhomeConstants.CHARSET_UTF8);
-            LogUtils.w("加签结果" + sign + "\n" + date);
 
-
-            Retrofit myRetrofit = new Retrofit.Builder()
-                    .baseUrl("http://yun.jiandanhome.com/")
-                    .addConverterFactory(GsonConverterFactory.create()) //设置使用Gson解析(记得加入依赖)
-                    .addCallAdapterFactory(RxJava2CallAdapterFactory.create()) // 支持RxJava
-                    .build();
-            DrawRoomInterface request = myRetrofit.create(DrawRoomInterface.class);
+            DrawRoomInterface request =RetrofitManager.getDefault().provideClientApi(mContext);
 
 
             request.getOpenToken(ParameterUtils.prepareFormData(appId), ParameterUtils.prepareFormData(openUserId), ParameterUtils.prepareFormData(companyId), ParameterUtils.prepareFormData(date + ""), ParameterUtils.prepareFormData(sign))

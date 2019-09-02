@@ -38,7 +38,7 @@ public class RetrofitManager {
     }
 
 
-    public static DrawRoomInterface provideClientApi(final Context context) {
+   public DrawRoomInterface provideClientApi(final Context context) {
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(SERVER_URL)
                 .client(genericClient(context))
@@ -49,7 +49,7 @@ public class RetrofitManager {
 
     }
 
-    public static OkHttpClient genericClient(final Context context) {
+  private OkHttpClient genericClient(final Context context) {
 
 
 
@@ -60,8 +60,8 @@ public class RetrofitManager {
                     @Override
                     public Response intercept(Chain chain) throws IOException {
 
-                        String userId = (String) SharedPreferencesUtils.get(context, SharedPreferencesUtils.USER_ID, "9027");
-                        String token = (String) SharedPreferencesUtils.get(context, SharedPreferencesUtils.USER_TOKEN, "cbcf71e1f8538fd11a0761fc759ffc5918bc092f");
+                        String userId = (String) SharedPreferencesUtils.get(context, SharedPreferencesUtils.USER_ID, "");
+                        String token = (String) SharedPreferencesUtils.get(context, SharedPreferencesUtils.USER_TOKEN, "");
 
                         LogUtils.w("userId" + userId + "\n" + token);
                         Request request = chain.request()
