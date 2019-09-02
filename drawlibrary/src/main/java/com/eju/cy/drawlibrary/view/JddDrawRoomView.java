@@ -20,17 +20,21 @@ import android.widget.TextView;
 import androidx.fragment.app.FragmentManager;
 
 import com.blankj.utilcode.util.LogUtils;
+import com.blankj.utilcode.util.TimeUtils;
 import com.blankj.utilcode.util.ToastUtils;
-import com.eju.cy.arhuxinglibrary.bean.RoomDataDto;
 import com.eju.cy.drawlibrary.R;
 import com.eju.cy.drawlibrary.activity.EnumPortActivity;
 import com.eju.cy.drawlibrary.activity.MyRoomDataList;
 import com.eju.cy.drawlibrary.bean.DrawRoomDataDto;
 import com.eju.cy.drawlibrary.bean.OpenRoomDto;
+import com.eju.cy.drawlibrary.bean.OpenYunDto;
+import com.eju.cy.drawlibrary.bean.ResultDto;
+import com.eju.cy.drawlibrary.bean.RoomDataDto;
 import com.eju.cy.drawlibrary.bean.SaveRoomDto;
 import com.eju.cy.drawlibrary.bluetooth.ACSUtility;
 import com.eju.cy.drawlibrary.dialog.CreateConstructionNameDalog;
 import com.eju.cy.drawlibrary.net.DrawRoomInterface;
+import com.eju.cy.drawlibrary.net.RetrofitManager;
 import com.eju.cy.drawlibrary.plug.DialogInterface;
 import com.eju.cy.drawlibrary.plug.EjuDrawBleEventCar;
 import com.eju.cy.drawlibrary.plug.EjuDrawEventCar;
@@ -40,10 +44,14 @@ import com.eju.cy.drawlibrary.pop.MorePopup;
 import com.eju.cy.drawlibrary.utils.ButtonUtils;
 import com.eju.cy.drawlibrary.utils.JsonUtils;
 import com.eju.cy.drawlibrary.utils.ParameterUtils;
+import com.eju.cy.drawlibrary.utils.SharedPreferencesUtils;
 import com.eju.cy.drawlibrary.web.AndroidInterface;
 import com.eju.cy.drawlibrary.web.ArInterface;
 import com.eju.cy.drawlibrary.web.X5CustomSettings;
 import com.google.gson.Gson;
+import com.jhome.util.JhomeApiException;
+import com.jhome.util.JhomeConstants;
+import com.jhome.util.JhomeSignature;
 import com.just.agentwebX5.AgentWebX5;
 import com.just.agentwebX5.DefaultWebClient;
 import com.just.agentwebX5.MiddleWareWebChromeBase;
@@ -53,6 +61,8 @@ import com.tencent.smtt.sdk.WebView;
 import com.tencent.smtt.sdk.WebViewClient;
 
 import java.io.ByteArrayOutputStream;
+import java.time.Instant;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Matcher;
@@ -132,7 +142,7 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
         ej_iv_back.setOnClickListener(this);
 
         tv_share.setVisibility(View.GONE);
-      //  ej_iv_more.setEnabled(false);
+        //  ej_iv_more.setEnabled(false);
 
 
         EjuDrawEventCar.getDefault().post("app_qgz_measurement_Click");
@@ -140,12 +150,79 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
     }
 
 
-    public void initJddDrawRoomView(Activity activity, FragmentManager fragmentManager) {
+    public void initJddDrawRoomView(Activity activity, FragmentManager fragmentManager, String appId, String openUserId, String companyId, String appPrivateKey) {
         this.activity = activity;
         this.fragmentManager = fragmentManager;
         initWeb(activity);
-
+        rl_av_load.setVisibility(View.VISIBLE);
         EjuDrawBleEventCar.getDefault().register(this);
+
+
+        Long date = TimeUtils.getNowMills();
+        //加签
+        JhomeSignature jhomeSignature = new JhomeSignature();
+        HashMap<String, String> params = new HashMap<String, String>();
+
+
+        params.put("appid", appId);
+        params.put("timestamp", date + "");
+        params.put("openid", openUserId);
+        params.put("company_id", companyId);
+        try {
+            String sign = jhomeSignature.rsaSign(params, appPrivateKey, JhomeConstants.CHARSET_UTF8);
+            LogUtils.w("加签结果" + sign + "\n" + date);
+
+
+            Retrofit myRetrofit = new Retrofit.Builder()
+                    .baseUrl("http://yun.jiandanhome.com/")
+                    .addConverterFactory(GsonConverterFactory.create()) //设置使用Gson解析(记得加入依赖)
+                    .addCallAdapterFactory(RxJava2CallAdapterFactory.create()) // 支持RxJava
+                    .build();
+            DrawRoomInterface request = myRetrofit.create(DrawRoomInterface.class);
+
+
+            request.getOpenToken(ParameterUtils.prepareFormData(appId), ParameterUtils.prepareFormData(openUserId), ParameterUtils.prepareFormData(companyId), ParameterUtils.prepareFormData(date + ""), ParameterUtils.prepareFormData(sign))
+                    .subscribeOn(Schedulers.io())
+                    .observeOn(AndroidSchedulers.mainThread())
+                    .subscribe(new Observer<ResultDto<OpenYunDto>>() {
+                        @Override
+                        public void onSubscribe(Disposable d) {
+
+                        }
+
+                        @Override
+                        public void onNext(ResultDto<OpenYunDto> openYunDtoResultDto) {
+                            rl_av_load.setVisibility(View.GONE);
+                            LogUtils.w("onNext------" + openYunDtoResultDto.getMsg()+openYunDtoResultDto.getCode());
+                            if (openYunDtoResultDto.isOk() && null != openYunDtoResultDto.getData()) {
+                                LogUtils.w("openYunDtoResultDto" + openYunDtoResultDto.getData().getToken() +
+                                        "\n" + openYunDtoResultDto.getData().getUser_id());
+
+                                SharedPreferencesUtils.put(mContext, SharedPreferencesUtils.USER_TOKEN, openYunDtoResultDto.getData().getToken()+"");
+                                SharedPreferencesUtils.put(mContext, SharedPreferencesUtils.USER_ID, openYunDtoResultDto.getData().getUser_id()+"");
+
+                            }
+
+
+                        }
+
+                        @Override
+                        public void onError(Throwable e) {
+                            rl_av_load.setVisibility(View.GONE);
+                            LogUtils.w("onError" + e.toString());
+                        }
+
+                        @Override
+                        public void onComplete() {
+                            rl_av_load.setVisibility(View.GONE);
+                        }
+                    });
+
+
+        } catch (JhomeApiException e) {
+            e.printStackTrace();
+            rl_av_load.setVisibility(View.GONE);
+        }
 
 
     }
@@ -371,38 +448,13 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
         rl_av_load.setVisibility(View.VISIBLE);
         final DrawRoomDataDto drawRoomDataDto = JsonUtils.fromJson(jsonString, DrawRoomDataDto.class);
 
+        final DrawRoomInterface obRequest = RetrofitManager.getDefault().provideClientApi(mContext);
 
-        Retrofit myRetrofit = new Retrofit.Builder()
-                .baseUrl("https://yun.jiandanhome.com/")
-                .build();
-        DrawRoomInterface request = myRetrofit.create(DrawRoomInterface.class);
-
-
-        final Map<String, String> headersMap = new HashMap<>();
-
-        headersMap.put("User-Id", "9027");
-        headersMap.put("User-Token", "cbcf71e1f8538fd11a0761fc759ffc5918bc092f");
-        headersMap.put("X-REQUESTED-WITH", "json");
-        //  headersMap.put("Http-Plat", "JDM");
-
-
-        LogUtils.w("no" + drawRoomDataDto.getNo());
-        LogUtils.w("data" + drawRoomDataDto.getData());
-        LogUtils.w("area" + drawRoomDataDto.getArea());
-
-
-        //步骤4：创建Retrofit对象
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://yun.jiandanhome.com/")
-                .addConverterFactory(GsonConverterFactory.create()) //设置使用Gson解析(记得加入依赖)
-                .addCallAdapterFactory(RxJava2CallAdapterFactory.create()) // 支持RxJava
-                .build();
-        final DrawRoomInterface obRequest = retrofit.create(DrawRoomInterface.class);
 
         //修改
         if (addOrUpdate) {
 
-            obRequest.saveDrawingRoom(headersMap,
+            obRequest.saveDrawingRoom(
                     ParameterUtils.prepareFormData(drawRoomDataDto.getNo()),
                     ParameterUtils.prepareFormData(drawRoomDataDto.getData()),
                     ParameterUtils.prepareFormData(drawRoomDataDto.getArea() + ""))
@@ -439,7 +491,7 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
 
         } else {
             //添加
-            obRequest.saveDrawingRoom(headersMap,
+            obRequest.saveDrawingRoom(
                     ParameterUtils.prepareFormData(drawRoomDataDto.getNo()),
                     ParameterUtils.prepareFormData(drawRoomDataDto.getData()),
                     ParameterUtils.prepareFormData(drawRoomDataDto.getArea() + "")
@@ -449,7 +501,7 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
                     .flatMap(new Function<SaveRoomDto, ObservableSource<SaveRoomDto>>() {
                         @Override
                         public ObservableSource<SaveRoomDto> apply(SaveRoomDto saveRoomDto) throws Exception {
-                            return obRequest.saveDrawingRoomProperty(headersMap, ParameterUtils.prepareFormData(drawRoomDataDto.getNo()), ParameterUtils.prepareFormData(constructionName));
+                            return obRequest.saveDrawingRoomProperty(ParameterUtils.prepareFormData(drawRoomDataDto.getNo()), ParameterUtils.prepareFormData(constructionName));
                         }
                     }).observeOn(AndroidSchedulers.mainThread())
                     .subscribe(new Observer<SaveRoomDto>() {
@@ -463,7 +515,7 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
                         @Override
                         public void onNext(SaveRoomDto saveRoomDto) {
 
-                            LogUtils.w("onNext" + saveRoomDto.getCode());
+                            LogUtils.w("onNext" + saveRoomDto.getCode() + "\n" + saveRoomDto.getMsg());
 
                             if (null != saveRoomDto && "0".equals(saveRoomDto.getCode()) || "10000".equals(saveRoomDto.getCode())) {
                                 ToastUtils.showShort("保存成功");

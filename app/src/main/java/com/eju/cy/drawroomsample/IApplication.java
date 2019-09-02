@@ -8,6 +8,7 @@ import com.eju.cy.drawlibrary.JDHomeSdk;
 
 public class IApplication extends Application {
 
+
     @Override
     public void onCreate() {
         super.onCreate();

@@ -12,6 +12,7 @@ import com.eju.cy.drawlibrary.bean.MyRoomData
 import com.eju.cy.drawlibrary.bean.OpenRoomDto
 import com.eju.cy.drawlibrary.bean.ResultDto
 import com.eju.cy.drawlibrary.net.DrawRoomInterface
+import com.eju.cy.drawlibrary.net.RetrofitManager
 import com.eju.cy.drawlibrary.plug.EjuDrawBleEventCar
 import com.eju.cy.drawlibrary.utils.GridSpacingItemDecoration
 import com.scwang.smartrefresh.layout.api.RefreshLayout
@@ -91,21 +92,21 @@ class MyRoomDataList : AppCompatActivity(), OnRefreshListener, OnLoadMoreListene
 
     private fun getRoomDetail(no: String) {
 
-        val headersMap = HashMap<String, String>()
+//        val headersMap = HashMap<String, String>()
+//
+//        headersMap["User-Id"] = "9027"
+//        headersMap["User-Token"] = "cbcf71e1f8538fd11a0761fc759ffc5918bc092f"
+//        headersMap["X-REQUESTED-WITH"] = "json"
+//
+//        val retrofit = Retrofit.Builder()
+//            .baseUrl("https://yun.jiandanhome.com/")
+//            .addConverterFactory(GsonConverterFactory.create()) //设置使用Gson解析(记得加入依赖)
+//            .addCallAdapterFactory(RxJava2CallAdapterFactory.create()) // 支持RxJava
+//            .build()
 
-        headersMap["User-Id"] = "9027"
-        headersMap["User-Token"] = "cbcf71e1f8538fd11a0761fc759ffc5918bc092f"
-        headersMap["X-REQUESTED-WITH"] = "json"
+        val obRequest = RetrofitManager.provideClientApi(this)
 
-        val retrofit = Retrofit.Builder()
-            .baseUrl("https://yun.jiandanhome.com/")
-            .addConverterFactory(GsonConverterFactory.create()) //设置使用Gson解析(记得加入依赖)
-            .addCallAdapterFactory(RxJava2CallAdapterFactory.create()) // 支持RxJava
-            .build()
-
-        val obRequest = retrofit.create(DrawRoomInterface::class.java)
-
-        obRequest.getDetail(headersMap, no)
+        obRequest.getDetail( no)
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe(object : Observer<ResultDto<String>> {
@@ -145,25 +146,11 @@ class MyRoomDataList : AppCompatActivity(), OnRefreshListener, OnLoadMoreListene
     private fun getData(isRefresh: Boolean) {
 
 
-        val headersMap = HashMap<String, String>()
-
-        headersMap["User-Id"] = "9027"
-        headersMap["User-Token"] = "cbcf71e1f8538fd11a0761fc759ffc5918bc092f"
-        headersMap["X-REQUESTED-WITH"] = "json"
-
-
-        val retrofit = Retrofit.Builder()
-            .baseUrl("https://yun.jiandanhome.com/")
-            .addConverterFactory(GsonConverterFactory.create()) //设置使用Gson解析(记得加入依赖)
-            .addCallAdapterFactory(RxJava2CallAdapterFactory.create()) // 支持RxJava
-            .build()
-
-
-        val obRequest = retrofit.create(DrawRoomInterface::class.java)
+        val obRequest =  RetrofitManager.provideClientApi(this)
 
 
         obRequest.getMyRoomList(
-            headersMap,
+
             start_index.toString(), "20"
         ).subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())

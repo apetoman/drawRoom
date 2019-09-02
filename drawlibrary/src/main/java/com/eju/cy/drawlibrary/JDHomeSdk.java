@@ -3,19 +3,30 @@ package com.eju.cy.drawlibrary;
 import android.content.Context;
 
 import com.blankj.utilcode.util.LogUtils;
+import com.blankj.utilcode.util.TimeUtils;
 import com.blankj.utilcode.util.ToastUtils;
+import com.jhome.util.JhomeApiException;
+import com.jhome.util.JhomeConstants;
+import com.jhome.util.JhomeSignature;
 import com.tencent.smtt.sdk.QbSdk;
+
+import org.apache.commons.codec.binary.Base64;
+
+import java.util.HashMap;
 
 public class JDHomeSdk {
 
 
     public static void init(Context context) {
 
+
+
+
         QbSdk.PreInitCallback cb = new QbSdk.PreInitCallback() {
 
             @Override
             public void onViewInitFinished(boolean arg0) {
-               ToastUtils.showShort( " 初始化结果" + arg0);
+                ToastUtils.showShort(" 初始化结果" + arg0);
             }
 
             @Override

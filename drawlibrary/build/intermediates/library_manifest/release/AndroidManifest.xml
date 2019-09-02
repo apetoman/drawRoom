@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eju.cy.drawlibrary"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="28" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 外置存储存取权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.eju.cy.drawlibrary.activity.MyRoomDataList" />
+        <activity android:name="com.eju.cy.drawlibrary.activity.TestActivity" />
+        <activity android:name="com.eju.cy.drawlibrary.activity.ShowArHuXingActivity" />
+        <activity android:name="com.eju.cy.drawlibrary.activity.DrawRoomActivity" />
+        <activity
+            android:name="com.eju.cy.drawlibrary.activity.EnumPortActivity"
+            android:launchMode="singleTask" />
+
+        <service
+            android:name="com.eju.cy.drawlibrary.bluetooth.ACSUtilityService"
+            android:enabled="true" />
+    </application>
+
+</manifest>

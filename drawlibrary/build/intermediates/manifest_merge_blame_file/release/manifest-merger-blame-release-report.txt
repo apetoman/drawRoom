@@ -1,0 +1,83 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.eju.cy.drawlibrary"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+11-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:5:5-79
+11-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:5:22-76
+12    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+12-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:6:5-76
+12-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:6:22-73
+13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+13-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:7:5-76
+13-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:7:22-73
+14    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+14-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:8:5-86
+14-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:8:22-83
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:9:5-67
+15-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:9:22-64
+16    <uses-permission android:name="android.permission.BLUETOOTH" />
+16-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:10:5-68
+16-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:10:22-65
+17    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+17-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:11:5-74
+17-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:11:22-71
+18    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+18-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:12:5-81
+18-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:12:22-78
+19    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 外置存储存取权限 -->
+19-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:13:5-79
+19-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:13:22-76
+20    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+20-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:14:5-80
+20-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:14:22-77
+21    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+21-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:15:5-81
+21-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:15:22-78
+22    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+22-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:16:5-75
+22-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:16:22-72
+23
+24    <application
+24-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:18:5-33:19
+25        android:networkSecurityConfig="@xml/network_security_config"
+25-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:20:9-69
+26        android:theme="@style/AppTheme" >
+26-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:21:9-40
+27        <activity android:name="com.eju.cy.drawlibrary.activity.MyRoomDataList" />
+27-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:22:9-70
+27-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:22:19-58
+28        <activity android:name="com.eju.cy.drawlibrary.activity.TestActivity" />
+28-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:23:9-59
+28-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:23:19-56
+29        <activity android:name="com.eju.cy.drawlibrary.activity.ShowArHuXingActivity" />
+29-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:24:9-67
+29-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:24:19-64
+30        <activity android:name="com.eju.cy.drawlibrary.activity.DrawRoomActivity" />
+30-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:25:9-63
+30-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:25:19-60
+31        <activity
+31-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:26:9-28:47
+32            android:name="com.eju.cy.drawlibrary.activity.EnumPortActivity"
+32-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:27:13-54
+33            android:launchMode="singleTask" />
+33-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:28:13-44
+34
+35        <service
+35-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:30:9-32:38
+36            android:name="com.eju.cy.drawlibrary.bluetooth.ACSUtilityService"
+36-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:31:13-56
+37            android:enabled="true" />
+37-->/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/AndroidManifest.xml:32:13-35
+38    </application>
+39
+40</manifest>

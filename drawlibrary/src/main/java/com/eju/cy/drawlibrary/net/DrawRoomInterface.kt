@@ -1,17 +1,12 @@
 package com.eju.cy.drawlibrary.net
 
 import com.eju.cy.drawlibrary.bean.MyRoomData
+import com.eju.cy.drawlibrary.bean.OpenYunDto
 import com.eju.cy.drawlibrary.bean.ResultDto
-import com.eju.cy.drawlibrary.bean.SaveDrawingRoomDto
 import com.eju.cy.drawlibrary.bean.SaveRoomDto
 import io.reactivex.Observable
-import okhttp3.Call
 import okhttp3.RequestBody
-import okhttp3.ResponseBody
 import retrofit2.http.*
-import retrofit2.http.POST
-import retrofit2.http.Multipart
-import retrofit2.http.GET
 
 
 interface DrawRoomInterface {
@@ -29,7 +24,7 @@ interface DrawRoomInterface {
     @Multipart
     @POST("/deco/huxing/save/")
     fun saveDrawingRoom(
-        @HeaderMap headers: Map<String, String>,
+
         @Part("no") no: RequestBody,
         @Part("data") data: RequestBody,
         @Part("area") area: RequestBody
@@ -39,7 +34,7 @@ interface DrawRoomInterface {
 
     @GET("/deco/huxing/own/")
     fun getMyRoomList(
-        @HeaderMap headers: Map<String, String>,
+
         @Query("start_index") start_index: String,
         @Query("count") count: String
     ): Observable<MyRoomData>
@@ -59,7 +54,6 @@ interface DrawRoomInterface {
     @Multipart
     @POST("/deco/huxing/save_property/")
     fun saveDrawingRoomProperty(
-        @HeaderMap headers: Map<String, String>,
         @Part("no") no: RequestBody,
         @Part("name") name: RequestBody
     ): Observable<SaveRoomDto>
@@ -73,7 +67,29 @@ interface DrawRoomInterface {
      */
 
     @GET("/deco/huxing/detail/")
-    fun getDetail(  @HeaderMap headers: Map<String, String>,@Query("no") no: String): Observable<ResultDto<String>>
+    fun getDetail(
 
+                  @Query("no") no: String): Observable<ResultDto<String>>
+
+
+    /**
+     * 获取用户登录token
+     * appid	是	string	APPID	注册app时返回的appid， 可在商家后台查询
+    openid	是	string	外部用户编号	请求方用户唯一标志，最大长度不可超过64位
+    company_id	是	int	企业id	企业id-由简单家系统生成
+    timestamp	是	string	时间戳	格式如：1529917926
+    signature	是	string	加签结果	加签方式详见-签名类
+     */
+
+    @Multipart
+    @POST("/mc/open/user/info/")
+    fun getOpenToken(
+        @Part("appid") appid: RequestBody,
+        @Part("openid") openid: RequestBody,
+        @Part("company_id") company_id: RequestBody,
+        @Part("timestamp") timestamp: RequestBody,
+        @Part("signature") signature: RequestBody
+
+    ): Observable<ResultDto<OpenYunDto>>
 
 }

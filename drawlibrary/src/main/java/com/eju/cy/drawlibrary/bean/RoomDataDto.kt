@@ -1,4 +1,4 @@
-package com.eju.cy.arhuxinglibrary.bean
+package com.eju.cy.drawlibrary.bean;
 
 public class RoomDataDto {
 

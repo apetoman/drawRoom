@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fl_content"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left|bottom">
+
+
+    <com.eju.cy.drawlibrary.view.BubbleLayout
+        android:layout_marginRight="8dp"
+        android:id="@+id/brlBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:background_color="@color/colorffffff"
+        app:direction="top"
+        app:offset="30dp"
+        app:radius="5dp"
+        app:shadow_size="0dp">
+
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_draw_img"
+                android:layout_width="130dp"
+                android:layout_height="39dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="绘制图"
+                android:textColor="@color/color333333"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/colorf4f4f4" />
+
+
+            <TextView
+                android:id="@+id/tv_limian_img"
+                android:layout_width="130dp"
+                android:layout_height="39dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="立面图"
+                android:textColor="@color/color333333"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/colorf4f4f4" />
+
+            <TextView
+                android:id="@+id/tv_3_img"
+                android:layout_width="130dp"
+                android:layout_height="39dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="3D模型"
+                android:textColor="@color/color333333"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/colorf4f4f4" />
+
+            <TextView
+                android:id="@+id/tv_jilu_img"
+                android:layout_width="130dp"
+                android:layout_height="39dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="量房记录"
+                android:textColor="@color/color333333"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/colorf4f4f4" />
+
+            <TextView
+                android:id="@+id/tv_qingdan_img"
+                android:layout_width="130dp"
+                android:layout_height="39dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="面积清单"
+                android:textColor="@color/color333333"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+    </com.eju.cy.drawlibrary.view.BubbleLayout>
+</RelativeLayout>
