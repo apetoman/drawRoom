@@ -22,9 +22,8 @@
 
 -keep class com.eju.cy.drawlibrary.**{*;}
 -dontwarn com.eju.cy.drawlibrary.**
-####################腾讯webx5#################
+
 -dontwarn com.tencent.smtt.**
 -keep public class com.tencent.smtt.**{*;}
 -dontwarn com.tencent.tbs.**
 -keep public class com.tencent.tbs.**{*;}
-####################腾讯webx5#################

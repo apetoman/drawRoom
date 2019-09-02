@@ -40,6 +40,6 @@ dependencies {
 
 
     implementation project(path: ':drawlibrary')
-    //implementation 'com.eju.cy.drawlibrary:drawroom:1.2.0'
+    //implementation 'com.eju.cy.drawlibrary:drawroom:1.2.1'
 
 }

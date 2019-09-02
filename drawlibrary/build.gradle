@@ -17,11 +17,15 @@ android {
         consumerProguardFiles 'consumer-rules.pro'
 
 
-        //NDK
-        ndk {
-            abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
-
+        packagingOptions {
+            exclude 'org/apache/commons/codec/language/bm/gen_approx_hungarian.txt'
         }
+
+//        //NDK
+//        ndk {
+//            abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
+//
+//        }
         renderscriptTargetApi 25
         renderscriptSupportModeEnabled true
     }
