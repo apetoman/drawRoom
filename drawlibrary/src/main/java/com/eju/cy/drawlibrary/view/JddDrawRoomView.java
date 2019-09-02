@@ -196,6 +196,8 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
                                 SharedPreferencesUtils.put(mContext, SharedPreferencesUtils.USER_TOKEN, openYunDtoResultDto.getData().getToken() + "");
                                 SharedPreferencesUtils.put(mContext, SharedPreferencesUtils.USER_ID, openYunDtoResultDto.getData().getUser_id() + "");
 
+                            }else {
+                                ToastUtils.showShort(openYunDtoResultDto.getMsg());
                             }
 
 
@@ -473,6 +475,9 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
                             if (null != saveRoomDto && "0".equals(saveRoomDto.getCode()) || "10000".equals(saveRoomDto.getCode())) {
                                 ToastUtils.showShort("修改成功");
                             }
+                            else {
+                                ToastUtils.showShort(saveRoomDto.getMsg());
+                            }
 
                             rl_av_load.setVisibility(View.GONE);
                         }
@@ -520,6 +525,9 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
 
                             if (null != saveRoomDto && "0".equals(saveRoomDto.getCode()) || "10000".equals(saveRoomDto.getCode())) {
                                 ToastUtils.showShort("保存成功");
+                            }
+                            else {
+                                ToastUtils.showShort(saveRoomDto.getMsg());
                             }
 
                             rl_av_load.setVisibility(View.GONE);

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rl_av_load"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:background="#0DFFFFFF"
+        android:layout_height="match_parent"
+        android:clickable="false">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/av_load"
+            style="@style/AVLoadingIndicatorView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            app:indicatorColor="@color/colorbfefe4"
+            app:indicatorName="LineSpinFadeLoaderIndicator"/>
+    </RelativeLayout>
+</layout>

@@ -5,6 +5,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import com.blankj.utilcode.util.LogUtils
+import com.blankj.utilcode.util.ToastUtils
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.eju.cy.drawlibrary.R
 import com.eju.cy.drawlibrary.adapter.MyRoomDataAdapter
@@ -106,7 +107,7 @@ class MyRoomDataList : AppCompatActivity(), OnRefreshListener, OnLoadMoreListene
 
 
                     if (t.isOk) {
-                        LogUtils.w("onNext" + t.data + "\n啥线程" + Thread.currentThread().name)
+
 
                         var roomData = OpenRoomDto()
                         roomData.no = no
@@ -114,7 +115,10 @@ class MyRoomDataList : AppCompatActivity(), OnRefreshListener, OnLoadMoreListene
                         roomData.addOrUpdata = true
                         EjuDrawBleEventCar.getDefault().post(roomData)
                         finish()
+                    } else {
+                        ToastUtils.showShort(t.msg)
                     }
+
 
                 }
 
@@ -133,7 +137,6 @@ class MyRoomDataList : AppCompatActivity(), OnRefreshListener, OnLoadMoreListene
 
 
         obRequest.getMyRoomList(
-
             start_index.toString(), "20"
         ).subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
@@ -150,7 +153,7 @@ class MyRoomDataList : AppCompatActivity(), OnRefreshListener, OnLoadMoreListene
                 override fun onNext(t: MyRoomData) {
 
 
-                    if (null != t && t.code == "10000" || t.code == "0" && null != t.data.records && t.data.records.size > 0) {
+                    if (null != t && t.code == "10000" || t.code == "0" && null !=t.data && null != t.data.records && t.data.records.size > 0) {
 
                         if (isRefresh) {
                             dataList.clear()
@@ -161,10 +164,12 @@ class MyRoomDataList : AppCompatActivity(), OnRefreshListener, OnLoadMoreListene
                             adapter!!.notifyDataSetChanged()
                         }
 
+                    } else {
+                        ToastUtils.showShort(t.msg)
                     }
 
 
-                    LogUtils.w("dataList大小--" + t.data.records.size)
+
 
                 }
 
