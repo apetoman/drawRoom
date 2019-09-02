@@ -19,7 +19,9 @@ public class TestActivity extends AppCompatActivity implements EjuDrawObserver {
         setContentView(R.layout.activity_test);
 
         jddView = findViewById(R.id.jdd_view);
-        jddView.initJddDrawRoomView(this, getSupportFragmentManager(),   "123456" );
+
+        String openUserId = "123456";//此ID为用户身份唯一标示
+        jddView.initJddDrawRoomView(this, getSupportFragmentManager(),   openUserId );
         EjuDrawEventCar.getDefault().register(this);
 
 
@@ -27,7 +29,7 @@ public class TestActivity extends AppCompatActivity implements EjuDrawObserver {
 
     @Override
     public void update(Object obj) {
-        LogUtils.w("我接收到的是" + (String) obj);
+        LogUtils.w("埋点回调" + (String) obj);
 
     }
 

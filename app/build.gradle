@@ -14,7 +14,7 @@ android {
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
-//tbs  x5   只能使用这种系统架构
+
         ndk {
             abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
 

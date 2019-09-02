@@ -11,160 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb50c49c-1f7f-461e-adc8-26f0367424d7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/.transforms/348e99bb6e3e7d90b6d214ee006a2e7b/full/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/.transforms/348e99bb6e3e7d90b6d214ee006a2e7b/full/classes.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/compile_library_classes/debug/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/compile_library_classes/debug/classes.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/full_jar/debug/createFullJarDebug/full.jar" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/full_jar/debug/createFullJarDebug/full.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/incremental/packageDebugAssets/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/incremental/packageDebugAssets/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/view/JddDrawRoomView$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/view/JddDrawRoomView$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/library_assets/debug/out/huxingmobile/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/library_assets/debug/out/huxingmobile/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/runtime_library_classes/debug/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/runtime_library_classes/debug/classes.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/build-history.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/subtypes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/subtypes.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/subtypes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/subtypes.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/supertypes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/supertypes.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/supertypes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/supertypes.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/last-build.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/3rdpartylicenses.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/alert/warning_2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/alert/warning_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/checkbox/selected_2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/checkbox/selected_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/checkbox/unselected_2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/checkbox/unselected_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/delete_2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/delete_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/hole_2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/hole_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/name_2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/name_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/new_arc_up.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/new_bottom_up.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/new_clear_up.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/new_copy_up.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/new_copymaterial_up.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/new_detail_up.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/new_floortool_up.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/new_hide_up.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/new_hole_up.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/new_myfavorate_up.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/new_replace_up.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/new_rotate_up.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/new_show_up.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/new_split_up.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/new_top_up.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/new_turn_up.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/rotate_2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/rotate_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/split_2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/split_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/radiobutton/selected_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/radiobutton/unenabled_selected_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/radiobutton/unenabled_unselected_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/radiobutton/unselected_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/virtualboard/confirm_up_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/virtualboard/remove_up_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/2d/images/1b8d12a87b5b11e7b85900163e0e72dc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/2d/images/1f287cbe7b5011e7a4d800163e0e72dc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/2d/images/2bd03eca7b5011e7b85900163e0e72dc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/2d/images/6f91458ec39711e7a11f00163e0e72dc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/2d/images/c9a0d5a27b4f11e7b85900163e0e72dc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/2d/images/f5119aaa7b4f11e7a4d800163e0e72dc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/3d/models/01ca25266d1a11e7b62200163e0e72dc/top.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/3d/models/223e41266d1e11e79f8200163e0e72dc/top.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/3d/models/223e41266d1e11e79f8200163e0e72dc/top2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/3d/models/292827e66d1811e79f8200163e0e72dc/item.hljm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/3d/models/292827e66d1811e79f8200163e0e72dc/top.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/3d/models/3621f4d66d2711e79f8200163e0e72dc/item.hljm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/3d/models/3621f4d66d2711e79f8200163e0e72dc/top.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/3d/models/4c6f640a6d1611e79f8200163e0e72dc/item.hljm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/3d/models/4c6f640a6d1611e79f8200163e0e72dc/maps/image_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/3d/models/4c6f640a6d1611e79f8200163e0e72dc/top.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/3d/models/8cd725966d1611e79f8200163e0e72dc/item.hljm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/3d/models/8cd725966d1611e79f8200163e0e72dc/top.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/3d/models/bf954ad06d1611e7b62200163e0e72dc/item.hljm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/3d/models/bf954ad06d1611e7b62200163e0e72dc/top.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/3d/models/c9c9418c6d1b11e79f8200163e0e72dc/top.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/3d/models/f2c36fc26d1b11e7b62200163e0e72dc/item.hljm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/3d/models/f2c36fc26d1b11e7b62200163e0e72dc/top.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/option/back_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/option/right_arrow_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/settingbars/close_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/add_note_2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/add_note_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/add_struct_2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/add_struct_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/door_common_2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/door_common_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/door_double_2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/door_double_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/door_sliding_2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/door_sliding_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/struct_flue_2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/struct_flue_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/struct_pillar_2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/struct_pillar_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/window_bay_2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/window_bay_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/window_common_2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/window_common_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/window_french_2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/window_french_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/2d_up_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/3d_up_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/add_note_udown_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/add_note_up_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/add_struct_down_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/add_struct_up_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/arrow_over.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/arrow_up.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/beauty_down_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/beauty_up_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/center_down_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/center_up_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/clear_down_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/clear_up_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/draw_room_down_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/draw_room_up_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/draw_wall_down_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/draw_wall_up_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/edit_area_icon_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/more_up_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/option_up_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/redo_up_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/ruler_down_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/ruler_up_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/save_up_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/undo_up_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/windows/areaeditorwindow/clear_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/windows/areaeditorwindow/close_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/windows/facadewindow/close_3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/worker/ByteArray.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/worker/ChildWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/worker/ParserItem3D.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/inline.11cdc5da67c9bdef9995.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/main.7796c519fe728201b346.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/polyfills.f6c511b24804b9b916b7.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/scripts.a9250beac713d9d0baa8.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/styles.745beb09f043c235597f.bundle.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/vendor.3b3aa8cca6020b441148.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/activity/TestActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/activity/TestActivity.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -193,7 +41,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/view/JddDrawRoomView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
+            <state relative-caret-position="3812">
               <caret line="493" column="16" selection-start-line="493" selection-start-column="16" selection-end-line="493" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -205,11 +53,59 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="1245">
+              <caret line="83" column="4" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/drawlibrary/proguard-rules.pro">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-315">
+              <caret line="49" column="12" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/proguard-rules.pro">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" selection-start-line="22" selection-end-line="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/eju/cy/drawroomsample/IApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" selection-start-line="8" selection-end-line="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/activity/TestActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="11" selection-start-line="11" selection-end-line="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/plug/EjuDrawObserver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -228,72 +124,20 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/activity/TestActivity.java">
+        <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/res/layout/activity_test.xml">
+          <provider editor-type-id="android-designer2" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
+            <state relative-caret-position="180">
+              <caret line="12" column="46" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="12" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret column="39" lean-forward="true" selection-start-column="39" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/drawlibrary/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/proguard-rules.pro">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/JDHomeSdk.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#646#647#0" expanded="true" />
-                <element signature="e#704#705#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/drawlibrary/bintray.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="124" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="124" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/activity/MyRoomDataList.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="97" column="17" selection-start-line="97" selection-start-column="17" selection-end-line="97" selection-end-column="17" />
-              <folding>
-                <element signature="e#41#1156#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -394,18 +238,18 @@
         <option value="$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/net/RetrofitManager.java" />
         <option value="$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/activity/MyRoomDataList.kt" />
         <option value="$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/JDHomeSdk.java" />
-        <option value="$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/activity/TestActivity.java" />
         <option value="$PROJECT_DIR$/app/proguard-rules.pro" />
         <option value="$PROJECT_DIR$/drawlibrary/build.gradle" />
         <option value="$PROJECT_DIR$/drawlibrary/bintray.gradle" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/view/JddDrawRoomView.java" />
+        <option value="$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/activity/TestActivity.java" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1389" />
+    <option name="x" value="1380" />
     <option name="y" value="-30" />
     <option name="width" value="1653" />
     <option name="height" value="942" />
@@ -662,7 +506,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" weight="0.29981378" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.29981378" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -675,7 +519,7 @@
       <window_info anchor="bottom" id="Logcat" order="2" weight="0.73176473" />
       <window_info anchor="bottom" id="TODO" order="3" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.7282353" />
-      <window_info anchor="bottom" id="Terminal" order="5" weight="0.5423529" />
+      <window_info anchor="bottom" id="Terminal" order="5" weight="0.5411765" />
       <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32941177" />
       <window_info anchor="bottom" id="Build" order="8" weight="0.38352942" />
@@ -701,10 +545,10 @@
       <window_info id="Capture Tool" order="8" />
       <window_info anchor="bottom" id="Messages" order="0" weight="0.32941177" />
       <window_info anchor="bottom" id="Run" order="1" weight="0.4847059" />
-      <window_info active="true" anchor="bottom" id="Logcat" order="2" visible="true" weight="0.73176473" />
+      <window_info anchor="bottom" id="Logcat" order="2" weight="0.73176473" />
       <window_info anchor="bottom" id="TODO" order="3" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.7282353" />
-      <window_info anchor="bottom" id="Terminal" order="5" weight="0.5423529" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="5" visible="true" weight="0.5411765" />
       <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32941177" />
       <window_info anchor="bottom" id="Build" order="8" weight="0.38352942" />
@@ -760,20 +604,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4a6ce7b66d7442b78ed587cb3a82c534/drawroom-1.1.6/jars/classes.jar!/com/tencent/smtt/sdk/aa.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4a6ce7b66d7442b78ed587cb3a82c534/drawroom-1.1.6/jars/classes.jar!/com/tencent/smtt/sdk/bc.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4a6ce7b66d7442b78ed587cb3a82c534/drawroom-1.1.6/jars/classes.jar!/com/eju/cy/drawlibrary/JDHomeSdk.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -955,13 +785,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/drawlibrary/proguard-rules.pro">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="49" column="12" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/eju/cy/drawroomsample/MainActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1015,16 +838,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="1050" column="31" selection-start-line="1050" selection-start-column="31" selection-end-line="1050" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/eju/cy/drawroomsample/IApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1166,20 +979,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/activity/TestActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/proguard-rules.pro">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/drawlibrary/bintray.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1194,6 +993,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="39" lean-forward="true" selection-start-column="39" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/res/layout/activity_test.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="46" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="12" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/bean/OpenRoomDto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1205,9 +1019,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/plug/EjuDrawObserver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/view/JddDrawRoomView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
+        <state relative-caret-position="3812">
           <caret line="493" column="16" selection-start-line="493" selection-start-column="16" selection-end-line="493" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1218,17 +1039,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/eju/cy/drawroomsample/IApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+    <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/activity/TestActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="39" lean-forward="true" selection-start-column="39" selection-end-column="39" />
+        <state relative-caret-position="45">
+          <caret line="11" selection-start-line="11" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drawlibrary/proguard-rules.pro">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-315">
+          <caret line="49" column="12" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/proguard-rules.pro">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" selection-start-line="22" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1245">
+          <caret line="83" column="4" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="4" />
         </state>
       </provider>
     </entry>
