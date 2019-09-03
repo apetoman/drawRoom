@@ -29,7 +29,6 @@
 -keep public class com.eju.cy.drawlibrary.view.**{*;}
 -keep public class com.eju.cy.drawlibrary.web.**{*;}
 
--keep public class com.eju.cy.drawlibrary.bluetooth.**{*;}
 
 -keep class com.wang.avi.** { *; }
 -keep class com.wang.avi.indicators.** { *; }

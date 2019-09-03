@@ -22,6 +22,7 @@ import androidx.fragment.app.FragmentManager;
 import com.blankj.utilcode.util.LogUtils;
 import com.blankj.utilcode.util.TimeUtils;
 import com.blankj.utilcode.util.ToastUtils;
+import com.eju.cy.drawlibrary.BuildConfig;
 import com.eju.cy.drawlibrary.R;
 import com.eju.cy.drawlibrary.activity.EnumPortActivity;
 import com.eju.cy.drawlibrary.activity.MyRoomDataList;
@@ -74,9 +75,8 @@ import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
 import io.reactivex.functions.Function;
 import io.reactivex.schedulers.Schedulers;
-import retrofit2.Retrofit;
-import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
-import retrofit2.converter.gson.GsonConverterFactory;
+
+import static com.blankj.utilcode.util.LogUtils.*;
 
 /**
  * @ Name: Caochen
@@ -158,6 +158,9 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
      * @param openUserId      用户唯一标示
      */
     public void initJddDrawRoomView(Activity activity, FragmentManager fragmentManager, String openUserId) {
+
+        Config  config = LogUtils.getConfig();
+        config.setLogSwitch(BuildConfig.DEBUG);
         this.activity = activity;
         this.fragmentManager = fragmentManager;
         initWeb(activity);
@@ -206,7 +209,7 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
                         @Override
                         public void onError(Throwable e) {
                             rl_av_load.setVisibility(View.GONE);
-                            LogUtils.w("onError" + e.toString());
+                            w("onError" + e.toString());
                         }
 
                         @Override
@@ -294,7 +297,7 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
                                     ej_iv_more.setEnabled(true);
                                 }
                             });
-                            LogUtils.w("初始化完毕");
+                            w("初始化完毕");
 
                             break;
                         case "save"://保存按钮
@@ -325,7 +328,7 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
                             break;
 
                         case "reset":
-                            LogUtils.w("重置");
+                            w("重置");
                             addOrUpdate = false;
                             loadUrl("file:///android_asset/huxingmobile/index.html");
                             break;
@@ -520,7 +523,7 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
                         @Override
                         public void onNext(SaveRoomDto saveRoomDto) {
 
-                            LogUtils.w("onNext" + saveRoomDto.getCode() + "\n" + saveRoomDto.getMsg());
+                            w("onNext" + saveRoomDto.getCode() + "\n" + saveRoomDto.getMsg());
 
                             if (null != saveRoomDto && "0".equals(saveRoomDto.getCode()) || "10000".equals(saveRoomDto.getCode())) {
                                 ToastUtils.showShort("保存成功");
@@ -613,7 +616,7 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
             ej_iv_back.setVisibility(View.GONE);
             setMargins(tv_title, dpToPx(mContext, 21), 0, 0, 0);
             tv_title.setText("智能量房");
-            tv_share.setVisibility(View.VISIBLE);
+            tv_share.setVisibility(View.GONE);
         }
 
     }
@@ -652,17 +655,17 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
         if ((obj instanceof OpenRoomDto)) {
 
 
-            LogUtils.w("打开户型");
+            w("打开户型");
             OpenRoomDto openRoomDto = (OpenRoomDto) obj;
             addOrUpdate = openRoomDto.getAddOrUpdata();
             openDrawRoom(openRoomDto.getData() + "");
             return;
         } else {
-            LogUtils.w("蓝牙");
+            w("蓝牙");
             if (null != obj) {
                 BluetoothDevice device = (BluetoothDevice) obj;
                 //链接
-                LogUtils.w("接收到的蓝牙设备名字\n" + device.getName());
+                w("接收到的蓝牙设备名字\n" + device.getName());
 
                 mSelectedPort = util.new blePort(device);
 
@@ -672,13 +675,13 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
                         @Override
                         public void run() {
                             if (mSelectedPort != null) {
-                                LogUtils.w("我有值-------去链接");
+                                w("我有值-------去链接");
 
                                 if (isPortOpen) {
-                                    LogUtils.w("isPortOpen-------");
+                                    w("isPortOpen-------");
                                     util.closePort();
                                 } else if (mSelectedPort != null) {
-                                    LogUtils.w("mSelectedPort--------");
+                                    w("mSelectedPort--------");
                                     // 等待窗口
                                     util.openPort(mSelectedPort);
                                     rl_av_load.setVisibility(View.VISIBLE);
@@ -703,20 +706,20 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
         @Override
         public void didFoundPort(ACSUtility.blePort newPort) {
             // TODO Auto-generated method stub
-            LogUtils.w("didFoundPort-----");
+            w("didFoundPort-----");
         }
 
         @Override
         public void didFinishedEnumPorts() {
             // TODO Auto-generated method stub
-            LogUtils.w("didFinishedEnumPorts---");
+            w("didFinishedEnumPorts---");
         }
 
         @Override
         public void didOpenPort(ACSUtility.blePort port, Boolean bSuccess) {
-            LogUtils.w("didOpenPort---");
+            w("didOpenPort---");
             // TODO Auto-generated method stub
-            LogUtils.d("The port is open ? " + bSuccess);
+            d("The port is open ? " + bSuccess);
             if (bSuccess) {
                 isPortOpen = true;
                 mCurrentPort = port;
@@ -737,7 +740,7 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
 
         @Override
         public void didClosePort(ACSUtility.blePort port) {
-            LogUtils.w("didClosePort---");
+            w("didClosePort---");
             rl_av_load.setVisibility(View.GONE);
             isPortOpen = false;
             mCurrentPort = null;
@@ -748,7 +751,7 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
 
         @Override
         public void didPackageReceived(ACSUtility.blePort port, byte[] packageToSend) {
-            LogUtils.w("didPackageReceived---");
+            w("didPackageReceived---");
             // TODO Auto-generated method stub
 
 
@@ -763,7 +766,7 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
                     double size = sum / 10000;
                     //LogUtils.w("计算结果是" + size);
                     if ((int)size < 80000) {
-                        LogUtils.w("还进来》？");
+                        w("还进来》？");
                         mAgentWeb.getJsEntraceAccess().quickCallJs("CallJS.app_js_measure", size + "");
                     }
                 }
@@ -773,21 +776,21 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
 
         @Override
         public void heartbeatDebug() {
-            LogUtils.w("heartbeatDebug----------");
+            w("heartbeatDebug----------");
             // TODO Auto-generated method stub
 
         }
 
         @Override
         public void utilReadyForUse() {
-            LogUtils.w("utilReadyForUse---------");
+            w("utilReadyForUse---------");
             // TODO Auto-generated method stub
 
         }
 
         @Override
         public void didPackageSended(boolean succeed) {
-            LogUtils.w("didPackageSended--------" + succeed);
+            w("didPackageSended--------" + succeed);
         }
 
     };
