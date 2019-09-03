@@ -26,7 +26,7 @@
 
 -keep public class com.eju.cy.drawlibrary.bean.**{*;}
 
--keep public class com.eju.cy.drawlibrary.view.**{*;}
+
 -keep public class com.eju.cy.drawlibrary.web.**{*;}
 
 
