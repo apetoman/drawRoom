@@ -1,6 +1,6 @@
 # compiler: R8
 # compiler_version: 1.5.59
-# pg_map_id: 517b5cb
+# pg_map_id: b58c313
 com.eju.cy.drawlibrary.JDHomeSdk$1 -> com.eju.cy.drawlibrary.JDHomeSdk$a:
 com.eju.cy.drawlibrary.activity.EnumPortActivity -> com.eju.cy.drawlibrary.activity.EnumPortActivity:
     com.eju.cy.drawlibrary.bluetooth.ACSUtility$IACSUtilityCallback userCallback -> f
@@ -114,18 +114,6 @@ com.eju.cy.drawlibrary.activity.ShowArHuXingActivity$3 -> com.eju.cy.drawlibrary
 com.eju.cy.drawlibrary.activity.ShowArHuXingActivity$4 -> com.eju.cy.drawlibrary.activity.ShowArHuXingActivity$d:
 com.eju.cy.drawlibrary.activity.TestActivity -> com.eju.cy.drawlibrary.activity.TestActivity:
     com.eju.cy.drawlibrary.view.JddDrawRoomView jddView -> a
-    void update(java.lang.Object) -> a
-    1:1:void com.eju.cy.drawlibrary.plug.EjuDrawEventCar.register(com.eju.cy.drawlibrary.plug.EjuDrawObserver):0:0 -> onCreate
-    1:1:void onCreate(android.os.Bundle):0 -> onCreate
-    2:2:void com.eju.cy.drawlibrary.plug.ConcreteObservableStatistics.addObserver(com.eju.cy.drawlibrary.plug.EjuDrawObserver):0:0 -> onCreate
-    2:2:void com.eju.cy.drawlibrary.plug.EjuDrawEventCar.register(com.eju.cy.drawlibrary.plug.EjuDrawObserver):0 -> onCreate
-    2:2:void onCreate(android.os.Bundle):0 -> onCreate
-    1:1:void com.eju.cy.drawlibrary.plug.EjuDrawEventCar.unregister(com.eju.cy.drawlibrary.plug.EjuDrawObserver):0:0 -> onDestroy
-    1:1:void onDestroy():0 -> onDestroy
-    2:2:void com.eju.cy.drawlibrary.plug.ConcreteObservableStatistics.removeObserver(com.eju.cy.drawlibrary.plug.EjuDrawObserver):0:0 -> onDestroy
-    2:2:void com.eju.cy.drawlibrary.plug.EjuDrawEventCar.unregister(com.eju.cy.drawlibrary.plug.EjuDrawObserver):0 -> onDestroy
-    2:2:void onDestroy():0 -> onDestroy
-    3:3:void onDestroy():0:0 -> onDestroy
 com.eju.cy.drawlibrary.adapter.BluetoothDeviceAdapter -> a.a.a.a.b.a:
     1:1:void convert(com.chad.library.adapter.base.BaseViewHolder,android.bluetooth.BluetoothDevice):0:0 -> convert
     1:1:void convert(com.chad.library.adapter.base.BaseViewHolder,java.lang.Object):0 -> convert
@@ -409,9 +397,6 @@ com.eju.cy.drawlibrary.dialog.CreateConstructionNameDalog -> a.a.a.a.d.a:
     com.eju.cy.drawlibrary.plug.DialogInterface dialogInterface -> a
     java.util.HashMap _$_findViewCache -> b
     android.view.View _$_findCachedViewById(int) -> a
-    1:1:void com.eju.cy.drawlibrary.view.JddDrawRoomView$6$1.dialogCommit(java.lang.String):0:0 -> onClick
-    1:1:void onClick(android.view.View):0 -> onClick
-    2:2:void onClick(android.view.View):0:0 -> onClick
     1:1:void _$_clearFindViewByIdCache():0:0 -> onDestroyView
     1:1:void onDestroyView():0 -> onDestroyView
 com.eju.cy.drawlibrary.net.DrawRoomInterface -> a.a.a.a.e.a:
@@ -428,28 +413,8 @@ com.eju.cy.drawlibrary.net.RetrofitManager -> a.a.a.a.e.c:
     2:2:com.eju.cy.drawlibrary.net.DrawRoomInterface provideClientApi(android.content.Context):0:0 -> a
 com.eju.cy.drawlibrary.net.RetrofitManager$1 -> a.a.a.a.e.b:
     android.content.Context val$context -> a
-com.eju.cy.drawlibrary.plug.BleObservableStatistics -> a.a.a.a.f.a:
-    java.util.ArrayList observers -> a
-com.eju.cy.drawlibrary.plug.ConcreteObservableStatistics -> a.a.a.a.f.b:
-    java.util.ArrayList observers -> a
-com.eju.cy.drawlibrary.plug.DialogInterface -> a.a.a.a.f.c:
-com.eju.cy.drawlibrary.plug.EjuDrawBleEventCar -> a.a.a.a.f.d:
-    com.eju.cy.drawlibrary.plug.BleObservableStatistics observableA -> a
-    com.eju.cy.drawlibrary.plug.EjuDrawBleEventCar instance -> b
-    com.eju.cy.drawlibrary.plug.EjuDrawBleEventCar getDefault() -> a
-    1:1:void com.eju.cy.drawlibrary.plug.BleObservableStatistics.notifyObservers(java.lang.Object):0:0 -> a
-    1:1:void post(java.lang.Object):0 -> a
-com.eju.cy.drawlibrary.plug.EjuDrawEventCar -> a.a.a.a.f.e:
-    com.eju.cy.drawlibrary.plug.EjuDrawEventCar instance -> b
-    com.eju.cy.drawlibrary.plug.ConcreteObservableStatistics observableA -> a
-    com.eju.cy.drawlibrary.plug.EjuDrawEventCar getDefault() -> a
-    1:1:void com.eju.cy.drawlibrary.plug.ConcreteObservableStatistics.notifyObservers(java.lang.Object):0:0 -> a
-    1:1:void post(java.lang.Object):0 -> a
-com.eju.cy.drawlibrary.plug.EjuDrawObservable -> a.a.a.a.f.f:
-com.eju.cy.drawlibrary.plug.EjuDrawObserver -> a.a.a.a.f.g:
-    void update(java.lang.Object) -> a
-com.eju.cy.drawlibrary.pop.MoreInterface -> a.a.a.a.g.a:
-com.eju.cy.drawlibrary.pop.MorePopup -> a.a.a.a.g.b:
+com.eju.cy.drawlibrary.pop.MoreInterface -> a.a.a.a.f.a:
+com.eju.cy.drawlibrary.pop.MorePopup -> a.a.a.a.f.b:
     android.widget.TextView tv_draw_img -> a
     com.eju.cy.drawlibrary.pop.MoreInterface moreInterface -> f
     android.widget.TextView tv_3_img -> c
@@ -511,18 +476,18 @@ com.eju.cy.drawlibrary.pop.MorePopup -> a.a.a.a.g.b:
     25:25:void com.eju.cy.drawlibrary.view.JddDrawRoomView$10.popRepertoire():0:0 -> onClick
     25:25:void onClick(android.view.View):0 -> onClick
     26:26:void onClick(android.view.View):0:0 -> onClick
-com.eju.cy.drawlibrary.utils.ButtonUtils -> a.a.a.a.h.a:
+com.eju.cy.drawlibrary.utils.ButtonUtils -> a.a.a.a.g.a:
     long lastClickTime -> a
     int lastButtonId -> b
     1:1:boolean isFastDoubleClick(int,long):0:0 -> a
     1:1:boolean isFastDoubleClick():0 -> a
-com.eju.cy.drawlibrary.utils.GridSpacingItemDecoration -> a.a.a.a.h.b:
+com.eju.cy.drawlibrary.utils.GridSpacingItemDecoration -> a.a.a.a.g.b:
     int spacing -> b
     boolean includeEdge -> c
     int spanCount -> a
-com.eju.cy.drawlibrary.utils.JsonUtils -> a.a.a.a.h.c:
+com.eju.cy.drawlibrary.utils.JsonUtils -> a.a.a.a.g.c:
     java.lang.Object fromJson(java.lang.String,java.lang.Class) -> a
-com.eju.cy.drawlibrary.utils.ParameterUtils -> a.a.a.a.h.d:
+com.eju.cy.drawlibrary.utils.ParameterUtils -> a.a.a.a.g.d:
     boolean com.jhome.util.StringUtils.areNotEmpty(java.lang.String[]) -> a
     java.lang.Object com.eju.cy.drawlibrary.utils.SharedPreferencesUtils.get(android.content.Context,java.lang.String,java.lang.Object) -> a
     boolean com.jhome.util.StringUtils.isEmpty(java.lang.String) -> a
@@ -588,25 +553,8 @@ com.eju.cy.drawlibrary.view.JddDrawRoomView -> com.eju.cy.drawlibrary.view.JddDr
     8:8:void initWeb(android.app.Activity):0:0 -> a
     8:8:void initJddDrawRoomView(android.app.Activity,androidx.fragment.app.FragmentManager,java.lang.String):0 -> a
     9:9:void initJddDrawRoomView(android.app.Activity,androidx.fragment.app.FragmentManager,java.lang.String):0:0 -> a
-    10:10:void com.eju.cy.drawlibrary.plug.EjuDrawBleEventCar.register(com.eju.cy.drawlibrary.plug.EjuDrawObserver):0:0 -> a
-    10:10:void initJddDrawRoomView(android.app.Activity,androidx.fragment.app.FragmentManager,java.lang.String):0 -> a
-    11:11:void com.eju.cy.drawlibrary.plug.BleObservableStatistics.addObserver(com.eju.cy.drawlibrary.plug.EjuDrawObserver):0:0 -> a
-    11:11:void com.eju.cy.drawlibrary.plug.EjuDrawBleEventCar.register(com.eju.cy.drawlibrary.plug.EjuDrawObserver):0 -> a
-    11:11:void initJddDrawRoomView(android.app.Activity,androidx.fragment.app.FragmentManager,java.lang.String):0 -> a
-    12:12:void initJddDrawRoomView(android.app.Activity,androidx.fragment.app.FragmentManager,java.lang.String):0:0 -> a
     void loadUrl(java.lang.String) -> a
-    13:13:void com.eju.cy.drawlibrary.plug.EjuDrawBleEventCar.unregister(com.eju.cy.drawlibrary.plug.EjuDrawObserver):0:0 -> a
-    13:13:void onDestroy():0 -> a
-    14:14:void com.eju.cy.drawlibrary.plug.BleObservableStatistics.removeObserver(com.eju.cy.drawlibrary.plug.EjuDrawObserver):0:0 -> a
-    14:14:void com.eju.cy.drawlibrary.plug.EjuDrawBleEventCar.unregister(com.eju.cy.drawlibrary.plug.EjuDrawObserver):0 -> a
-    14:14:void onDestroy():0 -> a
-    15:15:void onDestroy():0:0 -> a
-    16:16:java.lang.String replaceBlank(java.lang.String):0:0 -> a
-    16:16:void openDrawRoom(java.lang.String):0 -> a
-    16:16:void update(java.lang.Object):0 -> a
-    17:17:void openDrawRoom(java.lang.String):0:0 -> a
-    17:17:void update(java.lang.Object):0 -> a
-    18:18:void update(java.lang.Object):0:0 -> a
+    void onDestroy() -> a
     java.lang.Boolean access$600(com.eju.cy.drawlibrary.view.JddDrawRoomView) -> b
     void onPause() -> b
     void returnRoomData(java.lang.String,java.lang.Boolean) -> b
@@ -615,6 +563,12 @@ com.eju.cy.drawlibrary.view.JddDrawRoomView -> com.eju.cy.drawlibrary.view.JddDr
     1:1:void loadUrl(java.lang.String):0:0 -> onClick
     1:1:void onClick(android.view.View):0 -> onClick
     2:2:void onClick(android.view.View):0:0 -> onClick
+    1:1:java.lang.String replaceBlank(java.lang.String):0:0 -> update
+    1:1:void openDrawRoom(java.lang.String):0 -> update
+    1:1:void update(java.lang.Object):0 -> update
+    2:2:void openDrawRoom(java.lang.String):0:0 -> update
+    2:2:void update(java.lang.Object):0 -> update
+    3:3:void update(java.lang.Object):0:0 -> update
 com.eju.cy.drawlibrary.view.JddDrawRoomView$1 -> com.eju.cy.drawlibrary.view.JddDrawRoomView$d:
     com.eju.cy.drawlibrary.view.JddDrawRoomView this$0 -> a
     1:1:android.widget.RelativeLayout com.eju.cy.drawlibrary.view.JddDrawRoomView.access$000(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> onComplete
@@ -704,7 +658,7 @@ com.eju.cy.drawlibrary.view.JddDrawRoomView$12 -> com.eju.cy.drawlibrary.view.Jd
     void didFinishedEnumPorts() -> b
     void didFoundPort(com.eju.cy.drawlibrary.bluetooth.ACSUtility$blePort) -> b
     void utilReadyForUse() -> c
-com.eju.cy.drawlibrary.view.JddDrawRoomView$2 -> a.a.a.a.i.a:
+com.eju.cy.drawlibrary.view.JddDrawRoomView$2 -> a.a.a.a.h.a:
     com.eju.cy.drawlibrary.view.JddDrawRoomView this$0 -> a
     1:1:java.lang.Boolean com.eju.cy.drawlibrary.view.JddDrawRoomView.access$602(com.eju.cy.drawlibrary.view.JddDrawRoomView,java.lang.Boolean):0:0 -> pushMsg
     1:1:void pushMsg(java.lang.String):0 -> pushMsg
@@ -732,7 +686,7 @@ com.eju.cy.drawlibrary.view.JddDrawRoomView$2 -> a.a.a.a.i.a:
     13:13:android.content.Context com.eju.cy.drawlibrary.view.JddDrawRoomView.access$100(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> pushMsg
     13:13:void pushMsg(java.lang.String):0 -> pushMsg
     14:14:void pushMsg(java.lang.String):0:0 -> pushMsg
-com.eju.cy.drawlibrary.view.JddDrawRoomView$2$1 -> a.a.a.a.i.a$a:
+com.eju.cy.drawlibrary.view.JddDrawRoomView$2$1 -> a.a.a.a.h.a$a:
     com.eju.cy.drawlibrary.view.JddDrawRoomView$2 this$1 -> a
     1:1:android.widget.TextView com.eju.cy.drawlibrary.view.JddDrawRoomView.access$200(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> run
     1:1:void run():0 -> run
@@ -742,12 +696,12 @@ com.eju.cy.drawlibrary.view.JddDrawRoomView$2$1 -> a.a.a.a.i.a$a:
     4:4:void run():0:0 -> run
 com.eju.cy.drawlibrary.view.JddDrawRoomView$3 -> com.eju.cy.drawlibrary.view.JddDrawRoomView$e:
 com.eju.cy.drawlibrary.view.JddDrawRoomView$4 -> com.eju.cy.drawlibrary.view.JddDrawRoomView$f:
-com.eju.cy.drawlibrary.view.JddDrawRoomView$5 -> a.a.a.a.i.b:
+com.eju.cy.drawlibrary.view.JddDrawRoomView$5 -> a.a.a.a.h.b:
     java.lang.String val$jsonString -> a
     com.eju.cy.drawlibrary.view.JddDrawRoomView this$0 -> b
     1:1:void accept(java.lang.Integer):0:0 -> accept
     1:1:void accept(java.lang.Object):0 -> accept
-com.eju.cy.drawlibrary.view.JddDrawRoomView$6 -> a.a.a.a.i.d:
+com.eju.cy.drawlibrary.view.JddDrawRoomView$6 -> a.a.a.a.h.d:
     java.lang.String val$jsonString -> a
     com.eju.cy.drawlibrary.view.JddDrawRoomView this$0 -> b
     1:1:void accept(java.lang.Integer):0:0 -> accept
@@ -757,9 +711,12 @@ com.eju.cy.drawlibrary.view.JddDrawRoomView$6 -> a.a.a.a.i.d:
     2:2:void accept(java.lang.Object):0 -> accept
     3:3:void accept(java.lang.Integer):0:0 -> accept
     3:3:void accept(java.lang.Object):0 -> accept
-com.eju.cy.drawlibrary.view.JddDrawRoomView$6$1 -> a.a.a.a.i.c:
+com.eju.cy.drawlibrary.view.JddDrawRoomView$6$1 -> a.a.a.a.h.c:
     com.eju.cy.drawlibrary.view.JddDrawRoomView$6 this$1 -> a
-com.eju.cy.drawlibrary.view.JddDrawRoomView$7 -> a.a.a.a.i.e:
+    1:1:java.lang.Boolean com.eju.cy.drawlibrary.view.JddDrawRoomView.access$600(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> dialogCommit
+    1:1:void dialogCommit(java.lang.String):0 -> dialogCommit
+    2:2:void dialogCommit(java.lang.String):0:0 -> dialogCommit
+com.eju.cy.drawlibrary.view.JddDrawRoomView$7 -> a.a.a.a.h.e:
     com.eju.cy.drawlibrary.view.JddDrawRoomView this$0 -> a
     1:1:android.widget.RelativeLayout com.eju.cy.drawlibrary.view.JddDrawRoomView.access$000(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> onComplete
     1:1:void onComplete():0 -> onComplete
@@ -774,7 +731,7 @@ com.eju.cy.drawlibrary.view.JddDrawRoomView$7 -> a.a.a.a.i.e:
     2:2:void onNext(java.lang.Object):0 -> onNext
     3:3:void onNext(com.eju.cy.drawlibrary.bean.SaveRoomDto):0:0 -> onNext
     3:3:void onNext(java.lang.Object):0 -> onNext
-com.eju.cy.drawlibrary.view.JddDrawRoomView$8 -> a.a.a.a.i.f:
+com.eju.cy.drawlibrary.view.JddDrawRoomView$8 -> a.a.a.a.h.f:
     com.eju.cy.drawlibrary.view.JddDrawRoomView this$0 -> a
     1:1:android.widget.RelativeLayout com.eju.cy.drawlibrary.view.JddDrawRoomView.access$000(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> onComplete
     1:1:void onComplete():0 -> onComplete
@@ -789,7 +746,7 @@ com.eju.cy.drawlibrary.view.JddDrawRoomView$8 -> a.a.a.a.i.f:
     2:2:void onNext(java.lang.Object):0 -> onNext
     3:3:void onNext(com.eju.cy.drawlibrary.bean.SaveRoomDto):0:0 -> onNext
     3:3:void onNext(java.lang.Object):0 -> onNext
-com.eju.cy.drawlibrary.view.JddDrawRoomView$9 -> a.a.a.a.i.g:
+com.eju.cy.drawlibrary.view.JddDrawRoomView$9 -> a.a.a.a.h.g:
     com.eju.cy.drawlibrary.bean.DrawRoomDataDto val$drawRoomDataDto -> b
     java.lang.String val$constructionName -> c
     com.eju.cy.drawlibrary.net.DrawRoomInterface val$obRequest -> a

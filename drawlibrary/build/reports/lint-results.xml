@@ -150,22 +150,6 @@
     <issue
         id="GradleDependency"
         severity="Warning"
-        message="A newer version of io.reactivex.rxjava2:rxjava than 2.2.3 is available: 2.2.4"
-        category="Correctness"
-        priority="4"
-        summary="Obsolete Gradle Dependency"
-        explanation="This detector looks for usages of libraries where the version you are using is not the current stable release. Using older versions is fine, and there are cases where you deliberately want to stick with an older version. However, you may simply not be aware that a more recent version is available, and that is what this lint check helps find."
-        errorLine1="    implementation &apos;io.reactivex.rxjava2:rxjava:2.2.3&apos;"
-        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
-        <location
-            file="/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/build.gradle"
-            line="70"
-            column="5"/>
-    </issue>
-
-    <issue
-        id="GradleDependency"
-        severity="Warning"
         message="A newer version of com.scwang.smartrefresh:SmartRefreshLayout than 1.1.0-alpha-5 is available: 1.1.0"
         category="Correctness"
         priority="4"

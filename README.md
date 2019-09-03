@@ -3,7 +3,7 @@
 ### Step1
 ```
 //gradle添加
-- implementation 'com.eju.cy.drawlibrary:drawroom:1.2.1'
+- implementation 'com.eju.cy.drawlibrary:drawroom:1.2.4'
 //添加支持NDK架构类型支持
     ndk {
             abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
@@ -38,51 +38,46 @@ public class IApplication extends Application {
 
 ### Step4
 ```
-//layout对应控制器中实现   EjuDrawObserver，且在对应生命周期调用生命周期方法，详细使用可参考sample 中 TestActivity.java
-public class TestActivity extends AppCompatActivity implements EjuDrawObserver {
-    JddDrawRoomView jddView;
+//layout对应控制器中实现   EjuDrawObserver，且在对应生命周期调用生命周期方法，详细使用可参考sample 中 MainActivity.java
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_test);
+class MainActivity : AppCompatActivity(), EjuDrawObserver {
 
-        jddView = findViewById(R.id.jdd_view);
 
-        String openUserId = "123456";//此ID为用户身份唯一标示
-        jddView.initJddDrawRoomView(this, getSupportFragmentManager(),   openUserId );
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val openUserId = "123456"//此ID为用户身份唯一标示（类似用户ID等）
+        jdd_view.a(this, supportFragmentManager, openUserId)
         EjuDrawEventCar.getDefault().register(this);
 
 
     }
 
-    @Override
-    public void update(Object obj) {
-        LogUtils.w("埋点回调" + (String) obj);
-
+    override fun onResume() {
+        super.onResume()
+        jdd_view.c()
     }
 
-    @Override
-    protected void onPause() {
-        super.onPause();
-        jddView.onPause();
+    override fun onPause() {
+        super.onPause()
+        jdd_view.b()
     }
 
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        jddView.onResume();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
+    override fun onDestroy() {
+        super.onDestroy()
+        jdd_view.a()
         EjuDrawEventCar.getDefault().unregister(this);
-        jddView.onDestroy();
 
+
+    }
+
+    override fun update(p0: Any?) {
+        Log.w(localClassName, p0 as String)
     }
 }
+
 ```
 
 ### Step5

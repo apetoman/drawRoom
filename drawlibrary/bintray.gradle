@@ -11,7 +11,7 @@ publish {
     userOrg = 'ejujdhome'
     groupId = 'com.eju.cy.drawlibrary'
     artifactId = 'drawroom'
-    publishVersion = '1.2.3'
+    publishVersion = '1.2.4'
     desc = '户型绘制'
     website = siteUrl
 }
