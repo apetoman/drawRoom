@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.blankj.utilcode.util.LogUtils;
+import com.blankj.utilcode.util.ToastUtils;
 import com.eju.cy.drawlibrary.R;
 import com.eju.cy.drawlibrary.plug.EjuDrawEventCar;
 import com.eju.cy.drawlibrary.plug.EjuDrawObserver;
@@ -20,7 +21,7 @@ public class TestActivity extends AppCompatActivity implements EjuDrawObserver {
 
         jddView = findViewById(R.id.jdd_view);
 
-        String openUserId = "123456";//此ID为用户身份唯一标示
+        String openUserId = "123456";//此ID为用户身份唯一标示（类似用户ID等）
         jddView.initJddDrawRoomView(this, getSupportFragmentManager(),   openUserId );
         EjuDrawEventCar.getDefault().register(this);
 
@@ -29,7 +30,7 @@ public class TestActivity extends AppCompatActivity implements EjuDrawObserver {
 
     @Override
     public void update(Object obj) {
-        LogUtils.w("埋点回调" + (String) obj);
+        ToastUtils.showShort("埋点回调" + (String) obj);
 
     }
 

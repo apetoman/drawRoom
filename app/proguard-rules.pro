@@ -27,3 +27,6 @@
 -keep public class com.tencent.smtt.**{*;}
 -dontwarn com.tencent.tbs.**
 -keep public class com.tencent.tbs.**{*;}
+
+-keep class com.wang.avi.** { *; }
+-keep class com.wang.avi.indicators.** { *; }

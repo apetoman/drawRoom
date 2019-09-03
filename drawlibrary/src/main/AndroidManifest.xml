@@ -22,7 +22,7 @@
         <activity android:name=".activity.MyRoomDataList"></activity>
         <activity android:name=".activity.TestActivity" />
         <activity android:name=".activity.ShowArHuXingActivity" />
-        <activity android:name=".activity.DrawRoomActivity" />
+
         <activity
             android:name=".activity.EnumPortActivity"
             android:launchMode="singleTask" />

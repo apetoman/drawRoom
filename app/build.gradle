@@ -3,8 +3,20 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
-
+//签名文件配置
+def propsFile = file("./keystore/key-config.properties")
+Properties keyProps = new Properties()
+keyProps.load(new FileInputStream(propsFile))
+//打包时间
+static def packageTime() {
+    return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC-8"))
+}
 android {
+
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.eju.cy.drawroomsample"
@@ -20,10 +32,40 @@ android {
 
         }
     }
-    buildTypes {
+    signingConfigs {
+        def vStoreFile = file(keyProps['storeFile'].toString())
+        def vStorePwd = keyProps['storePassword'].toString()
+        def vKeyAlias = keyProps['keyAlias'].toString()
+        def vKeyPwd = keyProps['keyPassword'].toString()
         release {
+            storeFile vStoreFile
+            storePassword vStorePwd
+            keyAlias vKeyAlias
+            keyPassword vKeyPwd
+        }
+    }
+//修改生成的最终文件名
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            outputFileName = "Onemile-v${variant.versionName}-${variant.name}-${packageTime()}.apk"
+        }
+    }
+    buildTypes {
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            buildConfigField "boolean", "USE_CANARY", "false"
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            buildConfigField "boolean", "USE_CANARY", "false"
+            minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
 }

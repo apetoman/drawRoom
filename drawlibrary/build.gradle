@@ -17,9 +17,6 @@ android {
         consumerProguardFiles 'consumer-rules.pro'
 
 
-        packagingOptions {
-            exclude 'org/apache/commons/codec/language/bm/gen_approx_hungarian.txt'
-        }
 
 //        //NDK
 //        ndk {

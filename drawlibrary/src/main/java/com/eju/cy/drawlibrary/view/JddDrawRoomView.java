@@ -196,7 +196,7 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
                                 SharedPreferencesUtils.put(mContext, SharedPreferencesUtils.USER_TOKEN, openYunDtoResultDto.getData().getToken() + "");
                                 SharedPreferencesUtils.put(mContext, SharedPreferencesUtils.USER_ID, openYunDtoResultDto.getData().getUser_id() + "");
 
-                            }else {
+                            } else {
                                 ToastUtils.showShort(openYunDtoResultDto.getMsg());
                             }
 
@@ -290,7 +290,7 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
                             getHandler().post(new Runnable() {
                                 @Override
                                 public void run() {
-                                    tv_share.setVisibility(View.VISIBLE);
+                                    tv_share.setVisibility(View.GONE);
                                     ej_iv_more.setEnabled(true);
                                 }
                             });
@@ -474,8 +474,7 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
 
                             if (null != saveRoomDto && "0".equals(saveRoomDto.getCode()) || "10000".equals(saveRoomDto.getCode())) {
                                 ToastUtils.showShort("修改成功");
-                            }
-                            else {
+                            } else {
                                 ToastUtils.showShort(saveRoomDto.getMsg());
                             }
 
@@ -525,8 +524,7 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
 
                             if (null != saveRoomDto && "0".equals(saveRoomDto.getCode()) || "10000".equals(saveRoomDto.getCode())) {
                                 ToastUtils.showShort("保存成功");
-                            }
-                            else {
+                            } else {
                                 ToastUtils.showShort(saveRoomDto.getMsg());
                             }
 
@@ -763,8 +761,11 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
 
                 if (sum > 0) {
                     double size = sum / 10000;
-                    LogUtils.w("计算结果是" + size);
-                    mAgentWeb.getJsEntraceAccess().quickCallJs("CallJS.app_js_measure", size + "");
+                    //LogUtils.w("计算结果是" + size);
+                    if ((int)size < 80000) {
+                        LogUtils.w("还进来》？");
+                        mAgentWeb.getJsEntraceAccess().quickCallJs("CallJS.app_js_measure", size + "");
+                    }
                 }
             }
 
