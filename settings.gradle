@@ -1,2 +1,2 @@
-include ':app', ':drawlibrary'
+include ':app'
 rootProject.name='DrawRoomSample'
