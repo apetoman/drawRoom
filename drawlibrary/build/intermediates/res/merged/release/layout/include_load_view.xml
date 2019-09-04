@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rl_av_load"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:background="#0DFFFFFF"
+        android:layout_height="match_parent"
+        android:clickable="false">
+
+        <ProgressBar
+            android:layout_centerInParent="true"
+            android:id="@+id/pb_loading"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:indeterminateDrawable="@drawable/loading_bg" />
+    </RelativeLayout>
+</layout>

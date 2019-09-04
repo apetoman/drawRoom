@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DrawLibrary</string>
+    <string name="bluetooth_equipment" translatable="false">请先链接测距仪</string>
+    <string name="ej_draw_room">智能量房</string>
+    <string name="ej_draw_room_list">量房记录</string>
+    <string name="ej_share">分享</string>
+    <string name="ej_hint">提示</string>
+    <string name="ej_construction_name">工地名称</string>
+    <string name="ej_construction_name_test_hint">提示：创建完成，您的量房绘图将保存至"量房记录"</string>
+    <string name="ej_crea_room">创建</string>
+
+</resources>

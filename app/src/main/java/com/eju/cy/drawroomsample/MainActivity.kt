@@ -8,6 +8,7 @@ import com.eju.cy.drawlibrary.activity.TestActivity
 import com.eju.cy.drawlibrary.plug.EjuDrawEventCar
 import com.eju.cy.drawlibrary.plug.EjuDrawObserver
 import kotlinx.android.synthetic.main.activity_main.*
+import java.util.HashMap
 
 class MainActivity : AppCompatActivity(), EjuDrawObserver {
 
@@ -17,7 +18,8 @@ class MainActivity : AppCompatActivity(), EjuDrawObserver {
         setContentView(R.layout.activity_main)
 
         val openUserId = "123456"//此ID为用户身份唯一标示（类似用户ID等）
-        jdd_view.a(this, supportFragmentManager, openUserId)
+        //jdd_view.a(this, supportFragmentManager, openUserId)
+        jdd_view.initJddDrawRoomView(this, supportFragmentManager, openUserId)
         EjuDrawEventCar.getDefault().register(this);
 
 
@@ -25,18 +27,21 @@ class MainActivity : AppCompatActivity(), EjuDrawObserver {
 
     override fun onResume() {
         super.onResume()
-        jdd_view.c()
+        //jdd_view.c()
+        //jdd_view.onResume()
     }
 
     override fun onPause() {
         super.onPause()
-        jdd_view.b()
+        //jdd_view.b()
+        //jdd_view.onPause()
     }
 
 
     override fun onDestroy() {
         super.onDestroy()
-        jdd_view.a()
+        //jdd_view.a()
+        //jdd_view.onDestroy()
         EjuDrawEventCar.getDefault().unregister(this);
 
 
