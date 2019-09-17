@@ -82,7 +82,7 @@ dependencies {
 
 
 
-    //implementation 'com.eju.cy.drawlibrary:drawroom:1.2.8'
-   implementation project(path: ':drawlibrary')
+    implementation 'com.eju.cy.drawlibrary:drawroom:1.2.9'
+   //implementation project(path: ':drawlibrary')
 
 }

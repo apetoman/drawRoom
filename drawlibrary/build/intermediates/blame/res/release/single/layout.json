@@ -80,6 +80,10 @@
         "source": "/Users/eju/.gradle/caches/transforms-2/files-2.1/96eaf4faac1d9a6d65c7b23a7c8bedd1/material-1.0.0/res/layout/design_navigation_item_subheader.xml"
     },
     {
+        "merged": "/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/build/intermediates/res/merged/release/layout/dialog_delete_room_layout.xml",
+        "source": "/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/res/layout/dialog_delete_room_layout.xml"
+    },
+    {
         "merged": "/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/build/intermediates/res/merged/release/layout/abc_search_dropdown_item_icons_2line.xml",
         "source": "/Users/eju/.gradle/caches/transforms-2/files-2.1/93349b457b71e1d2fb7a131a86f29a8f/appcompat-1.0.2/res/layout/abc_search_dropdown_item_icons_2line.xml"
     },

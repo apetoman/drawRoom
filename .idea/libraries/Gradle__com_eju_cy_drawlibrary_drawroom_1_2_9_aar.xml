@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.eju.cy.drawlibrary:drawroom:1.2.9@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/332819f743878c1f8beec0f9ddefa4ba/drawroom-1.2.9/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/332819f743878c1f8beec0f9ddefa4ba/drawroom-1.2.9/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/332819f743878c1f8beec0f9ddefa4ba/drawroom-1.2.9/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.eju.cy.drawlibrary/drawroom/1.2.9/2c40e893596bc3480975db22f41afc18d6fefabb/drawroom-1.2.9-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.eju.cy.drawlibrary/drawroom/1.2.9/2104de0827bb683a88a28333fd763148b21007fa/drawroom-1.2.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

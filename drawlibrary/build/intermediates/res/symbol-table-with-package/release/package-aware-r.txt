@@ -692,6 +692,7 @@ color cardview_shadow_start_color
 color color000000
 color color00000000
 color color0076FF
+color color00B6D5
 color color111111
 color color1bc4b3
 color color222222
@@ -1431,15 +1432,18 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id tv_3_img
+id tv_cancel
 id tv_community
 id tv_construction_name_hint
 id tv_create_construction
+id tv_determine
 id tv_draw_img
 id tv_ed_construction_name_hint
 id tv_id
 id tv_jilu_img
 id tv_length
 id tv_limian_img
+id tv_message
 id tv_name
 id tv_prompt
 id tv_qingdan_img
@@ -1526,6 +1530,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout dialog_crea_name_layout
+layout dialog_delete_room_layout
 layout draw_room_view_layout
 layout include_load_view
 layout item_room_data_list_layout
@@ -2173,6 +2178,8 @@ style Widget_MaterialComponents_Toolbar
 style Widget_Support_CoordinatorLayout
 style actionActivity
 style bottomSheet_animation
+style t16_c0076ff
+style view_lin_cdced2
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth
