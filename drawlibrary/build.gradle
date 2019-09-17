@@ -85,5 +85,12 @@ dependencies {
     //X5
     implementation 'com.tencent.tbs.tbssdk:sdk:43697'
     implementation files('libs/commons-codec-1.13.jar')
+
+
+//    api(rootProject.ext.dependencies["rxlifecycle2"]) {
+//        exclude module: 'rxjava'
+//        exclude module: 'jsr305'
+//    }
+
 }
 apply from: 'bintray.gradle'

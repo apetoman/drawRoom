@@ -94,8 +94,7 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
 
     private final String APP_Id = "B7V0YDWLFMXK6HPI";
     private final String COMPANY_ID = "77";
-    private final String APPPRIVATE_KEY =  "MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDbI0Odb88C28eTdNuBD1Io5UKIuk+YOvqe/RbsYhUlI8rGLamd2VnJt/eGdnyzKdi2ZGAZ06EDbtfgv2ZpI1BXxgd89vXPU9u1JzN5LjxVM7ZNy0bugT8+oW82NVsQW8JHdWKWwe6Z6L5Dwdpx7O16C7FL0E3V0iOiuFDa1UCGwuuoZZ8r9cJMhP74UzeDhUX9zKZNdFSH9K4jvylWi7oSZtaBLj2/PCrBkqYTLm9lQr1HvmqpKV7XHYjDbh5lkQZepnBQlyARJYQMparJ5TZ8jXQYAC2NAnRpEXhQr3rCCjdfakGPZiBgkudUh3WucUi4EOqWDzVPQ8QCCKCrEz5JAgMBAAECggEABRsaPTXYtfFXAhmL78LioC9PUI4+woZFRqUQ/qr+YSInXFy+Af6JeAjATLLADxCfiwhlsNRcgQ75GrR692IqQhFMJV4/tff3O45RRbaNE1MkIUXmPjJmvdfXFoVBvOzWZwHWLTsRiyaAIGYI5/SkR96z39dXqO6/g9AVmjOz0C/5bSvgnC0083tYjVMF8kBokxfOlczsBYPZiu+ZIQqkrtXvA6yCet+UMhYbXDhWcPbvVjUmKThNhY4AucCxDiqYW45DNYsyHgVePgGgzluBDkEPffdxeulMJT7jXmGj8V7uswCN+ScigEQlo737twtcChoaueGpiW/vbHkRaoHKTQKBgQDfQrLKUKEF3XGBXzgJpsYQKbAriAOYmZLzDiYtlGn5YgkuULntmaEeATZN2rCEXz2aKNenOGS1/qQlVZOgcHAgoe+lGKSx2hnSUazDwP/wnOHZ03Fl1lio5bMdgjNH33424amBFoZp0z9vP8zG29wrQZTz4nvNv/w8LYoyGCdMbwKBgQD7RctYSNYjwgM5Fb2V7R32CbHopatw6zfPEg2n/oYNjzxR6nT1N4jDtmswxLJy76jhNfSd00SeeaoglAHr9YW7959cxTULRAp6AhPB/JrvaEjmYDsMY+HHu9xS4cNlLYHDelt++G/IFoWcpaQkLBgz2bVUFZXZYG0bddt+6DhsxwKBgFD8Y9ipyM9U1aClRrGRkpU4WhRgYVWQl9KdFlJAXPS+kDABzoAW03AL5oP1SUSrO7BZEmkxNq8h8K8uTL/NKY9czo5n0w5E3EsDn5TexLimX/LhFWhoiX6y2/dfTHTM6H7F+vO9lQJ8Q616SjD0ffge8QZK6Lfo5Xl61392bYL3AoGBALLpl0hdVFxRoInc+QjvtQ2jCZJlpBTa5voCGMcta7Xr7z9EedLAoBj6oogvBgDgtJbnHC3kaE+OwZxAxr2ELJ0SS956bLKA2BTXtcnCW29sCbw/eMvxsqnNEavSJJa+OE8/qDZYHv+RScGoD5/R5cnFkl80n2YQSp/q40cRgluxAoGADBn2wRsjoE7vfirziBxb9WxL5ZQHvH1Nx3JSHKqtSsDuPQupM+lnKjbGYYI0kxa6Y0SB+7vyuax5u6pPvzcWYS2N9CCDGpCsS5B8lqKwI8mDvk9m6/g72RIq95WYJK2/fIQOv8jia2/ZnhUESNbzx9bpHGXirQGH28+uqTin/xw=";
-
+    private final String APPPRIVATE_KEY = "MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDbI0Odb88C28eTdNuBD1Io5UKIuk+YOvqe/RbsYhUlI8rGLamd2VnJt/eGdnyzKdi2ZGAZ06EDbtfgv2ZpI1BXxgd89vXPU9u1JzN5LjxVM7ZNy0bugT8+oW82NVsQW8JHdWKWwe6Z6L5Dwdpx7O16C7FL0E3V0iOiuFDa1UCGwuuoZZ8r9cJMhP74UzeDhUX9zKZNdFSH9K4jvylWi7oSZtaBLj2/PCrBkqYTLm9lQr1HvmqpKV7XHYjDbh5lkQZepnBQlyARJYQMparJ5TZ8jXQYAC2NAnRpEXhQr3rCCjdfakGPZiBgkudUh3WucUi4EOqWDzVPQ8QCCKCrEz5JAgMBAAECggEABRsaPTXYtfFXAhmL78LioC9PUI4+woZFRqUQ/qr+YSInXFy+Af6JeAjATLLADxCfiwhlsNRcgQ75GrR692IqQhFMJV4/tff3O45RRbaNE1MkIUXmPjJmvdfXFoVBvOzWZwHWLTsRiyaAIGYI5/SkR96z39dXqO6/g9AVmjOz0C/5bSvgnC0083tYjVMF8kBokxfOlczsBYPZiu+ZIQqkrtXvA6yCet+UMhYbXDhWcPbvVjUmKThNhY4AucCxDiqYW45DNYsyHgVePgGgzluBDkEPffdxeulMJT7jXmGj8V7uswCN+ScigEQlo737twtcChoaueGpiW/vbHkRaoHKTQKBgQDfQrLKUKEF3XGBXzgJpsYQKbAriAOYmZLzDiYtlGn5YgkuULntmaEeATZN2rCEXz2aKNenOGS1/qQlVZOgcHAgoe+lGKSx2hnSUazDwP/wnOHZ03Fl1lio5bMdgjNH33424amBFoZp0z9vP8zG29wrQZTz4nvNv/w8LYoyGCdMbwKBgQD7RctYSNYjwgM5Fb2V7R32CbHopatw6zfPEg2n/oYNjzxR6nT1N4jDtmswxLJy76jhNfSd00SeeaoglAHr9YW7959cxTULRAp6AhPB/JrvaEjmYDsMY+HHu9xS4cNlLYHDelt++G/IFoWcpaQkLBgz2bVUFZXZYG0bddt+6DhsxwKBgFD8Y9ipyM9U1aClRrGRkpU4WhRgYVWQl9KdFlJAXPS+kDABzoAW03AL5oP1SUSrO7BZEmkxNq8h8K8uTL/NKY9czo5n0w5E3EsDn5TexLimX/LhFWhoiX6y2/dfTHTM6H7F+vO9lQJ8Q616SjD0ffge8QZK6Lfo5Xl61392bYL3AoGBALLpl0hdVFxRoInc+QjvtQ2jCZJlpBTa5voCGMcta7Xr7z9EedLAoBj6oogvBgDgtJbnHC3kaE+OwZxAxr2ELJ0SS956bLKA2BTXtcnCW29sCbw/eMvxsqnNEavSJJa+OE8/qDZYHv+RScGoD5/R5cnFkl80n2YQSp/q40cRgluxAoGADBn2wRsjoE7vfirziBxb9WxL5ZQHvH1Nx3JSHKqtSsDuPQupM+lnKjbGYYI0kxa6Y0SB+7vyuax5u6pPvzcWYS2N9CCDGpCsS5B8lqKwI8mDvk9m6/g72RIq95WYJK2/fIQOv8jia2/ZnhUESNbzx9bpHGXirQGH28+uqTin/xw=";
 
 
     private Context mContext;
@@ -166,19 +165,13 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
      */
     public void initJddDrawRoomView(Activity activity, FragmentManager fragmentManager, String openUserId) {
 
-        Config  config = LogUtils.getConfig();
+        Config config = LogUtils.getConfig();
         config.setLogSwitch(BuildConfig.DEBUG);//false
         this.activity = activity;
         this.fragmentManager = fragmentManager;
         initWeb(activity);
         rl_av_load.setVisibility(View.VISIBLE);
         EjuDrawBleEventCar.getDefault().register(this);
-
-
-
-
-
-
 
 
         Long date = TimeUtils.getNowMills();
@@ -188,21 +181,18 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
 
         HashMap<String, String> params = new HashMap<String, String>();
         params.put("appid", APP_Id);
-        params.put("timestamp",  date+"");
+        params.put("timestamp", date + "");
         params.put("openid", openUserId);
         params.put("company_id", COMPANY_ID);
 
 
-
-
-
         try {
             String sign = jhomeSignature.rsaSign(params, APPPRIVATE_KEY, JhomeConstants.CHARSET_UTF8);
-            LogUtils.w("sign-------"+sign);
+            LogUtils.w("sign-------" + sign);
             DrawRoomInterface request = RetrofitManager.getDefault().provideClientApi(mContext);
 
 
-            request.getOpenToken(ParameterUtils.prepareFormData(APP_Id), ParameterUtils.prepareFormData(openUserId), ParameterUtils.prepareFormData(COMPANY_ID), ParameterUtils.prepareFormData( date+""), ParameterUtils.prepareFormData(sign))
+            request.getOpenToken(ParameterUtils.prepareFormData(APP_Id), ParameterUtils.prepareFormData(openUserId), ParameterUtils.prepareFormData(COMPANY_ID), ParameterUtils.prepareFormData(date + ""), ParameterUtils.prepareFormData(sign))
                     .subscribeOn(Schedulers.io())
                     .observeOn(AndroidSchedulers.mainThread())
                     .subscribe(new Observer<ResultDto<OpenYunDto>>() {
@@ -547,11 +537,13 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
 
                             if (null != saveRoomDto && "0".equals(saveRoomDto.getCode()) || "10000".equals(saveRoomDto.getCode())) {
                                 ToastUtils.showShort("保存成功");
+                                setAddOrUpdate(true);
                             } else {
                                 ToastUtils.showShort(saveRoomDto.getMsg());
                             }
 
                             rl_av_load.setVisibility(View.GONE);
+
                         }
 
                         @Override
@@ -628,11 +620,13 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
     private void backViewIsShow(Boolean isShow, String title) {
 
         if (isShow) {
+            ej_iv_more.setVisibility(View.GONE);
             ej_iv_back.setVisibility(View.VISIBLE);
             setMargins(tv_title, dpToPx(mContext, 0), 0, 0, 0);
             tv_title.setText(title);
             tv_share.setVisibility(View.GONE);
         } else {
+            ej_iv_more.setVisibility(View.VISIBLE);
             ej_iv_back.setVisibility(View.GONE);
             setMargins(tv_title, dpToPx(mContext, 21), 0, 0, 0);
             tv_title.setText("智能量房");
@@ -785,7 +779,7 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
                 if (sum > 0) {
                     double size = sum / 10000;
                     //LogUtils.w("计算结果是" + size);
-                    if ((int)size < 80000) {
+                    if ((int) size < 80000) {
                         w("还进来》？");
                         mAgentWeb.getJsEntraceAccess().quickCallJs("CallJS.app_js_measure", size + "");
                     }
@@ -833,6 +827,10 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
         }
 
         return false;
+    }
+
+    private void setAddOrUpdate(Boolean isadd) {
+        this.addOrUpdate = isadd;
     }
 
 }

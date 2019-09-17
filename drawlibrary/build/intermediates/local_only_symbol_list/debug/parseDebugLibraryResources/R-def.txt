@@ -11,6 +11,7 @@ attr? shadow_size
 color color000000
 color color00000000
 color color0076FF
+color color00B6D5
 color color111111
 color color1bc4b3
 color color222222
@@ -115,15 +116,18 @@ id rl_view
 id title
 id top
 id tv_3_img
+id tv_cancel
 id tv_community
 id tv_construction_name_hint
 id tv_create_construction
+id tv_determine
 id tv_draw_img
 id tv_ed_construction_name_hint
 id tv_id
 id tv_jilu_img
 id tv_length
 id tv_limian_img
+id tv_message
 id tv_name
 id tv_qingdan_img
 id tv_select
@@ -138,6 +142,7 @@ layout activity_my_room_data_list
 layout activity_show_ar_hu_xing
 layout activity_test
 layout dialog_crea_name_layout
+layout dialog_delete_room_layout
 layout draw_room_view_layout
 layout include_load_view
 layout item_room_data_list_layout
@@ -154,5 +159,7 @@ string ej_hint
 string ej_share
 style AppTheme
 style bottomSheet_animation
+style t16_c0076ff
+style view_lin_cdced2
 styleable BubbleLayout background_color shadow_color shadow_size radius direction offset
 xml network_security_config

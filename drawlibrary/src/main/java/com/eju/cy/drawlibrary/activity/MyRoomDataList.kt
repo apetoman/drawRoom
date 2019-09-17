@@ -9,12 +9,16 @@ import com.blankj.utilcode.util.ToastUtils
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.eju.cy.drawlibrary.R
 import com.eju.cy.drawlibrary.adapter.MyRoomDataAdapter
+import com.eju.cy.drawlibrary.bean.DelectDrawRoomDto
 import com.eju.cy.drawlibrary.bean.MyRoomData
 import com.eju.cy.drawlibrary.bean.OpenRoomDto
 import com.eju.cy.drawlibrary.bean.ResultDto
+import com.eju.cy.drawlibrary.dialog.DeleteRoomDalog
 import com.eju.cy.drawlibrary.net.RetrofitManager
+import com.eju.cy.drawlibrary.plug.DialogInterface
 import com.eju.cy.drawlibrary.plug.EjuDrawBleEventCar
 import com.eju.cy.drawlibrary.utils.GridSpacingItemDecoration
+import com.eju.cy.drawlibrary.utils.ParameterUtils
 import com.scwang.smartrefresh.layout.api.RefreshLayout
 import com.scwang.smartrefresh.layout.listener.OnLoadMoreListener
 import com.scwang.smartrefresh.layout.listener.OnRefreshListener
@@ -70,6 +74,35 @@ class MyRoomDataList : AppCompatActivity(), OnRefreshListener, OnLoadMoreListene
         }
 
 
+        adapter.onItemLongClickListener =
+            BaseQuickAdapter.OnItemLongClickListener { adapter, view, position ->
+
+
+                var deleteRoomDalog = DeleteRoomDalog(object : DialogInterface {
+                    override fun dialogCommit(msg: String?) {
+
+                        deleteRoom(dataList[position].no, position)
+
+                    }
+
+                    override fun dialogFinish(msg: String?) {
+
+                    }
+
+                    override fun dialogFinish() {
+
+
+                    }
+                }, "提示", "是否确定删除该户型？", "确定", "取消")
+
+
+                deleteRoomDalog.show(supportFragmentManager, "deleteRoomDalog")
+
+
+                true
+            }
+
+
     }
 
 
@@ -83,6 +116,46 @@ class MyRoomDataList : AppCompatActivity(), OnRefreshListener, OnLoadMoreListene
         refreshLayout.finishRefresh(2000/*,false*/);//传入false表示刷新失败
         start_index = 0
         getData(true)
+    }
+
+
+    private fun deleteRoom(no: String, position: Int) {
+
+        val obRequest = RetrofitManager.getDefault().provideClientApi(this)
+        ParameterUtils.prepareFormData(no)?.let {
+            obRequest.delectDrawingRoom(it)
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(object : Observer<DelectDrawRoomDto> {
+                    override fun onComplete() {
+
+                    }
+
+                    override fun onSubscribe(d: Disposable) {
+
+                    }
+
+                    override fun onNext(t: DelectDrawRoomDto) {
+
+
+                        if (t?.code != null && t.code == "10000") {
+                            ToastUtils.showShort("户型删除成功")
+                            dataList.removeAt(position)
+                            adapter.notifyDataSetChanged()
+                        } else {
+                            ToastUtils.showShort("户型删除失败")
+                        }
+
+
+                    }
+
+                    override fun onError(e: Throwable) {
+                        ToastUtils.showShort("户型删除失败")
+                    }
+
+                })
+        }
+
     }
 
 
@@ -153,7 +226,7 @@ class MyRoomDataList : AppCompatActivity(), OnRefreshListener, OnLoadMoreListene
                 override fun onNext(t: MyRoomData) {
 
 
-                    if (null != t && t.code == "10000" || t.code == "0" && null !=t.data && null != t.data.records && t.data.records.size > 0) {
+                    if (null != t && t.code == "10000" || t.code == "0" && null != t.data && null != t.data.records && t.data.records.size > 0) {
 
                         if (isRefresh) {
                             dataList.clear()
@@ -167,8 +240,6 @@ class MyRoomDataList : AppCompatActivity(), OnRefreshListener, OnLoadMoreListene
                     } else {
                         ToastUtils.showShort(t.msg)
                     }
-
-
 
 
                 }

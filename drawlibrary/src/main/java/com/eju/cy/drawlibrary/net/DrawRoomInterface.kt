@@ -7,6 +7,11 @@ import com.eju.cy.drawlibrary.bean.SaveRoomDto
 import io.reactivex.Observable
 import okhttp3.RequestBody
 import retrofit2.http.*
+import com.eju.cy.drawlibrary.bean.DelectDrawRoomDto
+import retrofit2.http.POST
+import retrofit2.http.Multipart
+
+
 
 
 interface DrawRoomInterface {
@@ -91,5 +96,17 @@ interface DrawRoomInterface {
         @Part("signature") signature: RequestBody
 
     ): Observable<ResultDto<OpenYunDto>>
+
+
+    /**
+     * 删除户型数据
+     *
+     * @param no 户型编号
+     * @return
+     */
+    @Multipart
+    @POST("/deco/huxing/delete/")
+    fun delectDrawingRoom(@Part("no") no: RequestBody): Observable<DelectDrawRoomDto>
+
 
 }
