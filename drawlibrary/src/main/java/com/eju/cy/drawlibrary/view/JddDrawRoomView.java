@@ -27,6 +27,7 @@ import com.eju.cy.drawlibrary.R;
 import com.eju.cy.drawlibrary.activity.EnumPortActivity;
 import com.eju.cy.drawlibrary.activity.MyRoomDataList;
 import com.eju.cy.drawlibrary.bean.DrawRoomDataDto;
+import com.eju.cy.drawlibrary.bean.IsShowBarDto;
 import com.eju.cy.drawlibrary.bean.OpenRoomDto;
 import com.eju.cy.drawlibrary.bean.OpenYunDto;
 import com.eju.cy.drawlibrary.bean.ResultDto;
@@ -620,12 +621,14 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
     private void backViewIsShow(Boolean isShow, String title) {
 
         if (isShow) {
+            EjuDrawEventCar.getDefault().post(new IsShowBarDto(false));
             ej_iv_more.setVisibility(View.GONE);
             ej_iv_back.setVisibility(View.VISIBLE);
             setMargins(tv_title, dpToPx(mContext, 0), 0, 0, 0);
             tv_title.setText(title);
             tv_share.setVisibility(View.GONE);
         } else {
+            EjuDrawEventCar.getDefault().post(new IsShowBarDto(true));
             ej_iv_more.setVisibility(View.VISIBLE);
             ej_iv_back.setVisibility(View.GONE);
             setMargins(tv_title, dpToPx(mContext, 21), 0, 0, 0);

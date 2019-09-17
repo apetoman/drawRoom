@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.eju.cy.drawlibrary.activity.TestActivity
+import com.eju.cy.drawlibrary.bean.IsShowBarDto
+import com.eju.cy.drawlibrary.bean.OpenRoomDto
 import com.eju.cy.drawlibrary.plug.EjuDrawEventCar
 import com.eju.cy.drawlibrary.plug.EjuDrawObserver
 import kotlinx.android.synthetic.main.activity_main.*
@@ -48,6 +50,25 @@ class MainActivity : AppCompatActivity(), EjuDrawObserver {
     }
 
     override fun update(p0: Any?) {
-        Log.w(localClassName, p0 as String)
+
+        p0?.let {
+
+            if (it is IsShowBarDto) {
+
+                Log.e("showBarDto", "" + it.ishow)
+                if (it.ishow) {
+                    //显示底导
+                } else {
+                    //隐藏底导
+                }
+
+
+            } else {
+                Log.e("埋点", it as String)
+
+            }
+        }
+
+
     }
 }
