@@ -91,6 +91,7 @@ drawable bg_radius4_color_ffffff
 drawable bg_radius5_color_ffffff
 drawable close_enum
 drawable ej_icon_more
+drawable ej_iv_back
 drawable eju_icon_back
 drawable loading_bg
 drawable loading_img
@@ -120,6 +121,7 @@ id tv_cancel
 id tv_community
 id tv_construction_name_hint
 id tv_create_construction
+id tv_debug
 id tv_determine
 id tv_draw_img
 id tv_ed_construction_name_hint

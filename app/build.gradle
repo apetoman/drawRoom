@@ -27,10 +27,10 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
 
-        ndk {
-            abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
-
-        }
+//        ndk {
+//            abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
+//
+//        }
     }
     signingConfigs {
         def vStoreFile = file(keyProps['storeFile'].toString())
@@ -81,8 +81,8 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
 
 
-
-    implementation 'com.eju.cy.drawlibrary:drawroom:1.3.0'
-   //implementation project(path: ':drawlibrary')
+    //implementation 'com.tencent.tbs.tbssdk:sdk:43697'
+    //implementation 'com.eju.cy.drawlibrary:drawroom:1.3.3'
+   implementation project(path: ':drawlibrary')
 
 }

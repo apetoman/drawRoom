@@ -2,27 +2,18 @@
 <project version="4">
   <component name="AndroidLayouts">
     <shared>
-      <config />
+      <config>
+        <device id="Nexus 7" />
+      </config>
     </shared>
   </component>
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="数据" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5931aa9-5db3-4732-8dab-62277d3794ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_core_1_1_0_aar2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_1_1_aar2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_1_1_aar2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_ext_junit_1_1_0_aar2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_1_1_aar2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_1_1_aar2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_2_0_1_jar2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_javawriter_2_1_1_jar2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_inject_javax_inject_1_jar2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_sf_kxml_kxml2_2_3_0_jar2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3_jar2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3_jar2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/bean/IsShowBarDto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/drawlibrary/src/main/res/drawable-xxhdpi/ej_iv_back.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -33,24 +24,51 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_eju_cy_drawlibrary_drawroom_1_2_9_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_eju_cy_drawlibrary_drawroom_1_3_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_eju_cy_drawlibrary_drawroom_1_3_0_aar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/eju/cy/drawroomsample/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/eju/cy/drawroomsample/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/typos-en.txt-2.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/androidx/core/group-index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/androidx/core/group-index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/androidx/recyclerview/group-index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/androidx/recyclerview/group-index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/master-index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/master-index.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/bintray.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/bintray.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/.transforms/60dc6e053048717a304e5394075f5659/full/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/.transforms/60dc6e053048717a304e5394075f5659/full/classes.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/blame/res/release/single/drawable-xxhdpi-v4.json" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/blame/res/release/single/drawable-xxhdpi-v4.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/compile_library_classes/debug/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/compile_library_classes/debug/classes.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/compile_library_classes/release/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/compile_library_classes/release/classes.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/R.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/compile_only_not_namespaced_r_class_jar/release/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/compile_only_not_namespaced_r_class_jar/release/R.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/full_jar/debug/createFullJarDebug/full.jar" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/full_jar/debug/createFullJarDebug/full.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/incremental/mergeReleaseResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/incremental/mergeReleaseResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/incremental/mergeReleaseResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/incremental/mergeReleaseResources/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/incremental/packageDebugAssets/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/incremental/packageDebugAssets/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/incremental/packageDebugResources/merged.dir/values/values.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/incremental/packageDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/incremental/packageDebugResources/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/incremental/packageReleaseAssets/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/incremental/packageReleaseAssets/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/incremental/packageReleaseResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/incremental/packageReleaseResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/incremental/packageReleaseResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/incremental/packageReleaseResources/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/JDHomeSdk$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/JDHomeSdk$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/JDHomeSdk.class" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/JDHomeSdk.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/activity/ShowArHuXingActivity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/activity/ShowArHuXingActivity$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/activity/ShowArHuXingActivity$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/activity/ShowArHuXingActivity$2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/activity/ShowArHuXingActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/activity/ShowArHuXingActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/bluetooth/ACSUtility$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/bluetooth/ACSUtility$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/bluetooth/ACSUtility$myThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/bluetooth/ACSUtility$myThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/bluetooth/ACSUtility.class" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/bluetooth/ACSUtility.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/bluetooth/ACSUtilityService$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/bluetooth/ACSUtilityService$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/bluetooth/ACSUtilityService$TimerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/bluetooth/ACSUtilityService$TimerThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/bluetooth/ACSUtilityService$WorkerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/bluetooth/ACSUtilityService$WorkerThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/bluetooth/ACSUtilityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/bluetooth/ACSUtilityService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/net/RetrofitManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/net/RetrofitManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/plug/BleObservableStatistics.class" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/plug/BleObservableStatistics.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/plug/ConcreteObservableStatistics.class" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/plug/ConcreteObservableStatistics.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/plug/EjuDrawBleEventCar.class" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/plug/EjuDrawBleEventCar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/plug/EjuDrawEventCar.class" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/plug/EjuDrawEventCar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/utils/JsonUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/utils/JsonUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/utils/SharedPreferencesUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/utils/SharedPreferencesUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/view/JddDrawRoomView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/view/JddDrawRoomView$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/view/JddDrawRoomView$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/view/JddDrawRoomView$10.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/view/JddDrawRoomView$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/debug/classes/com/eju/cy/drawlibrary/view/JddDrawRoomView$11.class" afterDir="false" />
@@ -81,20 +99,41 @@
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/release/classes/com/eju/cy/drawlibrary/view/JddDrawRoomView$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/release/classes/com/eju/cy/drawlibrary/view/JddDrawRoomView$8.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/release/classes/com/eju/cy/drawlibrary/view/JddDrawRoomView$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/release/classes/com/eju/cy/drawlibrary/view/JddDrawRoomView$9.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/release/classes/com/eju/cy/drawlibrary/view/JddDrawRoomView.class" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/javac/release/classes/com/eju/cy/drawlibrary/view/JddDrawRoomView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/library_assets/debug/out/huxingmobile/assets/view/toolbar/ruler_down_3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/library_assets/debug/out/huxingmobile/assets/view/toolbar/ruler_down_3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/library_assets/debug/out/huxingmobile/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/library_assets/debug/out/huxingmobile/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/library_assets/debug/out/huxingmobile/inline.5944e39d4d6c8e94f243.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/library_assets/debug/out/huxingmobile/main.6f8ab2ac909d56178ba8.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/library_assets/debug/out/huxingmobile/scripts.a9250beac713d9d0baa8.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/library_assets/release/out/huxingmobile/assets/view/toolbar/ruler_down_3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/library_assets/release/out/huxingmobile/assets/view/toolbar/ruler_down_3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/library_assets/release/out/huxingmobile/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/library_assets/release/out/huxingmobile/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/library_assets/release/out/huxingmobile/inline.5944e39d4d6c8e94f243.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/library_assets/release/out/huxingmobile/main.6f8ab2ac909d56178ba8.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/library_assets/release/out/huxingmobile/scripts.a9250beac713d9d0baa8.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/local_only_symbol_list/debug/parseDebugLibraryResources/R-def.txt" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/local_only_symbol_list/debug/parseDebugLibraryResources/R-def.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/local_only_symbol_list/release/parseReleaseLibraryResources/R-def.txt" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/local_only_symbol_list/release/parseReleaseLibraryResources/R-def.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/merged_java_res/debug/out.jar" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/merged_java_res/debug/out.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/merged_java_res/release/out.jar" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/merged_java_res/release/out.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/packaged-classes/debug/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/packaged-classes/debug/classes.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/packaged-classes/release/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/packaged-classes/release/classes.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/packaged_res/debug/layout/activity_my_room_data_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/packaged_res/debug/layout/activity_my_room_data_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/packaged_res/debug/layout/dialog_delete_room_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/packaged_res/debug/layout/dialog_delete_room_layout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/packaged_res/debug/layout/draw_room_view_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/packaged_res/debug/layout/draw_room_view_layout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/packaged_res/release/layout/activity_my_room_data_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/packaged_res/release/layout/activity_my_room_data_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/packaged_res/release/layout/draw_room_view_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/packaged_res/release/layout/draw_room_view_layout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/res/compiled/release/layout_activity_my_room_data_list.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/res/compiled/release/layout_activity_my_room_data_list.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/res/compiled/release/layout_draw_room_view_layout.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/res/compiled/release/layout_draw_room_view_layout.xml.flat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/res/merged/release/layout/activity_my_room_data_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/res/merged/release/layout/activity_my_room_data_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/res/merged/release/layout/draw_room_view_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/res/merged/release/layout/draw_room_view_layout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/res/symbol-table-with-package/debug/package-aware-r.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/res/symbol-table-with-package/release/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/res/symbol-table-with-package/release/package-aware-r.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/runtime_library_classes/debug/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/runtime_library_classes/debug/classes.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/runtime_library_classes/release/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/runtime_library_classes/release/classes.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/symbols/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/symbols/debug/R.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/symbols/release/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/symbols/release/R.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/intermediates/transforms/r8/release/0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/intermediates/transforms/r8/release/0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/build-history.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/inputs/source-to-output.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len" afterDir="false" />
@@ -102,31 +141,36 @@
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/java-sources-proto-map.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/proto.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/subtypes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/subtypes.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/subtypes.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/subtypes.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/subtypes.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/subtypes.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/subtypes.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/subtypes.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/subtypes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/subtypes.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/subtypes.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/subtypes.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/supertypes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/supertypes.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/supertypes.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/supertypes.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/supertypes.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/supertypes.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/supertypes.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/supertypes.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/supertypes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/supertypes.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/supertypes.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/jvm/kotlin/supertypes.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/lookups/counters.tab" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/lookups/counters.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/lookups/file-to-id.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/lookups/id-to-file.tab" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/lookups/id-to-file.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/lookups/id-to-file.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/lookups/id-to-file.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/lookups/id-to-file.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/lookups/id-to-file.tab.keystream.len" afterDir="false" />
@@ -134,65 +178,11 @@
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/lookups/id-to-file.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/lookups/id-to-file.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/lookups/id-to-file.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/lookups/id-to-file.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/lookups/lookups.tab" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/lookups/lookups.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/lookups/lookups.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/lookups/lookups.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/lookups/lookups.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/lookups/lookups.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/lookups/lookups.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/lookups/lookups.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/lookups/lookups.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/lookups/lookups.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/lookups/lookups.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/caches-jvm/lookups/lookups.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugKotlin/last-build.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugUnitTestKotlin/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugUnitTestKotlin/build-history.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugUnitTestKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileDebugUnitTestKotlin/last-build.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/build-history.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/inputs/source-to-output.tab" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/inputs/source-to-output.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/inputs/source-to-output.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/inputs/source-to-output.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/inputs/source-to-output.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/inputs/source-to-output.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/inputs/source-to-output.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/inputs/source-to-output.tab.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/inputs/source-to-output.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/inputs/source-to-output.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/inputs/source-to-output.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/inputs/source-to-output.tab_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/proto.tab" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/proto.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/proto.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/proto.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/proto.tab.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/proto.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/proto.tab_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/supertypes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/jvm/kotlin/supertypes.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/lookups/counters.tab" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/lookups/counters.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/lookups/file-to-id.tab" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/lookups/file-to-id.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/lookups/file-to-id.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/lookups/file-to-id.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/lookups/file-to-id.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/lookups/file-to-id.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/lookups/file-to-id.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/lookups/file-to-id.tab.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/lookups/file-to-id.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/lookups/file-to-id.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/lookups/file-to-id.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/lookups/file-to-id.tab_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/lookups/id-to-file.tab" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/lookups/id-to-file.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/lookups/id-to-file.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/lookups/id-to-file.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/lookups/id-to-file.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/lookups/id-to-file.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/lookups/id-to-file.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/lookups/id-to-file.tab.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/lookups/id-to-file.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/lookups/id-to-file.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/lookups/id-to-file.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/lookups/id-to-file.tab_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/lookups/lookups.tab" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/lookups/lookups.tab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/lookups/lookups.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/lookups/lookups.tab.keystream" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/lookups/lookups.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/lookups/lookups.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/lookups/lookups.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/lookups/lookups.tab.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/lookups/lookups.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/lookups/lookups.tab.values.at" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/lookups/lookups.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/caches-jvm/lookups/lookups.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseKotlin/last-build.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseUnitTestKotlin/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseUnitTestKotlin/build-history.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseUnitTestKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/kotlin/compileReleaseUnitTestKotlin/last-build.bin" afterDir="false" />
@@ -200,6 +190,7 @@
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/libs/drawlibrary-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/libs/drawlibrary-sources.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/outputs/aar/drawlibrary-debug.aar" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/outputs/aar/drawlibrary-debug.aar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/outputs/aar/drawlibrary-release.aar" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/outputs/aar/drawlibrary-release.aar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/build/outputs/mapping/release/mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/outputs/mapping/release/mapping.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/publications/release/pom-default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/publications/release/pom-default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/reports/lint-results.html" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/reports/lint-results.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/reports/lint-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/reports/lint-results.xml" afterDir="false" />
@@ -213,9 +204,135 @@
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/test-results/testDebugUnitTest/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/test-results/testDebugUnitTest/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/test-results/testReleaseUnitTest/TEST-com.eju.cy.drawlibrary.ExampleUnitTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/test-results/testReleaseUnitTest/TEST-com.eju.cy.drawlibrary.ExampleUnitTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/build/test-results/testReleaseUnitTest/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/test-results/testReleaseUnitTest/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/build/tmp/javadoc/javadoc.options" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/build/tmp/javadoc/javadoc.options" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drawlibrary/drawlibrary.iml" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/drawlibrary.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/3rdpartylicenses.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/alert/warning_2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/alert/warning_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/checkbox/selected_2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/checkbox/selected_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/checkbox/unselected_2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/checkbox/unselected_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/delete_2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/delete_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/hole_2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/hole_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/name_2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/name_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/new_arc_up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/new_bottom_up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/new_clear_up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/new_copy_up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/new_copymaterial_up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/new_detail_up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/new_floortool_up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/new_hide_up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/new_hole_up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/new_myfavorate_up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/new_replace_up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/new_rotate_up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/new_show_up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/new_split_up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/new_top_up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/new_turn_up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/rotate_2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/rotate_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/split_2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/operator/split_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/radiobutton/selected_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/radiobutton/unenabled_selected_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/radiobutton/unenabled_unselected_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/radiobutton/unselected_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/virtualboard/confirm_up_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/components/virtualboard/remove_up_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/2d/images/1b8d12a87b5b11e7b85900163e0e72dc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/2d/images/1f287cbe7b5011e7a4d800163e0e72dc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/2d/images/2bd03eca7b5011e7b85900163e0e72dc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/2d/images/6f91458ec39711e7a11f00163e0e72dc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/2d/images/c9a0d5a27b4f11e7b85900163e0e72dc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/2d/images/f5119aaa7b4f11e7a4d800163e0e72dc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/3d/models/01ca25266d1a11e7b62200163e0e72dc/top.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/3d/models/223e41266d1e11e79f8200163e0e72dc/top.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/3d/models/223e41266d1e11e79f8200163e0e72dc/top2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/3d/models/292827e66d1811e79f8200163e0e72dc/item.hljm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/3d/models/292827e66d1811e79f8200163e0e72dc/top.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/3d/models/3621f4d66d2711e79f8200163e0e72dc/item.hljm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/3d/models/3621f4d66d2711e79f8200163e0e72dc/top.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/3d/models/4c6f640a6d1611e79f8200163e0e72dc/item.hljm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/3d/models/4c6f640a6d1611e79f8200163e0e72dc/maps/image_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/3d/models/4c6f640a6d1611e79f8200163e0e72dc/top.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/3d/models/8cd725966d1611e79f8200163e0e72dc/item.hljm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/3d/models/8cd725966d1611e79f8200163e0e72dc/top.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/3d/models/bf954ad06d1611e7b62200163e0e72dc/item.hljm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/3d/models/bf954ad06d1611e7b62200163e0e72dc/top.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/3d/models/c9c9418c6d1b11e79f8200163e0e72dc/top.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/3d/models/f2c36fc26d1b11e7b62200163e0e72dc/item.hljm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/local/3d/models/f2c36fc26d1b11e7b62200163e0e72dc/top.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/option/back_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/option/right_arrow_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/settingbars/close_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/add_note_2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/add_note_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/add_struct_2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/add_struct_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/door_common_2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/door_common_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/door_double_2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/door_double_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/door_sliding_2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/door_sliding_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/struct_flue_2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/struct_flue_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/struct_pillar_2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/struct_pillar_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/window_bay_2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/window_bay_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/window_common_2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/window_common_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/window_french_2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/struct/window_french_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/2d_up_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/3d_up_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/add_note_udown_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/add_note_up_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/add_struct_down_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/add_struct_up_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/arrow_over.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/arrow_up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/beauty_down_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/beauty_up_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/center_down_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/center_up_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/clear_down_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/clear_up_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/draw_room_down_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/draw_room_up_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/draw_wall_down_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/draw_wall_up_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/edit_area_icon_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/more_up_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/option_up_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/redo_up_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/ruler_down_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/ruler_up_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/save_up_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/toolbar/undo_up_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/windows/areaeditorwindow/clear_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/windows/areaeditorwindow/close_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/view/windows/facadewindow/close_3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/worker/ByteArray.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/worker/ChildWorker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/assets/worker/ParserItem3D.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/inline.5944e39d4d6c8e94f243.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/main.6f8ab2ac909d56178ba8.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/polyfills.f6c511b24804b9b916b7.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/scripts.a9250beac713d9d0baa8.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/styles.745beb09f043c235597f.bundle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/assets/huxingmobile/vendor.3b3aa8cca6020b441148.bundle.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/view/JddDrawRoomView.java" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/view/JddDrawRoomView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/res/layout/activity_my_room_data_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/src/main/res/layout/activity_my_room_data_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/res/layout/dialog_delete_room_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/src/main/res/layout/dialog_delete_room_layout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/drawlibrary/src/main/res/layout/draw_room_view_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/drawlibrary/src/main/res/layout/draw_room_view_layout.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -239,13 +356,37 @@
       </state>
     </system>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="DrawRoomSample" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/drawlibrary/build.gradle">
+        <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1015">
-              <caret line="78" column="19" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
+            <state relative-caret-position="1275">
+              <caret line="85" column="47" selection-start-line="85" selection-start-column="47" selection-end-line="85" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#99#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/activity/MyRoomDataList.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="161" column="16" selection-start-line="161" selection-start-column="16" selection-end-line="161" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -253,80 +394,74 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/view/JddDrawRoomView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="617" column="5" selection-start-line="617" selection-start-column="5" selection-end-line="617" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/bean/IsShowBarDto.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="631">
-              <caret line="84" column="58" lean-forward="true" selection-start-line="84" selection-start-column="3" selection-end-line="84" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/eju/cy/drawroomsample/MainActivity.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="61" column="26" lean-forward="true" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/bean/OpenRoomDto.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/app/Activity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="5956" column="18" selection-start-line="5956" selection-start-column="18" selection-end-line="5956" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/drawlibrary/drawlibrary.iml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/plug/EjuDrawEventCar.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+            <state relative-caret-position="117">
+              <caret line="777" column="56" selection-start-line="777" selection-start-column="56" selection-end-line="777" selection-end-column="56" />
               <folding>
-                <element signature="e#899#900#0" expanded="true" />
-                <element signature="e#947#948#0" expanded="true" />
+                <element signature="e#14457#14767#0" expanded="true" />
+                <element signature="e#14766#14767#0" expanded="true" />
+                <element signature="e#29940#32523#0" expanded="true" />
+                <element signature="e#30621#32357#0" expanded="true" />
+                <element signature="e#32356#32357#0" expanded="true" />
+                <element signature="e#32522#32523#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/webkit/ValueCallback.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/res/values/colors.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="729">
+              <caret line="54" column="29" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/dialog/DeleteRoomDalog.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="598">
+              <caret line="75" column="37" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="44" />
+              <folding>
+                <element signature="e#39#426#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/plug/DialogInterface.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/res/layout/dialog_delete_room_layout.xml">
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="565">
+              <caret line="68" column="54" selection-start-line="68" selection-start-column="54" selection-end-line="68" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/drawlibrary/bintray.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+            <state relative-caret-position="75">
+              <caret line="5" column="124" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="124" />
             </state>
           </provider>
         </entry>
@@ -346,6 +481,15 @@
       <find>addOrUpdate</find>
       <find>subscribeOn</find>
       <find>backViewIsShow</find>
+      <find>file:///android_asset/huxin</find>
+      <find>loadUrl</find>
+      <find>tv_title</find>
+      <find>tv_debug</find>
+      <find>getJsEntraceAccess</find>
+      <find>mAgentWeb.getJsEntraceAccess().quickCallJs</find>
+      <find>DeleteRoomDalog</find>
+      <find>#3D4DE6</find>
+      <find>openDrawRoom</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -358,21 +502,24 @@
         <option value="$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/net/DrawRoomInterface.kt" />
         <option value="$PROJECT_DIR$/drawlibrary/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/drawlibrary/src/main/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/drawlibrary/src/main/res/layout/dialog_delete_room_layout.xml" />
         <option value="$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/dialog/DeleteRoomDalog.kt" />
         <option value="$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/activity/MyRoomDataList.kt" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/bean/IsShowBarDto.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/eju/cy/drawroomsample/MainActivity.kt" />
+        <option value="$PROJECT_DIR$/drawlibrary/build.gradle" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/drawlibrary/src/main/res/layout/activity_my_room_data_list.xml" />
+        <option value="$PROJECT_DIR$/drawlibrary/src/main/res/layout/draw_room_view_layout.xml" />
+        <option value="$PROJECT_DIR$/drawlibrary/src/main/res/layout/dialog_delete_room_layout.xml" />
         <option value="$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/view/JddDrawRoomView.java" />
         <option value="$PROJECT_DIR$/drawlibrary/bintray.gradle" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/eju/cy/drawroomsample/MainActivity.kt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1387" />
-    <option name="y" value="-13" />
+    <option name="x" value="1389" />
+    <option name="y" value="-24" />
     <option name="width" value="1617" />
     <option name="height" value="947" />
   </component>
@@ -381,9 +528,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -450,6 +597,14 @@
               <item name="drawlibrary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DrawRoomSample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DrawRoomSample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="drawlibrary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -460,6 +615,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="drawlibrary" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DrawRoomSample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DrawRoomSample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="drawlibrary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="drawlibrary" type="462c0819:PsiDirectoryNode" />
+              <item name="activity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DrawRoomSample" type="b2602c69:ProjectViewProjectNode" />
@@ -479,7 +644,34 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="drawlibrary" type="462c0819:PsiDirectoryNode" />
+              <item name="dialog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DrawRoomSample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DrawRoomSample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="drawlibrary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="drawlibrary" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DrawRoomSample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DrawRoomSample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="drawlibrary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DrawRoomSample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DrawRoomSample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="drawlibrary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="drawable-xxhdpi" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -489,23 +681,24 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="CLB0218908001351" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2019-09-17T04:33:14.920Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2019-10-12T05:56:01.103Z" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/drawlibrary/src/main/res/layout" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/drawlibrary/src/main/res/drawable-xxhdpi" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/drawlibrary/src/main/assets" />
-    </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
       <recent name="com.eju.cy.drawlibrary.dialog" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/drawlibrary/src/main/res/drawable-xxhdpi" />
       <recent name="$PROJECT_DIR$/drawlibrary/src/main/res/layout" />
       <recent name="$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/bean" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/drawlibrary/src/main/assets" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -615,27 +808,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1387" y="-13" width="1617" height="947" extended-state="0" />
-    <editor active="true" />
+    <frame x="1389" y="-24" width="1617" height="947" extended-state="0" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49941522" weight="0.3295238" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49824563" weight="0.39238095" />
       <window_info id="Structure" order="2" side_tool="true" />
-      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Favorites" order="3" sideWeight="0.5017544" side_tool="true" weight="0.3295238" />
       <window_info id="Build Variants" order="4" sideWeight="0.5005848" side_tool="true" weight="0.3295238" />
       <window_info id="Image Layers" order="5" />
       <window_info id="Designer" order="6" />
       <window_info id="Resources Explorer" order="7" />
       <window_info id="Capture Tool" order="8" />
-      <window_info anchor="bottom" id="Run" order="0" weight="0.32982457" />
-      <window_info anchor="bottom" id="Logcat" order="1" weight="0.6105263" />
-      <window_info anchor="bottom" id="TODO" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="4" weight="0.32982457" />
-      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.32982457" />
-      <window_info anchor="bottom" id="Android Profiler" order="8" />
+      <window_info anchor="bottom" id="Find" order="0" weight="0.32982457" />
+      <window_info anchor="bottom" id="Run" order="1" weight="0.32982457" />
+      <window_info anchor="bottom" id="Logcat" order="2" weight="0.4093567" />
+      <window_info anchor="bottom" id="TODO" order="3" />
+      <window_info anchor="bottom" id="Debug" order="4" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="5" visible="true" weight="0.44678363" />
+      <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32982457" />
+      <window_info anchor="bottom" id="Build" order="8" weight="0.32970297" />
+      <window_info anchor="bottom" id="Android Profiler" order="9" />
       <window_info anchor="right" id="Preview" order="0" weight="0.3295238" />
       <window_info anchor="right" id="Viewer" order="1" side_tool="true" />
       <window_info anchor="right" id="Device File Explorer" order="2" side_tool="true" />
@@ -646,23 +839,24 @@
     </layout>
     <layout-to-restore>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49941522" weight="0.3295238" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49824563" visible="true" weight="0.39238095" />
       <window_info id="Structure" order="2" side_tool="true" />
-      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Favorites" order="3" sideWeight="0.5017544" side_tool="true" weight="0.3295238" />
       <window_info id="Build Variants" order="4" sideWeight="0.5005848" side_tool="true" weight="0.3295238" />
       <window_info id="Image Layers" order="5" />
       <window_info id="Designer" order="6" />
       <window_info id="Resources Explorer" order="7" />
       <window_info id="Capture Tool" order="8" />
-      <window_info anchor="bottom" id="Run" order="0" weight="0.32982457" />
-      <window_info active="true" anchor="bottom" id="Logcat" order="1" visible="true" weight="0.6105263" />
-      <window_info anchor="bottom" id="TODO" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="4" weight="0.32982457" />
-      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.32982457" />
-      <window_info anchor="bottom" id="Android Profiler" order="8" />
+      <window_info anchor="bottom" id="Find" order="0" weight="0.32982457" />
+      <window_info anchor="bottom" id="Run" order="1" weight="0.32982457" />
+      <window_info anchor="bottom" id="Logcat" order="2" weight="0.4093567" />
+      <window_info anchor="bottom" id="TODO" order="3" />
+      <window_info anchor="bottom" id="Debug" order="4" />
+      <window_info anchor="bottom" id="Terminal" order="5" weight="0.44678363" />
+      <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32982457" />
+      <window_info anchor="bottom" id="Build" order="8" weight="0.32970297" />
+      <window_info anchor="bottom" id="Android Profiler" order="9" />
       <window_info anchor="right" id="Preview" order="0" weight="0.3295238" />
       <window_info anchor="right" id="Viewer" order="1" side_tool="true" />
       <window_info anchor="right" id="Device File Explorer" order="2" side_tool="true" />
@@ -695,12 +889,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/res/layout/dialog_crea_name_layout.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="61" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="61" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -709,44 +903,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="78" column="45" selection-start-line="78" selection-start-column="45" selection-end-line="78" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/res/layout/dialog_delete_room_layout.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="53" column="28" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/dialog/CreateConstructionNameDalog.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-182">
           <caret line="11" column="68" selection-start-line="11" selection-start-column="68" selection-end-line="11" selection-end-column="68" />
           <folding>
             <element signature="e#39#465#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/plug/DialogInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/dialog/DeleteRoomDalog.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
-          <folding>
-            <element signature="e#39#426#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -783,32 +945,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/eju/cy/drawroomsample/IApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#99#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.gradle">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/activity/MyRoomDataList.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/net/DrawRoomInterface.kt">
       <provider selected="true" editor-type-id="text-editor">
@@ -817,24 +955,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/332819f743878c1f8beec0f9ddefa4ba/drawroom-1.2.9/jars/classes.jar!/com/eju/cy/drawlibrary/view/JddDrawRoomView.class">
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/332819f743878c1f8beec0f9ddefa4ba/drawroom-1.2.9/jars/classes.jar!/com/eju/cy/drawlibrary/view/JddDrawRoomView.class" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drawlibrary/drawlibrary.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/bean/IsShowBarDto.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="332" column="16" selection-start-line="332" selection-start-column="16" selection-end-line="332" selection-end-column="16" />
-          <folding>
-            <element signature="e#13988#13989#0" expanded="true" />
-            <element signature="e#14039#14040#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="30">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/eju/cy/drawroomsample/MainActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/eju/cy/drawroomsample/IApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/bean/OpenRoomDto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/app/Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85815">
+          <caret line="5956" column="18" selection-start-line="5956" selection-start-column="18" selection-end-line="5956" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -849,55 +1008,203 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/drawlibrary/drawlibrary.iml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/JDHomeSdk.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+          <folding>
+            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/proguard-rules.pro">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drawlibrary/proguard-rules.pro">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/bean/IsShowBarDto.kt">
+    <entry file="file://$PROJECT_DIR$/app/app.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/activity/ShowArHuXingActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        <state relative-caret-position="60">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/app/Activity.java">
+    <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/activity/DrawRoomActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="5956" column="18" selection-start-line="5956" selection-start-column="18" selection-end-line="5956" selection-end-column="18" />
+        <state relative-caret-position="254">
+          <caret line="32" column="39" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/view/JddDrawRoomView.java">
+    <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/res/layout/activity_draw_room.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/activity/TestActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="617" column="5" selection-start-line="617" selection-start-column="5" selection-end-line="617" selection-end-column="5" />
+        <state relative-caret-position="60">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/drawlibrary/bintray.gradle">
+    <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/res/layout/activity_enum_port.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+        <state relative-caret-position="315">
+          <caret line="21" column="45" lean-forward="true" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/activity/EnumPortActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="39" column="41" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/res/drawable-xxhdpi/ej_iv_back.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/drawlibrary/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1015">
-          <caret line="78" column="19" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
+        <state relative-caret-position="466">
+          <caret line="81" column="26" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/res/drawable-xxhdpi/eju_icon_back.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/res/layout/draw_room_view_layout.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-262">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/webkit/ValueCallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.just.agentwebX5/agentwebX5/2.0.0/a0b790ed3461a3ea4f43e557d1f62acb39c89f52/agentwebX5-2.0.0-sources.jar!/com/just/agentwebX5/QuickCallJs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="631">
-          <caret line="84" column="58" lean-forward="true" selection-start-line="84" selection-start-column="3" selection-end-line="84" selection-end-column="58" />
+        <state relative-caret-position="1275">
+          <caret line="85" column="47" selection-start-line="85" selection-start-column="47" selection-end-line="85" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/eju/cy/drawroomsample/MainActivity.kt">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="61" column="26" lean-forward="true" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
+        <state relative-caret-position="330">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#99#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/activity/MyRoomDataList.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="161" column="16" selection-start-line="161" selection-start-column="16" selection-end-line="161" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="729">
+          <caret line="54" column="29" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/res/layout/activity_my_room_data_list.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/res/layout/dialog_delete_room_layout.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="68" column="54" selection-start-line="68" selection-start-column="54" selection-end-line="68" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/plug/DialogInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/dialog/DeleteRoomDalog.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="75" column="37" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="44" />
+          <folding>
+            <element signature="e#39#426#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drawlibrary/src/main/java/com/eju/cy/drawlibrary/view/JddDrawRoomView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="777" column="56" selection-start-line="777" selection-start-column="56" selection-end-line="777" selection-end-column="56" />
+          <folding>
+            <element signature="e#14457#14767#0" expanded="true" />
+            <element signature="e#14766#14767#0" expanded="true" />
+            <element signature="e#29940#32523#0" expanded="true" />
+            <element signature="e#30621#32357#0" expanded="true" />
+            <element signature="e#32356#32357#0" expanded="true" />
+            <element signature="e#32522#32523#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/drawlibrary/bintray.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="124" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="124" />
         </state>
       </provider>
     </entry>

@@ -16,9 +16,9 @@
             android:id="@+id/ej_iv_back"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:paddingLeft="21dp"
-            android:paddingRight="10dp"
-            android:src="@drawable/eju_icon_back"
+            android:paddingLeft="10dp"
+
+            android:src="@drawable/ej_iv_back"
             android:visibility="gone" />
 
         <TextView
@@ -47,8 +47,6 @@
     </RelativeLayout>
 
 
-
-
     <RelativeLayout
         android:id="@+id/rl_view"
         android:layout_width="match_parent"
@@ -74,23 +72,32 @@
         android:textSize="14sp" />
 
 
-    <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/rl_av_load"
-        android:visibility="gone"
         android:layout_width="match_parent"
-        android:background="#0DFFFFFF"
         android:layout_height="match_parent"
-        android:clickable="false">
+        android:background="#0DFFFFFF"
+        android:clickable="false"
+        android:visibility="gone">
 
 
         <ProgressBar
-            android:layout_centerInParent="true"
             android:id="@+id/pb_loading"
             android:layout_width="40dp"
             android:layout_height="40dp"
+            android:layout_centerInParent="true"
             android:indeterminateDrawable="@drawable/loading_bg" />
     </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_debug"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_title"
+        android:background="@color/colorffffff"
+        android:textColor="@color/color333333"
+        android:visibility="gone" />
 
 
 </RelativeLayout>

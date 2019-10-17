@@ -20,8 +20,8 @@ class MainActivity : AppCompatActivity(), EjuDrawObserver {
         setContentView(R.layout.activity_main)
 
         val openUserId = "123456"//此ID为用户身份唯一标示（类似用户ID等）
-        jdd_view.a(this, supportFragmentManager, openUserId)
-        //jdd_view.initJddDrawRoomView(this, supportFragmentManager, openUserId)
+       // jdd_view.a(this, supportFragmentManager, openUserId)
+        jdd_view.initJddDrawRoomView(this, supportFragmentManager, openUserId)
         EjuDrawEventCar.getDefault().register(this);
 
 

@@ -1188,6 +1188,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable ej_icon_more
+drawable ej_iv_back
 drawable eju_icon_back
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
@@ -1436,6 +1437,7 @@ id tv_cancel
 id tv_community
 id tv_construction_name_hint
 id tv_create_construction
+id tv_debug
 id tv_determine
 id tv_draw_img
 id tv_ed_construction_name_hint

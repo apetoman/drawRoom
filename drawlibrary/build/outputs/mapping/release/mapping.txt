@@ -1,6 +1,6 @@
 # compiler: R8
 # compiler_version: 1.5.59
-# pg_map_id: aa7b2ca
+# pg_map_id: 7137642
 com.eju.cy.drawlibrary.JDHomeSdk$1 -> com.eju.cy.drawlibrary.JDHomeSdk$a:
 com.eju.cy.drawlibrary.activity.EnumPortActivity -> com.eju.cy.drawlibrary.activity.EnumPortActivity:
     com.eju.cy.drawlibrary.bluetooth.ACSUtility$IACSUtilityCallback userCallback -> f
@@ -447,12 +447,12 @@ com.eju.cy.drawlibrary.pop.MorePopup -> a.a.a.a.f.b:
     android.widget.TextView tv_jilu_img -> d
     1:1:void com.eju.cy.drawlibrary.view.JddDrawRoomView$10.popDraw():0:0 -> onClick
     1:1:void onClick(android.view.View):0 -> onClick
-    2:2:com.just.agentwebX5.AgentWebX5 com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1100(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> onClick
+    2:2:com.just.agentwebX5.AgentWebX5 com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1300(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> onClick
     2:2:void com.eju.cy.drawlibrary.view.JddDrawRoomView$10.popDraw():0 -> onClick
     2:2:void onClick(android.view.View):0 -> onClick
     3:3:void com.eju.cy.drawlibrary.view.JddDrawRoomView$10.popDraw():0:0 -> onClick
     3:3:void onClick(android.view.View):0 -> onClick
-    4:4:void com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1200(com.eju.cy.drawlibrary.view.JddDrawRoomView,java.lang.Boolean,java.lang.String):0:0 -> onClick
+    4:4:void com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1400(com.eju.cy.drawlibrary.view.JddDrawRoomView,java.lang.Boolean,java.lang.String):0:0 -> onClick
     4:4:void com.eju.cy.drawlibrary.view.JddDrawRoomView$10.popDraw():0 -> onClick
     4:4:void onClick(android.view.View):0 -> onClick
     5:5:void com.eju.cy.drawlibrary.view.JddDrawRoomView$10.popDraw():0:0 -> onClick
@@ -460,12 +460,12 @@ com.eju.cy.drawlibrary.pop.MorePopup -> a.a.a.a.f.b:
     6:6:void onClick(android.view.View):0:0 -> onClick
     7:7:void com.eju.cy.drawlibrary.view.JddDrawRoomView$10.popFacade():0:0 -> onClick
     7:7:void onClick(android.view.View):0 -> onClick
-    8:8:com.just.agentwebX5.AgentWebX5 com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1100(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> onClick
+    8:8:com.just.agentwebX5.AgentWebX5 com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1300(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> onClick
     8:8:void com.eju.cy.drawlibrary.view.JddDrawRoomView$10.popFacade():0 -> onClick
     8:8:void onClick(android.view.View):0 -> onClick
     9:9:void com.eju.cy.drawlibrary.view.JddDrawRoomView$10.popFacade():0:0 -> onClick
     9:9:void onClick(android.view.View):0 -> onClick
-    10:10:void com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1200(com.eju.cy.drawlibrary.view.JddDrawRoomView,java.lang.Boolean,java.lang.String):0:0 -> onClick
+    10:10:void com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1400(com.eju.cy.drawlibrary.view.JddDrawRoomView,java.lang.Boolean,java.lang.String):0:0 -> onClick
     10:10:void com.eju.cy.drawlibrary.view.JddDrawRoomView$10.popFacade():0 -> onClick
     10:10:void onClick(android.view.View):0 -> onClick
     11:11:void com.eju.cy.drawlibrary.view.JddDrawRoomView$10.popFacade():0:0 -> onClick
@@ -473,33 +473,32 @@ com.eju.cy.drawlibrary.pop.MorePopup -> a.a.a.a.f.b:
     12:12:void onClick(android.view.View):0:0 -> onClick
     13:13:void com.eju.cy.drawlibrary.view.JddDrawRoomView$10.pop3D():0:0 -> onClick
     13:13:void onClick(android.view.View):0 -> onClick
-    14:14:com.just.agentwebX5.AgentWebX5 com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1100(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> onClick
+    14:14:com.just.agentwebX5.AgentWebX5 com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1300(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> onClick
     14:14:void com.eju.cy.drawlibrary.view.JddDrawRoomView$10.pop3D():0 -> onClick
     14:14:void onClick(android.view.View):0 -> onClick
     15:15:void com.eju.cy.drawlibrary.view.JddDrawRoomView$10.pop3D():0:0 -> onClick
     15:15:void onClick(android.view.View):0 -> onClick
-    16:16:void com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1200(com.eju.cy.drawlibrary.view.JddDrawRoomView,java.lang.Boolean,java.lang.String):0:0 -> onClick
-    16:16:void com.eju.cy.drawlibrary.view.JddDrawRoomView$10.pop3D():0 -> onClick
-    16:16:void onClick(android.view.View):0 -> onClick
-    17:17:void com.eju.cy.drawlibrary.view.JddDrawRoomView$10.pop3D():0:0 -> onClick
+    16:16:void onClick(android.view.View):0:0 -> onClick
+    17:17:void com.eju.cy.drawlibrary.view.JddDrawRoomView$10.popHistory():0:0 -> onClick
     17:17:void onClick(android.view.View):0 -> onClick
-    18:18:void onClick(android.view.View):0:0 -> onClick
-    19:19:void com.eju.cy.drawlibrary.view.JddDrawRoomView$10.popHistory():0:0 -> onClick
-    19:19:void onClick(android.view.View):0 -> onClick
-    20:20:void onClick(android.view.View):0:0 -> onClick
-    21:21:void com.eju.cy.drawlibrary.view.JddDrawRoomView$10.popRepertoire():0:0 -> onClick
+    18:18:boolean com.eju.cy.drawlibrary.view.JddDrawRoomView.isContent():0:0 -> onClick
+    18:18:boolean com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1500(com.eju.cy.drawlibrary.view.JddDrawRoomView):0 -> onClick
+    18:18:void com.eju.cy.drawlibrary.view.JddDrawRoomView$10.popHistory():0 -> onClick
+    18:18:void onClick(android.view.View):0 -> onClick
+    19:19:void onClick(android.view.View):0:0 -> onClick
+    20:20:void com.eju.cy.drawlibrary.view.JddDrawRoomView$10.popRepertoire():0:0 -> onClick
+    20:20:void onClick(android.view.View):0 -> onClick
+    21:21:com.just.agentwebX5.AgentWebX5 com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1300(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> onClick
+    21:21:void com.eju.cy.drawlibrary.view.JddDrawRoomView$10.popRepertoire():0 -> onClick
     21:21:void onClick(android.view.View):0 -> onClick
-    22:22:com.just.agentwebX5.AgentWebX5 com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1100(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> onClick
-    22:22:void com.eju.cy.drawlibrary.view.JddDrawRoomView$10.popRepertoire():0 -> onClick
+    22:22:void com.eju.cy.drawlibrary.view.JddDrawRoomView$10.popRepertoire():0:0 -> onClick
     22:22:void onClick(android.view.View):0 -> onClick
-    23:23:void com.eju.cy.drawlibrary.view.JddDrawRoomView$10.popRepertoire():0:0 -> onClick
+    23:23:void com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1400(com.eju.cy.drawlibrary.view.JddDrawRoomView,java.lang.Boolean,java.lang.String):0:0 -> onClick
+    23:23:void com.eju.cy.drawlibrary.view.JddDrawRoomView$10.popRepertoire():0 -> onClick
     23:23:void onClick(android.view.View):0 -> onClick
-    24:24:void com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1200(com.eju.cy.drawlibrary.view.JddDrawRoomView,java.lang.Boolean,java.lang.String):0:0 -> onClick
-    24:24:void com.eju.cy.drawlibrary.view.JddDrawRoomView$10.popRepertoire():0 -> onClick
+    24:24:void com.eju.cy.drawlibrary.view.JddDrawRoomView$10.popRepertoire():0:0 -> onClick
     24:24:void onClick(android.view.View):0 -> onClick
-    25:25:void com.eju.cy.drawlibrary.view.JddDrawRoomView$10.popRepertoire():0:0 -> onClick
-    25:25:void onClick(android.view.View):0 -> onClick
-    26:26:void onClick(android.view.View):0:0 -> onClick
+    25:25:void onClick(android.view.View):0:0 -> onClick
 com.eju.cy.drawlibrary.utils.ButtonUtils -> a.a.a.a.g.a:
     long lastClickTime -> a
     int lastButtonId -> b
@@ -538,33 +537,37 @@ com.eju.cy.drawlibrary.view.BubbleLayout -> com.eju.cy.drawlibrary.view.BubbleLa
     4:4:void onDraw(android.graphics.Canvas):0 -> onDraw
 com.eju.cy.drawlibrary.view.JddDrawRoomView -> com.eju.cy.drawlibrary.view.JddDrawRoomView:
     android.content.Context mContext -> a
-    com.tencent.smtt.sdk.WebChromeClient mWebChromeClient -> t
+    io.reactivex.disposables.CompositeDisposable compositeDisposable -> n
+    com.tencent.smtt.sdk.WebChromeClient mWebChromeClient -> w
     android.widget.RelativeLayout rl_av_load -> c
-    android.widget.RelativeLayout rl_view -> b
-    java.lang.Boolean isLink -> o
-    java.lang.Boolean isPortOpen -> p
-    java.lang.Boolean addOrUpdate -> n
-    android.widget.ImageView ej_iv_more -> d
+    java.lang.Boolean addOrUpdate -> o
+    java.lang.Boolean isPortOpen -> s
     android.widget.ImageView ej_iv_back -> e
-    com.just.agentwebX5.AgentWebX5 mAgentWeb -> h
-    io.reactivex.disposables.CompositeDisposable compositeDisposable -> m
-    com.just.agentwebX5.MiddleWareWebClientBase mMiddleWareWebClient -> l
-    com.eju.cy.drawlibrary.bluetooth.ACSUtility$IACSUtilityCallback userCallback -> v
-    android.app.Activity activity -> i
-    com.just.agentwebX5.MiddleWareWebChromeBase mMiddleWareWebChrome -> k
-    android.widget.TextView tv_title -> g
-    androidx.fragment.app.FragmentManager fragmentManager -> j
-    com.eju.cy.drawlibrary.bluetooth.ACSUtility util -> s
-    com.tencent.smtt.sdk.WebViewClient mWebViewClient -> u
+    com.just.agentwebX5.AgentWebX5 mAgentWeb -> i
+    com.just.agentwebX5.MiddleWareWebClientBase mMiddleWareWebClient -> m
+    android.app.Activity activity -> j
+    com.eju.cy.drawlibrary.bluetooth.ACSUtility$IACSUtilityCallback userCallback -> y
     android.widget.TextView tv_share -> f
-    com.eju.cy.drawlibrary.bluetooth.ACSUtility$blePort mSelectedPort -> r
-    com.eju.cy.drawlibrary.bluetooth.ACSUtility$blePort mCurrentPort -> q
+    com.eju.cy.drawlibrary.bluetooth.ACSUtility$blePort mCurrentPort -> t
+    android.widget.TextView tv_debug -> h
+    android.widget.RelativeLayout rl_view -> b
+    java.lang.String roomData -> q
+    android.widget.ImageView ej_iv_more -> d
+    java.lang.Boolean isLink -> r
+    com.just.agentwebX5.MiddleWareWebChromeBase mMiddleWareWebChrome -> l
+    android.widget.TextView tv_title -> g
+    androidx.fragment.app.FragmentManager fragmentManager -> k
+    com.eju.cy.drawlibrary.bluetooth.ACSUtility$blePort mSelectedPort -> u
+    com.eju.cy.drawlibrary.bluetooth.ACSUtility util -> v
+    int ckcount -> p
+    com.tencent.smtt.sdk.WebViewClient mWebViewClient -> x
     1:1:void initView(android.content.Context):0:0 -> <init>
     1:1:void <init>(android.content.Context,android.util.AttributeSet,int):0 -> <init>
-    void access$1000(com.eju.cy.drawlibrary.view.JddDrawRoomView,java.lang.Boolean) -> a
-    android.app.Activity access$1300(com.eju.cy.drawlibrary.view.JddDrawRoomView) -> a
     1:1:void saveRoomData(java.lang.String,java.lang.String,java.lang.Boolean):0:0 -> a
-    1:1:void access$800(com.eju.cy.drawlibrary.view.JddDrawRoomView,java.lang.String,java.lang.String,java.lang.Boolean):0 -> a
+    1:1:void access$1000(com.eju.cy.drawlibrary.view.JddDrawRoomView,java.lang.String,java.lang.String,java.lang.Boolean):0 -> a
+    androidx.fragment.app.FragmentManager access$1100(com.eju.cy.drawlibrary.view.JddDrawRoomView) -> a
+    void access$1200(com.eju.cy.drawlibrary.view.JddDrawRoomView,java.lang.Boolean) -> a
+    void access$1400(com.eju.cy.drawlibrary.view.JddDrawRoomView,java.lang.Boolean,java.lang.String) -> a
     2:2:int dpToPx(android.content.Context,float):0:0 -> a
     2:2:void backViewIsShow(java.lang.Boolean,java.lang.String):0 -> a
     3:3:void setMargins(android.view.View,int,int,int,int):0:0 -> a
@@ -623,23 +626,23 @@ com.eju.cy.drawlibrary.view.JddDrawRoomView$10 -> com.eju.cy.drawlibrary.view.Jd
     com.eju.cy.drawlibrary.view.JddDrawRoomView this$0 -> a
 com.eju.cy.drawlibrary.view.JddDrawRoomView$11 -> com.eju.cy.drawlibrary.view.JddDrawRoomView$b:
     com.eju.cy.drawlibrary.view.JddDrawRoomView this$0 -> a
-    1:1:com.eju.cy.drawlibrary.bluetooth.ACSUtility$blePort com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1400(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> run
+    1:1:com.eju.cy.drawlibrary.bluetooth.ACSUtility$blePort com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1600(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> run
     1:1:void run():0 -> run
     2:2:void run():0:0 -> run
-    3:3:java.lang.Boolean com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1500(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> run
+    3:3:java.lang.Boolean com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1700(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> run
     3:3:void run():0 -> run
     4:4:void run():0:0 -> run
-    5:5:com.eju.cy.drawlibrary.bluetooth.ACSUtility com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1600(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> run
+    5:5:com.eju.cy.drawlibrary.bluetooth.ACSUtility com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1800(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> run
     5:5:void run():0 -> run
     6:6:void com.eju.cy.drawlibrary.bluetooth.ACSUtility.closePort():0:0 -> run
     6:6:void run():0 -> run
     7:7:void run():0:0 -> run
-    8:8:com.eju.cy.drawlibrary.bluetooth.ACSUtility$blePort com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1400(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> run
+    8:8:com.eju.cy.drawlibrary.bluetooth.ACSUtility$blePort com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1600(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> run
     8:8:void run():0 -> run
     9:9:void run():0:0 -> run
-    10:10:com.eju.cy.drawlibrary.bluetooth.ACSUtility com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1600(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> run
+    10:10:com.eju.cy.drawlibrary.bluetooth.ACSUtility com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1800(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> run
     10:10:void run():0 -> run
-    11:11:com.eju.cy.drawlibrary.bluetooth.ACSUtility$blePort com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1400(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> run
+    11:11:com.eju.cy.drawlibrary.bluetooth.ACSUtility$blePort com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1600(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> run
     11:11:void run():0 -> run
     12:12:void com.eju.cy.drawlibrary.bluetooth.ACSUtility.openPort(com.eju.cy.drawlibrary.bluetooth.ACSUtility$blePort):0:0 -> run
     12:12:void run():0 -> run
@@ -647,23 +650,67 @@ com.eju.cy.drawlibrary.view.JddDrawRoomView$11 -> com.eju.cy.drawlibrary.view.Jd
     14:14:android.widget.RelativeLayout com.eju.cy.drawlibrary.view.JddDrawRoomView.access$000(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> run
     14:14:void run():0 -> run
     15:15:void run():0:0 -> run
-com.eju.cy.drawlibrary.view.JddDrawRoomView$12 -> com.eju.cy.drawlibrary.view.JddDrawRoomView$c:
+com.eju.cy.drawlibrary.view.JddDrawRoomView$12 -> a.a.a.a.h.c:
+    com.eju.cy.drawlibrary.view.JddDrawRoomView this$0 -> a
+    1:1:void onReceiveValue(java.lang.String):0:0 -> onReceiveValue
+    1:1:void onReceiveValue(java.lang.Object):0 -> onReceiveValue
+    2:2:android.app.Activity com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1900(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> onReceiveValue
+    2:2:void onReceiveValue(java.lang.String):0 -> onReceiveValue
+    2:2:void onReceiveValue(java.lang.Object):0 -> onReceiveValue
+    3:3:void onReceiveValue(java.lang.String):0:0 -> onReceiveValue
+    3:3:void onReceiveValue(java.lang.Object):0 -> onReceiveValue
+    4:4:android.app.Activity com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1900(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> onReceiveValue
+    4:4:void onReceiveValue(java.lang.String):0 -> onReceiveValue
+    4:4:void onReceiveValue(java.lang.Object):0 -> onReceiveValue
+    5:5:void onReceiveValue(java.lang.String):0:0 -> onReceiveValue
+    5:5:void onReceiveValue(java.lang.Object):0 -> onReceiveValue
+    6:6:com.just.agentwebX5.AgentWebX5 com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1300(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> onReceiveValue
+    6:6:void onReceiveValue(java.lang.String):0 -> onReceiveValue
+    6:6:void onReceiveValue(java.lang.Object):0 -> onReceiveValue
+    7:7:void onReceiveValue(java.lang.String):0:0 -> onReceiveValue
+    7:7:void onReceiveValue(java.lang.Object):0 -> onReceiveValue
+com.eju.cy.drawlibrary.view.JddDrawRoomView$12$1 -> a.a.a.a.h.b:
+    com.eju.cy.drawlibrary.view.JddDrawRoomView$12 this$1 -> a
+    1:1:void onReceiveValue(java.lang.String):0:0 -> onReceiveValue
+    1:1:void onReceiveValue(java.lang.Object):0 -> onReceiveValue
+    2:2:android.app.Activity com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1900(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> onReceiveValue
+    2:2:void onReceiveValue(java.lang.String):0 -> onReceiveValue
+    2:2:void onReceiveValue(java.lang.Object):0 -> onReceiveValue
+    3:3:void onReceiveValue(java.lang.String):0:0 -> onReceiveValue
+    3:3:void onReceiveValue(java.lang.Object):0 -> onReceiveValue
+    4:4:android.app.Activity com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1900(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> onReceiveValue
+    4:4:void onReceiveValue(java.lang.String):0 -> onReceiveValue
+    4:4:void onReceiveValue(java.lang.Object):0 -> onReceiveValue
+    5:5:void onReceiveValue(java.lang.String):0:0 -> onReceiveValue
+    5:5:void onReceiveValue(java.lang.Object):0 -> onReceiveValue
+com.eju.cy.drawlibrary.view.JddDrawRoomView$12$1$1 -> a.a.a.a.h.a:
+    com.eju.cy.drawlibrary.view.JddDrawRoomView$12$1 this$2 -> a
+    1:1:com.just.agentwebX5.AgentWebX5 com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1300(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> dialogCommit
+    1:1:void dialogCommit(java.lang.String):0 -> dialogCommit
+    2:2:void dialogCommit(java.lang.String):0:0 -> dialogCommit
+    1:1:android.app.Activity com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1900(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> dialogFinish
+    1:1:void dialogFinish():0 -> dialogFinish
+    2:2:void dialogFinish():0:0 -> dialogFinish
+    3:3:android.app.Activity com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1900(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> dialogFinish
+    3:3:void dialogFinish():0 -> dialogFinish
+    4:4:void dialogFinish():0:0 -> dialogFinish
+com.eju.cy.drawlibrary.view.JddDrawRoomView$13 -> com.eju.cy.drawlibrary.view.JddDrawRoomView$c:
     com.eju.cy.drawlibrary.view.JddDrawRoomView this$0 -> a
     1:1:android.widget.RelativeLayout com.eju.cy.drawlibrary.view.JddDrawRoomView.access$000(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> a
     1:1:void didClosePort(com.eju.cy.drawlibrary.bluetooth.ACSUtility$blePort):0 -> a
     2:2:void didClosePort(com.eju.cy.drawlibrary.bluetooth.ACSUtility$blePort):0:0 -> a
-    3:3:java.lang.Boolean com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1502(com.eju.cy.drawlibrary.view.JddDrawRoomView,java.lang.Boolean):0:0 -> a
+    3:3:java.lang.Boolean com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1702(com.eju.cy.drawlibrary.view.JddDrawRoomView,java.lang.Boolean):0:0 -> a
     3:3:void didClosePort(com.eju.cy.drawlibrary.bluetooth.ACSUtility$blePort):0 -> a
     4:4:void didClosePort(com.eju.cy.drawlibrary.bluetooth.ACSUtility$blePort):0:0 -> a
-    5:5:com.eju.cy.drawlibrary.bluetooth.ACSUtility$blePort com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1702(com.eju.cy.drawlibrary.view.JddDrawRoomView,com.eju.cy.drawlibrary.bluetooth.ACSUtility$blePort):0:0 -> a
+    5:5:com.eju.cy.drawlibrary.bluetooth.ACSUtility$blePort com.eju.cy.drawlibrary.view.JddDrawRoomView.access$2002(com.eju.cy.drawlibrary.view.JddDrawRoomView,com.eju.cy.drawlibrary.bluetooth.ACSUtility$blePort):0:0 -> a
     5:5:void didClosePort(com.eju.cy.drawlibrary.bluetooth.ACSUtility$blePort):0 -> a
     6:6:void didClosePort(com.eju.cy.drawlibrary.bluetooth.ACSUtility$blePort):0:0 -> a
     7:7:java.lang.Boolean com.eju.cy.drawlibrary.view.JddDrawRoomView.access$402(com.eju.cy.drawlibrary.view.JddDrawRoomView,java.lang.Boolean):0:0 -> a
     7:7:void didClosePort(com.eju.cy.drawlibrary.bluetooth.ACSUtility$blePort):0 -> a
-    8:8:java.lang.Boolean com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1502(com.eju.cy.drawlibrary.view.JddDrawRoomView,java.lang.Boolean):0:0 -> a
+    8:8:java.lang.Boolean com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1702(com.eju.cy.drawlibrary.view.JddDrawRoomView,java.lang.Boolean):0:0 -> a
     8:8:void didOpenPort(com.eju.cy.drawlibrary.bluetooth.ACSUtility$blePort,java.lang.Boolean):0 -> a
     9:9:void didOpenPort(com.eju.cy.drawlibrary.bluetooth.ACSUtility$blePort,java.lang.Boolean):0:0 -> a
-    10:10:com.eju.cy.drawlibrary.bluetooth.ACSUtility$blePort com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1702(com.eju.cy.drawlibrary.view.JddDrawRoomView,com.eju.cy.drawlibrary.bluetooth.ACSUtility$blePort):0:0 -> a
+    10:10:com.eju.cy.drawlibrary.bluetooth.ACSUtility$blePort com.eju.cy.drawlibrary.view.JddDrawRoomView.access$2002(com.eju.cy.drawlibrary.view.JddDrawRoomView,com.eju.cy.drawlibrary.bluetooth.ACSUtility$blePort):0:0 -> a
     10:10:void didOpenPort(com.eju.cy.drawlibrary.bluetooth.ACSUtility$blePort,java.lang.Boolean):0 -> a
     11:11:void didOpenPort(com.eju.cy.drawlibrary.bluetooth.ACSUtility$blePort,java.lang.Boolean):0:0 -> a
     12:12:java.lang.Boolean com.eju.cy.drawlibrary.view.JddDrawRoomView.access$402(com.eju.cy.drawlibrary.view.JddDrawRoomView,java.lang.Boolean):0:0 -> a
@@ -675,7 +722,7 @@ com.eju.cy.drawlibrary.view.JddDrawRoomView$12 -> com.eju.cy.drawlibrary.view.Jd
     16:16:android.widget.RelativeLayout com.eju.cy.drawlibrary.view.JddDrawRoomView.access$000(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> a
     16:16:void didOpenPort(com.eju.cy.drawlibrary.bluetooth.ACSUtility$blePort,java.lang.Boolean):0 -> a
     17:17:void didOpenPort(com.eju.cy.drawlibrary.bluetooth.ACSUtility$blePort,java.lang.Boolean):0:0 -> a
-    18:18:com.just.agentwebX5.AgentWebX5 com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1100(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> a
+    18:18:com.just.agentwebX5.AgentWebX5 com.eju.cy.drawlibrary.view.JddDrawRoomView.access$1300(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> a
     18:18:void didPackageReceived(com.eju.cy.drawlibrary.bluetooth.ACSUtility$blePort,byte[]):0 -> a
     19:19:void didPackageReceived(com.eju.cy.drawlibrary.bluetooth.ACSUtility$blePort,byte[]):0:0 -> a
     void didPackageSended(boolean) -> a
@@ -683,35 +730,41 @@ com.eju.cy.drawlibrary.view.JddDrawRoomView$12 -> com.eju.cy.drawlibrary.view.Jd
     void didFinishedEnumPorts() -> b
     void didFoundPort(com.eju.cy.drawlibrary.bluetooth.ACSUtility$blePort) -> b
     void utilReadyForUse() -> c
-com.eju.cy.drawlibrary.view.JddDrawRoomView$2 -> a.a.a.a.h.a:
+com.eju.cy.drawlibrary.view.JddDrawRoomView$2 -> a.a.a.a.h.d:
     com.eju.cy.drawlibrary.view.JddDrawRoomView this$0 -> a
-    1:1:java.lang.Boolean com.eju.cy.drawlibrary.view.JddDrawRoomView.access$602(com.eju.cy.drawlibrary.view.JddDrawRoomView,java.lang.Boolean):0:0 -> pushMsg
+    1:1:android.widget.TextView com.eju.cy.drawlibrary.view.JddDrawRoomView.access$900(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> pushMsg
     1:1:void pushMsg(java.lang.String):0 -> pushMsg
     2:2:void pushMsg(java.lang.String):0:0 -> pushMsg
-    3:3:void com.eju.cy.drawlibrary.view.JddDrawRoomView.access$700(com.eju.cy.drawlibrary.view.JddDrawRoomView,java.lang.String):0:0 -> pushMsg
+    3:3:java.lang.Boolean com.eju.cy.drawlibrary.view.JddDrawRoomView.access$602(com.eju.cy.drawlibrary.view.JddDrawRoomView,java.lang.Boolean):0:0 -> pushMsg
     3:3:void pushMsg(java.lang.String):0 -> pushMsg
     4:4:void pushMsg(java.lang.String):0:0 -> pushMsg
-    5:5:java.lang.Boolean com.eju.cy.drawlibrary.view.JddDrawRoomView.access$400(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> pushMsg
+    5:5:void com.eju.cy.drawlibrary.view.JddDrawRoomView.access$700(com.eju.cy.drawlibrary.view.JddDrawRoomView,java.lang.String):0:0 -> pushMsg
     5:5:void pushMsg(java.lang.String):0 -> pushMsg
     6:6:void pushMsg(java.lang.String):0:0 -> pushMsg
-    7:7:void com.eju.cy.drawlibrary.view.JddDrawRoomView.setData():0:0 -> pushMsg
-    7:7:void com.eju.cy.drawlibrary.view.JddDrawRoomView.access$500(com.eju.cy.drawlibrary.view.JddDrawRoomView):0 -> pushMsg
+    7:7:java.lang.String com.eju.cy.drawlibrary.view.JddDrawRoomView.access$802(com.eju.cy.drawlibrary.view.JddDrawRoomView,java.lang.String):0:0 -> pushMsg
     7:7:void pushMsg(java.lang.String):0 -> pushMsg
-    8:8:boolean com.eju.cy.drawlibrary.bluetooth.ACSUtility.writePort(byte[]):0:0 -> pushMsg
-    8:8:void com.eju.cy.drawlibrary.view.JddDrawRoomView.setData():0 -> pushMsg
-    8:8:void com.eju.cy.drawlibrary.view.JddDrawRoomView.access$500(com.eju.cy.drawlibrary.view.JddDrawRoomView):0 -> pushMsg
-    8:8:void pushMsg(java.lang.String):0 -> pushMsg
-    9:9:void com.eju.cy.drawlibrary.view.JddDrawRoomView.setData():0:0 -> pushMsg
-    9:9:void com.eju.cy.drawlibrary.view.JddDrawRoomView.access$500(com.eju.cy.drawlibrary.view.JddDrawRoomView):0 -> pushMsg
+    8:8:void pushMsg(java.lang.String):0:0 -> pushMsg
+    9:9:java.lang.Boolean com.eju.cy.drawlibrary.view.JddDrawRoomView.access$400(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> pushMsg
     9:9:void pushMsg(java.lang.String):0 -> pushMsg
     10:10:void pushMsg(java.lang.String):0:0 -> pushMsg
-    11:11:android.content.Context com.eju.cy.drawlibrary.view.JddDrawRoomView.access$100(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> pushMsg
+    11:11:void com.eju.cy.drawlibrary.view.JddDrawRoomView.setData():0:0 -> pushMsg
+    11:11:void com.eju.cy.drawlibrary.view.JddDrawRoomView.access$500(com.eju.cy.drawlibrary.view.JddDrawRoomView):0 -> pushMsg
     11:11:void pushMsg(java.lang.String):0 -> pushMsg
-    12:12:void pushMsg(java.lang.String):0:0 -> pushMsg
-    13:13:android.content.Context com.eju.cy.drawlibrary.view.JddDrawRoomView.access$100(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> pushMsg
+    12:12:boolean com.eju.cy.drawlibrary.bluetooth.ACSUtility.writePort(byte[]):0:0 -> pushMsg
+    12:12:void com.eju.cy.drawlibrary.view.JddDrawRoomView.setData():0 -> pushMsg
+    12:12:void com.eju.cy.drawlibrary.view.JddDrawRoomView.access$500(com.eju.cy.drawlibrary.view.JddDrawRoomView):0 -> pushMsg
+    12:12:void pushMsg(java.lang.String):0 -> pushMsg
+    13:13:void com.eju.cy.drawlibrary.view.JddDrawRoomView.setData():0:0 -> pushMsg
+    13:13:void com.eju.cy.drawlibrary.view.JddDrawRoomView.access$500(com.eju.cy.drawlibrary.view.JddDrawRoomView):0 -> pushMsg
     13:13:void pushMsg(java.lang.String):0 -> pushMsg
     14:14:void pushMsg(java.lang.String):0:0 -> pushMsg
-com.eju.cy.drawlibrary.view.JddDrawRoomView$2$1 -> a.a.a.a.h.a$a:
+    15:15:android.content.Context com.eju.cy.drawlibrary.view.JddDrawRoomView.access$100(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> pushMsg
+    15:15:void pushMsg(java.lang.String):0 -> pushMsg
+    16:16:void pushMsg(java.lang.String):0:0 -> pushMsg
+    17:17:android.content.Context com.eju.cy.drawlibrary.view.JddDrawRoomView.access$100(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> pushMsg
+    17:17:void pushMsg(java.lang.String):0 -> pushMsg
+    18:18:void pushMsg(java.lang.String):0:0 -> pushMsg
+com.eju.cy.drawlibrary.view.JddDrawRoomView$2$1 -> a.a.a.a.h.d$a:
     com.eju.cy.drawlibrary.view.JddDrawRoomView$2 this$1 -> a
     1:1:android.widget.TextView com.eju.cy.drawlibrary.view.JddDrawRoomView.access$200(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> run
     1:1:void run():0 -> run
@@ -721,28 +774,24 @@ com.eju.cy.drawlibrary.view.JddDrawRoomView$2$1 -> a.a.a.a.h.a$a:
     4:4:void run():0:0 -> run
 com.eju.cy.drawlibrary.view.JddDrawRoomView$3 -> com.eju.cy.drawlibrary.view.JddDrawRoomView$e:
 com.eju.cy.drawlibrary.view.JddDrawRoomView$4 -> com.eju.cy.drawlibrary.view.JddDrawRoomView$f:
-com.eju.cy.drawlibrary.view.JddDrawRoomView$5 -> a.a.a.a.h.b:
+com.eju.cy.drawlibrary.view.JddDrawRoomView$5 -> a.a.a.a.h.e:
     java.lang.String val$jsonString -> a
     com.eju.cy.drawlibrary.view.JddDrawRoomView this$0 -> b
     1:1:void accept(java.lang.Integer):0:0 -> accept
     1:1:void accept(java.lang.Object):0 -> accept
-com.eju.cy.drawlibrary.view.JddDrawRoomView$6 -> a.a.a.a.h.d:
+com.eju.cy.drawlibrary.view.JddDrawRoomView$6 -> a.a.a.a.h.g:
     java.lang.String val$jsonString -> a
     com.eju.cy.drawlibrary.view.JddDrawRoomView this$0 -> b
     1:1:void accept(java.lang.Integer):0:0 -> accept
     1:1:void accept(java.lang.Object):0 -> accept
-    2:2:androidx.fragment.app.FragmentManager com.eju.cy.drawlibrary.view.JddDrawRoomView.access$900(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> accept
-    2:2:void accept(java.lang.Integer):0 -> accept
-    2:2:void accept(java.lang.Object):0 -> accept
-    3:3:void accept(java.lang.Integer):0:0 -> accept
-    3:3:void accept(java.lang.Object):0 -> accept
-com.eju.cy.drawlibrary.view.JddDrawRoomView$6$1 -> a.a.a.a.h.c:
+com.eju.cy.drawlibrary.view.JddDrawRoomView$6$1 -> a.a.a.a.h.f:
     com.eju.cy.drawlibrary.view.JddDrawRoomView$6 this$1 -> a
     1:1:java.lang.Boolean com.eju.cy.drawlibrary.view.JddDrawRoomView.access$600(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> dialogCommit
     1:1:void dialogCommit(java.lang.String):0 -> dialogCommit
     2:2:void dialogCommit(java.lang.String):0:0 -> dialogCommit
-com.eju.cy.drawlibrary.view.JddDrawRoomView$7 -> a.a.a.a.h.e:
-    com.eju.cy.drawlibrary.view.JddDrawRoomView this$0 -> a
+com.eju.cy.drawlibrary.view.JddDrawRoomView$7 -> a.a.a.a.h.h:
+    com.eju.cy.drawlibrary.view.JddDrawRoomView this$0 -> b
+    com.eju.cy.drawlibrary.bean.DrawRoomDataDto val$drawRoomDataDto -> a
     1:1:android.widget.RelativeLayout com.eju.cy.drawlibrary.view.JddDrawRoomView.access$000(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> onComplete
     1:1:void onComplete():0 -> onComplete
     2:2:void onComplete():0:0 -> onComplete
@@ -751,13 +800,19 @@ com.eju.cy.drawlibrary.view.JddDrawRoomView$7 -> a.a.a.a.h.e:
     2:2:void onError(java.lang.Throwable):0:0 -> onError
     1:1:void onNext(com.eju.cy.drawlibrary.bean.SaveRoomDto):0:0 -> onNext
     1:1:void onNext(java.lang.Object):0 -> onNext
-    2:2:android.widget.RelativeLayout com.eju.cy.drawlibrary.view.JddDrawRoomView.access$000(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> onNext
+    2:2:java.lang.String com.eju.cy.drawlibrary.view.JddDrawRoomView.access$802(com.eju.cy.drawlibrary.view.JddDrawRoomView,java.lang.String):0:0 -> onNext
     2:2:void onNext(com.eju.cy.drawlibrary.bean.SaveRoomDto):0 -> onNext
     2:2:void onNext(java.lang.Object):0 -> onNext
     3:3:void onNext(com.eju.cy.drawlibrary.bean.SaveRoomDto):0:0 -> onNext
     3:3:void onNext(java.lang.Object):0 -> onNext
-com.eju.cy.drawlibrary.view.JddDrawRoomView$8 -> a.a.a.a.h.f:
-    com.eju.cy.drawlibrary.view.JddDrawRoomView this$0 -> a
+    4:4:android.widget.RelativeLayout com.eju.cy.drawlibrary.view.JddDrawRoomView.access$000(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> onNext
+    4:4:void onNext(com.eju.cy.drawlibrary.bean.SaveRoomDto):0 -> onNext
+    4:4:void onNext(java.lang.Object):0 -> onNext
+    5:5:void onNext(com.eju.cy.drawlibrary.bean.SaveRoomDto):0:0 -> onNext
+    5:5:void onNext(java.lang.Object):0 -> onNext
+com.eju.cy.drawlibrary.view.JddDrawRoomView$8 -> a.a.a.a.h.i:
+    com.eju.cy.drawlibrary.view.JddDrawRoomView this$0 -> b
+    com.eju.cy.drawlibrary.bean.DrawRoomDataDto val$drawRoomDataDto -> a
     1:1:android.widget.RelativeLayout com.eju.cy.drawlibrary.view.JddDrawRoomView.access$000(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> onComplete
     1:1:void onComplete():0 -> onComplete
     2:2:void onComplete():0:0 -> onComplete
@@ -766,12 +821,17 @@ com.eju.cy.drawlibrary.view.JddDrawRoomView$8 -> a.a.a.a.h.f:
     2:2:void onError(java.lang.Throwable):0:0 -> onError
     1:1:void onNext(com.eju.cy.drawlibrary.bean.SaveRoomDto):0:0 -> onNext
     1:1:void onNext(java.lang.Object):0 -> onNext
-    2:2:android.widget.RelativeLayout com.eju.cy.drawlibrary.view.JddDrawRoomView.access$000(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> onNext
+    2:2:java.lang.String com.eju.cy.drawlibrary.view.JddDrawRoomView.access$802(com.eju.cy.drawlibrary.view.JddDrawRoomView,java.lang.String):0:0 -> onNext
     2:2:void onNext(com.eju.cy.drawlibrary.bean.SaveRoomDto):0 -> onNext
     2:2:void onNext(java.lang.Object):0 -> onNext
     3:3:void onNext(com.eju.cy.drawlibrary.bean.SaveRoomDto):0:0 -> onNext
     3:3:void onNext(java.lang.Object):0 -> onNext
-com.eju.cy.drawlibrary.view.JddDrawRoomView$9 -> a.a.a.a.h.g:
+    4:4:android.widget.RelativeLayout com.eju.cy.drawlibrary.view.JddDrawRoomView.access$000(com.eju.cy.drawlibrary.view.JddDrawRoomView):0:0 -> onNext
+    4:4:void onNext(com.eju.cy.drawlibrary.bean.SaveRoomDto):0 -> onNext
+    4:4:void onNext(java.lang.Object):0 -> onNext
+    5:5:void onNext(com.eju.cy.drawlibrary.bean.SaveRoomDto):0:0 -> onNext
+    5:5:void onNext(java.lang.Object):0 -> onNext
+com.eju.cy.drawlibrary.view.JddDrawRoomView$9 -> a.a.a.a.h.j:
     com.eju.cy.drawlibrary.bean.DrawRoomDataDto val$drawRoomDataDto -> b
     java.lang.String val$constructionName -> c
     com.eju.cy.drawlibrary.net.DrawRoomInterface val$obRequest -> a

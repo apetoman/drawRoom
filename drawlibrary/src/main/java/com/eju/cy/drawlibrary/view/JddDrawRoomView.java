@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.ValueCallback;
 import android.widget.ImageView;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
@@ -35,6 +36,7 @@ import com.eju.cy.drawlibrary.bean.RoomDataDto;
 import com.eju.cy.drawlibrary.bean.SaveRoomDto;
 import com.eju.cy.drawlibrary.bluetooth.ACSUtility;
 import com.eju.cy.drawlibrary.dialog.CreateConstructionNameDalog;
+import com.eju.cy.drawlibrary.dialog.DeleteRoomDalog;
 import com.eju.cy.drawlibrary.net.DrawRoomInterface;
 import com.eju.cy.drawlibrary.net.RetrofitManager;
 import com.eju.cy.drawlibrary.plug.DialogInterface;
@@ -101,7 +103,7 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
     private Context mContext;
     private RelativeLayout rl_view, rl_av_load;
     private ImageView ej_iv_more, ej_iv_back;
-    private TextView tv_share, tv_title;
+    private TextView tv_share, tv_title, tv_debug;
     private AgentWebX5 mAgentWeb;
 
     private PopupWindow popupWindow;
@@ -113,8 +115,10 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
     private Disposable disposable;
     CompositeDisposable compositeDisposable = new CompositeDisposable();
     private Boolean addOrUpdate = false;
+    private int ckcount = 0;
 
 
+    private String roomData = "";
     //蓝牙
     private Boolean isLink = false, isPortOpen = false;
     private ACSUtility.blePort mCurrentPort, mSelectedPort;
@@ -146,10 +150,12 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
         rl_av_load = layout.findViewById(R.id.rl_av_load);
         tv_title = layout.findViewById(R.id.tv_title);
         ej_iv_back = layout.findViewById(R.id.ej_iv_back);
+        tv_debug = layout.findViewById(R.id.tv_debug);
         backViewIsShow(false, "");
         ej_iv_more.setOnClickListener(this);
         tv_share.setOnClickListener(this);
         ej_iv_back.setOnClickListener(this);
+        tv_title.setOnClickListener(this);
 
         tv_share.setVisibility(View.GONE);
         //  ej_iv_more.setEnabled(false);
@@ -342,7 +348,15 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
                             w("重置");
                             addOrUpdate = false;
                             loadUrl("file:///android_asset/huxingmobile/index.html");
+
+                            roomData = "";
+
                             break;
+
+                        case "debug":
+                            tv_debug.setText("日志：" + roomDataDto.getData());
+                            break;
+
 
                     }
 
@@ -487,6 +501,7 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
                         public void onNext(SaveRoomDto saveRoomDto) {
 
                             if (null != saveRoomDto && "0".equals(saveRoomDto.getCode()) || "10000".equals(saveRoomDto.getCode())) {
+                                roomData = drawRoomDataDto.getData();
                                 ToastUtils.showShort("修改成功");
                             } else {
                                 ToastUtils.showShort(saveRoomDto.getMsg());
@@ -538,6 +553,7 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
 
                             if (null != saveRoomDto && "0".equals(saveRoomDto.getCode()) || "10000".equals(saveRoomDto.getCode())) {
                                 ToastUtils.showShort("保存成功");
+                                roomData = drawRoomDataDto.getData();
                                 setAddOrUpdate(true);
                             } else {
                                 ToastUtils.showShort(saveRoomDto.getMsg());
@@ -587,16 +603,19 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
 
                 @Override
                 public void pop3D() {
-                    mAgentWeb.getJsEntraceAccess().quickCallJs("CallJS.app_js_show3d()");
+
                     backViewIsShow(true, "3D模型");
                     EjuDrawEventCar.getDefault().post("app_qgz_abbr_Click");
+                    mAgentWeb.getJsEntraceAccess().quickCallJs("CallJS.app_js_show3d()");
+
                 }
 
                 @Override
                 public void popHistory() {
-                    Intent intent = new Intent(activity, MyRoomDataList.class);
-                    activity.startActivity(intent);
-                    EjuDrawEventCar.getDefault().post("app_qgz_record_Click");
+
+                    isContent();
+
+
                 }
 
                 @Override
@@ -614,6 +633,15 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
         } else if (v.getId() == R.id.ej_iv_back) {
             backViewIsShow(false, "");
             mAgentWeb.getJsEntraceAccess().quickCallJs("CallJS.app_js_showDefault()");
+        } else if (v.getId() == R.id.tv_title) {
+            ckcount++;
+            if (ckcount == 5) {
+                tv_debug.setVisibility(View.VISIBLE);
+                ckcount = 0;
+            } else {
+                tv_debug.setVisibility(View.GONE);
+            }
+
         }
     }
 
@@ -676,6 +704,7 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
             OpenRoomDto openRoomDto = (OpenRoomDto) obj;
             addOrUpdate = openRoomDto.getAddOrUpdata();
             openDrawRoom(openRoomDto.getData() + "");
+            roomData = "";
             return;
         } else {
             w("蓝牙");
@@ -716,6 +745,86 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
             }
         }
 
+    }
+
+    /**
+     * 画布上是否存在数据
+     *
+     * @return
+     */
+    private boolean isContent() {
+
+        mAgentWeb.getJsEntraceAccess().quickCallJs("CallJS.app_js_isEmpty", new ValueCallback<String>() {
+            @Override
+            public void onReceiveValue(String value) {
+
+
+                String mValue = value.replaceAll("\"", "").toString();
+                if ("true".equals(mValue)) {
+                    LogUtils.w("是没有数据");
+                    Intent intent = new Intent(activity, MyRoomDataList.class);
+                    activity.startActivity(intent);
+                    EjuDrawEventCar.getDefault().post("app_qgz_record_Click");
+
+                } else {
+                    //判断下数据是否保存过没，没有保存过出弹出提示
+                    LogUtils.w("是有数据");
+
+
+                    mAgentWeb.getJsEntraceAccess().quickCallJs("CallJS.app_js_hasChanged", new ValueCallback<String>() {
+                        @Override
+                        public void onReceiveValue(String value) {
+                            String mValue = value.replaceAll("\"", "").toString();
+                            if ("true".equals(mValue)) {
+
+                                DeleteRoomDalog saveDalog = new DeleteRoomDalog(new DialogInterface() {
+                                    @Override
+                                    public void dialogCommit(String msg) {
+
+                                        mAgentWeb.getJsEntraceAccess().quickCallJs("CallJS.app_js_save");
+                                    }
+
+                                    @Override
+                                    public void dialogFinish(String msg) {
+
+                                    }
+
+                                    @Override
+                                    public void dialogFinish() {
+                                        Intent intent = new Intent(activity, MyRoomDataList.class);
+                                        activity.startActivity(intent);
+                                        EjuDrawEventCar.getDefault().post("app_qgz_record_Click");
+                                    }
+                                }, "提示", "是否保存所绘图形", "确定", "取消");
+
+
+                                saveDalog.show(fragmentManager, "saveDalog");
+
+
+                            } else {
+
+                                Intent intent = new Intent(activity, MyRoomDataList.class);
+                                activity.startActivity(intent);
+                                EjuDrawEventCar.getDefault().post("app_qgz_record_Click");
+                            }
+
+                        }
+
+                    });
+//
+//                    if (roomData.length() < 10) {
+//
+//                    } else {
+//
+//
+//                    }
+
+
+                }
+
+            }
+        });
+        return false;
     }
 
     private ACSUtility.IACSUtilityCallback userCallback = new ACSUtility.IACSUtilityCallback() {

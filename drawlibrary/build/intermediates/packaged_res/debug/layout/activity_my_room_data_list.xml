@@ -18,9 +18,8 @@
             android:id="@+id/iv_back"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:paddingLeft="21dp"
-            android:paddingRight="10dp"
-            android:src="@drawable/eju_icon_back" />
+            android:paddingLeft="10dp"
+            android:src="@drawable/ej_iv_back" />
 
         <TextView
             android:id="@+id/tv_title"
@@ -48,6 +47,8 @@
     </RelativeLayout>
 
     <com.scwang.smartrefresh.layout.SmartRefreshLayout
+
+        android:layout_marginTop="17dp"
         android:id="@+id/refreshLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

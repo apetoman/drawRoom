@@ -76,6 +76,10 @@
         "source": "/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/res/drawable-xxhdpi/ej_icon_more.png"
     },
     {
+        "merged": "/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/build/intermediates/res/merged/release/drawable-xxhdpi-v4/ej_iv_back.png",
+        "source": "/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/res/drawable-xxhdpi/ej_iv_back.png"
+    },
+    {
         "merged": "/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/build/intermediates/res/merged/release/drawable-xxhdpi-v4/eju_icon_back.png",
         "source": "/Users/eju/Documents/Zxzsg/DrawRoomSample/drawlibrary/src/main/res/drawable-xxhdpi/eju_icon_back.png"
     },

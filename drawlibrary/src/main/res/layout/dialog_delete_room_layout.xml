@@ -56,7 +56,7 @@
                 android:layout_centerVertical="true"
                 android:layout_toLeftOf="@+id/view_lin"
                 android:gravity="center"
-                android:textColor="@color/color00B6D5"
+                android:textColor="@color/colorc3d4de6"
                 android:textSize="17dp"
                 tools:text="xxxxxx" />
 
@@ -66,7 +66,7 @@
                 android:layout_centerVertical="true"
                 android:layout_toRightOf="@+id/view_lin"
                 android:gravity="center"
-                android:textColor="@color/color00B6D5"
+                android:textColor="@color/colorc3d4de6"
                 android:textSize="17dp"
                 tools:text="xxxxx" />
 
