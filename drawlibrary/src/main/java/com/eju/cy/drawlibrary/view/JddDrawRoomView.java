@@ -1,5 +1,6 @@
 package com.eju.cy.drawlibrary.view;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
@@ -18,6 +19,7 @@ import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 
 import com.blankj.utilcode.util.LogUtils;
@@ -60,6 +62,7 @@ import com.just.agentwebX5.AgentWebX5;
 import com.just.agentwebX5.DefaultWebClient;
 import com.just.agentwebX5.MiddleWareWebChromeBase;
 import com.just.agentwebX5.MiddleWareWebClientBase;
+import com.tbruyelle.rxpermissions2.RxPermissions;
 import com.tencent.smtt.sdk.WebChromeClient;
 import com.tencent.smtt.sdk.WebView;
 import com.tencent.smtt.sdk.WebViewClient;
@@ -123,7 +126,7 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
     private Boolean isLink = false, isPortOpen = false;
     private ACSUtility.blePort mCurrentPort, mSelectedPort;
     private ACSUtility util;
-
+    private RxPermissions rxPermissions;
 
     public JddDrawRoomView(Context context) {
         this(context, null);
@@ -170,7 +173,7 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
      * @param fragmentManager fragmentManager
      * @param openUserId      用户唯一标示
      */
-    public void initJddDrawRoomView(Activity activity, FragmentManager fragmentManager, String openUserId) {
+    public void initJddDrawRoomView(FragmentActivity activity, FragmentManager fragmentManager, String openUserId) {
 
         Config config = LogUtils.getConfig();
         config.setLogSwitch(BuildConfig.DEBUG);//false
@@ -193,6 +196,7 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
         params.put("company_id", COMPANY_ID);
 
 
+        rxPermissions = new RxPermissions(activity);
         try {
             String sign = jhomeSignature.rsaSign(params, APPPRIVATE_KEY, JhomeConstants.CHARSET_UTF8);
             LogUtils.w("sign-------" + sign);
@@ -295,6 +299,7 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
             //mAgentWeb.getJsInterfaceHolder().addJavaObject("android",new AndroidInterface(mAgentWeb,mContext));
 
             mAgentWeb.getJsInterfaceHolder().addJavaObject("android", new AndroidInterface(mAgentWeb, mContext, new ArInterface() {
+                @SuppressLint("CheckResult")
                 @Override
                 public void pushMsg(String msg) {
 
@@ -328,11 +333,29 @@ public class JddDrawRoomView extends RelativeLayout implements View.OnClickListe
                                     if (isLink) {
                                         setData();
                                     } else {
-                                        Intent intent = new Intent(mContext, EnumPortActivity.class);
-                                        mContext.startActivity(intent);
+                                        Observable.just(1)
+                                                .subscribeOn(AndroidSchedulers.mainThread())
+                                                .observeOn(AndroidSchedulers.mainThread())
+                                                .subscribe(new Consumer<Integer>() {
+                                                    @Override
+                                                    public void accept(Integer integer) throws Exception {
+                                                        rxPermissions
+                                                                .request(Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION)
+                                                                .subscribe(granted -> {
+                                                                    if (granted) {
+                                                                        LogUtils.w("有权限");
+                                                                        Intent intent = new Intent(mContext, EnumPortActivity.class);
+                                                                        mContext.startActivity(intent);
+                                                                    } else {
+                                                                        // Oups permission denied
+                                                                        LogUtils.w("无权限");
+                                                                        ToastUtils.showShort("请授予位置权限用来搜寻蓝牙设备");
+                                                                    }
+                                                                });
+
+                                                    }
+                                                });
                                     }
-
-
                                 } else {
                                     //isLink = false;
                                     ToastUtils.showShort("请打开蓝牙");

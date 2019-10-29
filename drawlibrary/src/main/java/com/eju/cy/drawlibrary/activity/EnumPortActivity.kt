@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.blankj.utilcode.util.LogUtils
 import com.blankj.utilcode.util.ToastUtils
 import com.eju.cy.drawlibrary.R
 import com.eju.cy.drawlibrary.adapter.BluetoothDeviceAdapter
@@ -134,6 +135,12 @@ class EnumPortActivity : AppCompatActivity() {
                 break
             }
         }
+
+//        device.name.let {
+//            LogUtils.w("设备"+device.name)
+//
+//        }
+
 
         if (!deviceFound) {
             if (null != device.name && device.name.replace(" ", "") == "Myhome3D") {
